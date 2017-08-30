@@ -177,3 +177,48 @@ p {
   padding: 20px;
   max-height: 100px;
 }
+
+/* SPONSORS */
+.alpha img {
+  max-width: 300px !important;
+  max-height: 300px !important;
+}
+
+/* DID YOU KNOW */
+
+#didyouknow {
+  margin-bottom: 0px !important;
+}
+
+/* SOCIAL */
+
+.social {
+  height: 40px;
+  line-height: 40px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.social a {
+  color: #36373a;
+  text-decoration: none;
+}
+
+.social span {
+  padding: 0 15px;
+}
+
+.social span:hover {
+  color: white;
+  transition: all .3s ease;
+}
+
+.social i {
+  padding: 0 15px;
+  transition: all .3s ease;
+ }
+
+.social i:hover {
+  color: white;
+}
