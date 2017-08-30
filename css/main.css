@@ -1,0 +1,73 @@
+
+#logo-container {
+  width: 30%;
+  margin: auto;
+  padding-top: 20%;
+}
+
+#title {
+  text-align: center;
+}
+
+#learnmore {
+  margin-top: 10%;
+}
+
+.landingPage {
+  text-align: center;
+  height:100vh;
+}
+
+.navbar {
+  text-align: center;
+}
+.main-nav a{
+  text-decoration: none;
+  color: #36373a;
+}
+
+.section {
+  margin: 50px 0px 50px 0px;
+}
+
+p {
+  font-size: 16px;
+  font-family: Open Sans;
+  line-height: 25px;
+}
+
+.divider {
+  height: 2px;
+  background-color: white;
+}
+
+.infoCards {
+  padding: 25px;
+  text-align: center;
+  border: solid 2px white;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
