@@ -55,7 +55,11 @@
 
 /* GENERAL */
 
-.section {
+body {
+  background-color:rgb(240, 247, 251);
+}
+
+.content {
   margin: 50px 0px 50px 0px;
 }
 
@@ -152,4 +156,24 @@ p {
   .faq .question {
     font-size: 18px;
   }
+}
+
+/* IN THE NEWS */
+.news-container {
+  padding-top:25px;
+}
+
+/* IMAGE COLLAGE */
+
+.collage-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.collage-images img {
+  max-width: 200px;
+  padding: 20px;
+  max-height: 100px;
 }
