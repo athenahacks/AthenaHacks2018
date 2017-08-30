@@ -1,3 +1,4 @@
+/* LANDING PAGE */
 
 #logo-container {
   width: 30%;
@@ -26,27 +27,6 @@
   color: #36373a;
 }
 
-.section {
-  margin: 50px 0px 50px 0px;
-}
-
-p {
-  font-size: 16px;
-  font-family: Open Sans;
-  line-height: 25px;
-}
-
-.divider {
-  height: 2px;
-  background-color: white;
-}
-
-.infoCards {
-  padding: 25px;
-  text-align: center;
-  border: solid 2px white;
-}
-
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -70,4 +50,106 @@ p {
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+}
+
+
+/* GENERAL */
+
+.section {
+  margin: 50px 0px 50px 0px;
+}
+
+p {
+  font-size: 16px;
+  font-family: Open Sans;
+  line-height: 25px;
+}
+
+.divider {
+  height: 2px;
+  background-color: white;
+}
+
+
+/* ABOUT */
+
+.infoCards {
+  padding: 25px;
+  text-align: center;
+  border: solid 2px #fff;
+}
+
+
+/* FAQ */
+
+.faq {
+  list-style: none;
+  padding-left: 75px;
+}
+.faq li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fbfbfb;
+}
+.faq li.active .answer {
+  max-height: 275px !important;
+  padding-bottom: 25px;
+  transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+}
+.faq li.active .question {
+  color: #36373a;
+  transition: color 0.5s ease;
+}
+.faq .answer {
+  color: #36373a;
+  font-family: serif;
+  font-size: 16px;
+  line-height: 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+}
+.faq .plus-minus-toggle {
+  cursor: pointer;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  left: -40px;
+  top: 50%;
+  z-index: 2;
+}
+.faq .plus-minus-toggle:before, .faq .plus-minus-toggle:after {
+  background: #000;
+  content: '';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 15px;
+  transition: transform 500ms ease;
+}
+.faq .plus-minus-toggle:after {
+  transform-origin: center;
+}
+.faq .plus-minus-toggle.collapsed:after {
+  transform: rotate(90deg);
+}
+.faq .plus-minus-toggle.collapsed:before {
+  transform: rotate(180deg);
+}
+.faq .question {
+  color: #36373a;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  padding-top: 3px;
+  transition: color 0.5s ease;
+  margin-bottom:1rem !important;
+}
+@media screen and (max-width: 767px) {
+  .faq .question {
+    font-size: 18px;
+  }
 }
