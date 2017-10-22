@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* LANDING PAGE */
 
 #logo-container {
@@ -109,7 +114,7 @@ p {
 }
 .faq .answer {
   color: #36373a;
-  font-family: serif;
+  font-family: "Questrial";
   font-size: 16px;
   line-height: 24px;
   max-height: 0;
@@ -204,10 +209,21 @@ p {
 }
 
 /* SPONSORS */
-.alpha img {
+.teir1 img {
+  max-width: 370px !important;
+  max-height: 370px !important;
+}
+
+.teir2 img {
   max-width: 300px !important;
   max-height: 300px !important;
 }
+
+.teir3 img {
+  max-width: 230px !important;
+  max-height: 230px !important;
+}
+
 
 /* DID YOU KNOW */
 

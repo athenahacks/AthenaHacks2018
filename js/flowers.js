@@ -15,19 +15,22 @@
                 return the_images[i];
             };
 
-            var total_number_of_images = 25;
-            var max_height = canvas.offsetHeight - icon_height;
-            var max_width = canvas.offsetWidth - icon_width;
+            var total_number_of_images = 15;
+            var max_height = screen.height - icon_width;
+            var max_width = screen.width;
+
+            console.log("max height: " + max_height);
+            console.log("max width: " + max_width);
 
             var randomCoordinate = function(){
                 var r = [];
-                var x = Math.floor(Math.random() * max_width);
-                var y = Math.floor(Math.random() * max_height);
+                var x = Math.floor(Math.random() * max_width) - 200;
+                var y = Math.floor(Math.random() * max_height) - 150;
                 r = [x,y];
                 return r;
             };
 
-            var createImage = function(i){
+            var createImage = function(){
                 var node = icon_template.cloneNode(true);
                 var xy = randomCoordinate();
                 node.removeAttribute('id');
@@ -41,7 +44,7 @@
             };
 
             for (var i = 0; i < total_number_of_images; i++){
-                createImage(i);
+                createImage();
             };
         };
        window.addEventListener('load',init);

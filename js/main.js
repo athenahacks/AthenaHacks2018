@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
   $('.fadeMe').hide().each(function(i) {
     $(this).delay(i*650).fadeIn(750);
