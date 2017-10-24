@@ -2,7 +2,7 @@
     "use strict";
         var init = function(){
             var canvas = document.querySelector('#flowers');
-            var icon_template = document.querySelector('#template');
+            var icon_template = document.querySelector('#append-flowers-here');
             var icon_width = 40;
             var icon_height = 30;
             var the_images = [

@@ -30,10 +30,10 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
-  width: 100%;
+  width: 90%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 10px 20px;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -143,7 +143,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 { font-size: 5.0rem; }
+  h1 { font-size: 7.0rem; }
   h2 { font-size: 4.2rem; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 3.0rem; }
@@ -173,9 +173,9 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: #37363a;
   text-align: center;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
@@ -183,8 +183,8 @@ input[type="button"] {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
+  border-radius: 1px;
+  border: 1px solid #37363a;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
