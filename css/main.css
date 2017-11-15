@@ -65,8 +65,29 @@ nav a:focus {
 #landing {
   text-align: center;
   height:100vh;
-  padding-top: 11em;
+  padding-top: 6em;
   z-index: 10;
+}
+
+@media(min-height: 600px)
+{
+	#landing {
+		padding-top: 7em;
+	}
+}
+
+@media(min-height: 700px)
+{
+	#landing {
+		padding-top: 10em;
+	}
+}
+
+@media(min-height: 800px)
+{
+	#landing {
+		padding-top: 12em;
+	}
 }
 
 #logo {
