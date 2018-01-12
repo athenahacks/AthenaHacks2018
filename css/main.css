@@ -114,6 +114,11 @@ nav a:focus {
   }
 }
 
+#app-closed:hover {
+	cursor: default !important;
+	border-color: #37363a !important; 
+}
+
 /* FLOWERS */
 
 #flowers {
@@ -311,8 +316,8 @@ nav a:focus {
 }
 
 .tier3 img {
-  max-width: 230px !important;
-  max-height: 230px !important;
+  max-width: 250px !important;
+  max-height: 250px !important;
 }
 
 #sponsor-thank-you {
