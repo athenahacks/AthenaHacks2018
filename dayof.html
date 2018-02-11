@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>AthenaHacks Live</title>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- this should fix FB when you post the link -->
+  <meta property="og:image" content="http://imgur.com/a/gIR3O" />
+  <meta property="og:description" content="AthenaHacks - Southern California's premier all-female hackathon!" />
+  <meta property="og:url"content="http://www.athenahacks.com" />
+  <meta property="og:title" content="AthenaHacks" />
+
+  <meta name="description" content="AthenaHacks is Southern California's premier all-female hackathon!">
+  <meta name="author" content="">
+  <!-- this should clear cache for users -->
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="no-cache">
+        <meta http-equiv="Expires" content="-1">
+        <meta http-equiv="Cache-Control" content="no-cache">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="vendors/animate/animate.min.css">
+  <link rel="stylesheet" href="vendors/skeleton/normalize.css">
+  <link rel="stylesheet" href="vendors/skeleton/skeleton.css">
+  <link rel="stylesheet" href="vendors/responsive-nav/responsive-nav.css">
+  <link rel="stylesheet" href="resources/css/custom.css">
+  <link rel="stylesheet" href="resources/css/reset.css"> <!-- schedule CSS reset -->
+  <link rel="stylesheet" href="resources/css/style.css"> <!-- schedule  style -->
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="vendors/responsive-nav/responsive-nav.min.js"></script>
+  <script src="https://use.fontawesome.com/9f7b7f8456.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="resources/images/favicon.png"> -->
+  <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<nav class="navbar">
+  <ul>
+    <a class="nav-title" href="index.html">
+      AthenaHacks
+    </a>
+  </ul>
+</nav>
+
+<div class=countdown>
+  <!-- Display the countdown timer in an element -->
+  <h1>Time Remaining</h1>
+  <div id="clockdiv">
+    <div>
+      <span class="days"></span>
+      <div class="smalltext">Days</div>
+    </div>
+    <div>
+      <span class="hours"></span>
+      <div class="smalltext">Hours</div>
+    </div>
+    <div>
+      <span class="minutes"></span>
+      <div class="smalltext">Minutes</div>
+    </div>
+    <div>
+      <span class="seconds"></span>
+      <div class="smalltext">Seconds</div>
+    </div>
+  </div>
+  <script>
+    function getTimeRemaining(endtime) {
+      var t = Date.parse(endtime) - Date.parse(new Date());
+      var seconds = Math.floor((t / 1000) % 60);
+      var minutes = Math.floor((t / 1000 / 60) % 60);
+      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+    function initializeClock(id, endtime) {
+      var clock = document.getElementById(id);
+      var daysSpan = clock.querySelector('.days');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
+    }
+    var deadline = new Date("April 9, 2017 11:00:00");
+    initializeClock('clockdiv', deadline);
+  </script>
+</div>
+
+<div class="announcement">
+  <h2>Announcements</h2>
+
+</div>
+
+<div class="links">
+  <table>
+    <tr>
+      <th><a href="http://bit.ly/AthenaSlack"><i class="fa fa-slack fa-3x"></i><br>Slack</th>
+      <th><a href="https://github.com/athenahacks"><i class="fa fa-gears fa-3x"></i><br>Hackpacks</th>
+      <th><a href="https://athenahacks2018.devpost.com/"><i class="fa fa-folder fa-3x"></i><br>Devpost</th>
+      <th><a href="Leavey.jpg"><i class="fa fa-map-signs fa-3x"></i><br>Hackspace</th>
+      <th><a href="USC.png"><i class="fa fa-map-marker fa-3x"></i><br>USC Map</th>
+    </tr>
+  </table>
+</div>
+
+
+<div class="schedule" id="schedule">
+  <div class="container">
+    <div class="header">
+      <div class="circle">
+        schedule
+      </div>
+    </div>
+
+    <div id="day-tag">
+      Saturday
+    </div>
+    <table class="table table-bordered" style="margin-bottom:35px">
+      <tbody>
+        <tr>
+          <th scope="row">10 am - 12 pm </th>
+          <th>Check In <br/>Team Formation</th>
+          <th> Hoffman Hall</th>
+        </tr>
+        <tr>
+          <th scope="row">12 pm - 1 pm</th>
+          <th>Opening Ceremony + Keynote</th>
+          <th>Edison Auditorium (Hoffman) </th>
+        </tr>
+        <tr>
+          <th scope="row" colspan="3" style="color:#FFB6C2;background-color:#fff">HACKING BEGINS!</th>
+        </tr>
+        <tr>
+          <th scope="row">1 pm - 2 pm</th>
+          <th>Lunch <br/>Team Formation Cont'd <br/> Hacker/Sponsor Breakout</th>
+          <th> Leavey Library (LVL) Patio <br/> <br/> LVL Hacking Space</th>
+        </tr>
+        <tr>
+          <th scope="row">2 pm - 3:30 pm</th>
+          <th>Android Workshop (Led by Facebook)<br/>iOS Workshop (Led by MakeSchool)<br/>Unity Workshop (Led by Zynga)</th>
+          <th>LVL 13<br/>LVL 16<br/>LVL 17</th>
+        </tr>
+        <tr>
+          <th scope="row">3:30 pm - 5 pm</th>
+          <th>Data Science Workshop (Led by Honeywell)<br/>Chatbots Workshop (Led by Microsoft)</th>
+          <th>LVL 13<br/>LVL 16</th>
+        </tr>
+        <tr>
+          <th scope="row">5 pm - 7 pm</th>
+          <th>ReactJS Workshop (Facebook)<br/>5 pm - 6 pm: Games Workshop (Zynga)<br/>6 pm - 7 pm: Saqi Mehta Panel<br/>Social Event: Scavenger Hunt with GIT</th>
+          <th>LVL 16<br/>LVL 13<br/>LVL 16<br/>McCarthy Quad</th>
+        </tr>
+        <tr>
+          <th scope="row">7 pm - 8 pm</th>
+          <th>Dinner</th>
+          <th>LVL Patio</th>
+        </tr>
+        <tr>
+          <th scope="row">8 pm - 9 pm</th>
+          <th>Speaker: Audrey Wu from CONVRG<br/>Hololens Demos (Led by Microsoft)</th>
+          <th>LVL 13<br/>LVL 3B</th>
+        </tr>
+        <tr>
+          <th scope="row">9 pm - 10 pm</th>
+          <th>Fireside Chat w/ Susan Nesbitt<br/>Hololens Demos Cont'd (Microsoft)</th>
+          <th>LVL 13<br/>LVL 3B</th>
+        </tr>
+        <tr>
+          <th scope="row">10 pm - 11 pm</th>
+          <th>No Light! (Social Activity led by MLH)</th>
+          <th>LVL Hacking Space</th>
+        </tr>
+        <tr>
+          <th scope="row">11 pm - 12 am</th>
+          <th>Screening of 'Debugging the Gender Gap'</th>
+          <th>LVL 17</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="day-tag">
+      Sunday
+    </div>
+    <table class="table table-bordered" style="margin-bottom:35px">
+      <tbody>
+        <tr>
+          <th scope="row">12 am - 1 am </th>
+          <th>Midnight Snack</th>
+          <th>LVL Patio</th>
+        </tr>
+        <tr>
+          <th scope="row">1 am - 2 am </th>
+          <th>Heads Up with WiC</th>
+          <th>LVL Hacking Space</th>
+        </tr>
+        <tr>
+          <th scope="row">2 am - 7 am </th>
+          <th>Time to Hack!</th>
+          <th>LVL Hacking Space</th>
+        </tr>
+        <tr>
+          <th scope="row">7 am - 8 am </th>
+          <th>Breakfast</th>
+          <th>LVL Patio</th>
+        </tr>
+        <tr>
+          <th scope="row">8 am - 9 am </th>
+          <th>Morning Yoga</th>
+          <th>LVL 16</th>
+        </tr>
+        <tr>
+          <th scope="row">9 am - 10 am </th>
+          <th>How To Pitch Demo (Led by Drops LA)</th>
+          <th>LVL 17</th>
+        </tr>
+        <tr>
+          <th scope="row">10 am - 11 am </th>
+          <th>Devpost Office Hours</th>
+          <th>LVL 3Z</th>
+        </tr>
+        <tr>
+          <th scope="row" colspan="3" style="color:#FFB6C2;background-color:#fff">HACKING ENDS @ NOON!</th>
+        </tr>
+        <tr>
+          <th scope="row">12 pm - 1 pm </th>
+          <th>Lunch</th>
+          <th>LVL Patio</th>
+        </tr>
+        <tr>
+          <th scope="row">1 pm - 2:30 pm </th>
+          <th>Project Expo</th>
+          <th>LVL 13&16</th>
+        </tr>
+        <tr>
+          <th scope="row">3 pm - 5 pm </th>
+          <th>Closing Ceremony</th>
+          <th>THH 201</th>
+        </tr>
+        <tr>
+          <th scope="row">5 pm - 6 pm </th>
+          <th>Buses Depart :(</th>
+          <th>Behind Leavey</th>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+
+<!--MLH Badge-->
+<a id="mlh-trust-badge" style="display:block;max-width:80px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+<script>
+  var nav = responsiveNav(".nav-collapse", { // Selector
+    animate: true, // Boolean: Use CSS3 transitions, true or false
+    transition: 284, // Integer: Speed of the transition, in milliseconds
+    label: "AthenaHacks", // String: Label for the navigation toggle
+    insert: "before", // String: Insert the toggle before or after the navigation
+    customToggle: "", // Selector: Specify the ID of a custom toggle
+    closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+    openPos: "relative", // String: Position of the opened nav, relative or static
+    navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+    navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
+    jsClass: "js", // String: 'JS enabled' class which is added to  element
+    init: function(){}, // Function: Init callback
+    open: function(){}, // Function: Open callback
+    close: function(){} // Function: Close callback
+  });
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+
+</body>
+</html>
