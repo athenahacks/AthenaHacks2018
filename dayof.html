@@ -26,9 +26,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,6 +40,7 @@
   <link rel="stylesheet" href="resources/css/custom.css">
   <link rel="stylesheet" href="resources/css/reset.css"> <!-- schedule CSS reset -->
   <link rel="stylesheet" href="resources/css/style.css"> <!-- schedule  style -->
+  <link rel="stylesheet" href="css/main.css">
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -46,41 +48,34 @@
   <script src="vendors/responsive-nav/responsive-nav.min.js"></script>
   <script src="https://use.fontawesome.com/9f7b7f8456.js"></script>
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link rel="icon" type="image/png" href="resources/images/favicon.png"> -->
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon-hand-peace-o.ico">
   <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
 
 </head>
 <body>
-<nav class="navbar">
-  <ul>
-    <a class="nav-title" href="index.html">
-      AthenaHacks
-    </a>
-  </ul>
-</nav>
+<div class="dayof-nav">
+    <a href="index.html"><i class="fa fa-arrow-circle-left" style="vertical-align:text-bottom"></i> Back to AthenaHacks</a>
+</div>
 
 <div class=countdown>
   <!-- Display the countdown timer in an element -->
-  <h1>Time Remaining</h1>
-  <div id="clockdiv">
-    <div>
+  <h1 style="padding-top: 5%">Time Remaining</h1>
+  <div class="main" id="clockdiv">
+    <div class="timer">
       <span class="days"></span>
-      <div class="smalltext">Days</div>
     </div>
-    <div>
+    <div class="timer">
       <span class="hours"></span>
-      <div class="smalltext">Hours</div>
     </div>
-    <div>
+    <div class="timer">
       <span class="minutes"></span>
-      <div class="smalltext">Minutes</div>
     </div>
-    <div>
+    <div class="timer">
       <span class="seconds"></span>
-      <div class="smalltext">Seconds</div>
     </div>
   </div>
   <script>
@@ -104,12 +99,23 @@
       var hoursSpan = clock.querySelector('.hours');
       var minutesSpan = clock.querySelector('.minutes');
       var secondsSpan = clock.querySelector('.seconds');
+
       function updateClock() {
         var t = getTimeRemaining(endtime);
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+        daysSpan.innerHTML = t.days + " days";
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2) + " hours";
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2) + " min";
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2) + " sec";
+        daysSpan.style.fontSize = "30px";
+        hoursSpan.style.fontSize = "30px";
+        minutesSpan.style.fontSize = "30px";
+        secondsSpan.style.fontSize = "30px";
+
+        daysSpan.style.width = "100%";
+        hoursSpan.style.width = "100%";
+        minutesSpan.style.width = "100%";
+        secondsSpan.style.width = "100%";
+
         if (t.total <= 0) {
           clearInterval(timeinterval);
         }
@@ -117,25 +123,19 @@
       updateClock();
       var timeinterval = setInterval(updateClock, 1000);
     }
-    var deadline = new Date("February 24, 2018 11:00:00");
+    var deadline = new Date("February 25, 2018 11:30:00");
     initializeClock('clockdiv', deadline);
   </script>
 </div>
 
-<div class="announcement">
-  <h2>Announcements</h2>
-
-</div>
-
 <div class="links">
-  <table>
+  <table width=100%>
     <tr>
-      <th><a href="https://athenahacks2018.slack.com"><i class="fa fa-slack fa-3x"></i><br>Slack</th>
-      <th><a href="https://join.slack.com/t/athenahacks2018/shared_invite/enQtMzEyNzMwMDQwMTQ1LWVkY2YzMzI3NDRkNTAyZTU0N2QzMDlmYjRkMTE3NzllYzk1YzlhMWZhNmQ2NzA5MjI4NDQyMzk3YzVkNjE2NjA"><i class="fa fa-slack fa-3x"></i><br>Slack Invite Link</th>
-      <th><a href="https://github.com/athenahacks"><i class="fa fa-gears fa-3x"></i><br>Hackpacks</th>
-      <th><a href="https://athenahacks2018.devpost.com/"><i class="fa fa-folder fa-3x"></i><br>Devpost</th>
-      <th><a href="Leavey_Library_Basement.jpg"><i class="fa fa-map-signs fa-3x"></i><br>Hackspace</th>
-      <th><a href="USCMap.png"><i class="fa fa-map-marker fa-3x"></i><br>USC Map</th>
+      <th width=20%><a href="https://join.slack.com/t/athenahacks2018/shared_invite/enQtMzEyNzMwMDQwMTQ1LWVkY2YzMzI3NDRkNTAyZTU0N2QzMDlmYjRkMTE3NzllYzk1YzlhMWZhNmQ2NzA5MjI4NDQyMzk3YzVkNjE2NjA"><i class="fa fa-slack fa-3x"></i><br>Slack</th>
+      <th width=20%><a href="https://github.com/athenahacks"><i class="fa fa-gears fa-3x"></i><br>Hackpacks</th>
+      <th width=20%><a href="https://athenahacks2018.devpost.com/"><i class="fa fa-folder fa-3x"></i><br>Devpost</th>
+      <th width=20%><a href="Leavey_Library_Basement.jpg"><i class="fa fa-map-signs fa-3x"></i><br>Hackspace</th>
+      <th width=20%><a href="USCMap.png"><i class="fa fa-map-marker fa-3x"></i><br>USC Map</th>
     </tr>
   </table>
 </div>
@@ -143,21 +143,21 @@
 
 <div class="schedule" id="schedule">
   <div class="container">
-    <div class="header">
-      <div class="circle">
-        schedule
+    <div class="schedule-header">
+      <div>
+        Schedule
       </div>
     </div>
 
     <div id="day-tag">
-      Saturday
+      <strong>Saturday</strong>
     </div>
     <table class="table table-bordered" style="margin-bottom:35px">
       <tbody>
         <tr>
-          <th scope="row">10 am - 12 pm </th>
-          <th>Check In <br/>Team Formation</th>
-          <th> Outside Hoffman Hall</th>
+          <th scope="row" width=20%>10 am - 12 pm </th>
+          <th width=60%>Check In <br/>Team Formation</th>
+          <th width=20%> Outside Hoffman Hall</th>
         </tr>
         <tr>
           <th scope="row">12 pm - 1 pm</th>
@@ -165,7 +165,7 @@
           <th>Edison Auditorium (Hoffman) </th>
         </tr>
         <tr>
-          <th scope="row" colspan="3" style="color:#FFB6C2;background-color:#fff">HACKING BEGINS!</th>
+          <th scope="row" colspan="3" style="color:#FFFFFF;background-color:#FFB6C2">HACKING BEGINS!</th>
         </tr>
         <tr>
           <th scope="row">1 pm - 2 pm</th>
@@ -228,14 +228,14 @@
     </table>
 
     <div id="day-tag">
-      Sunday
+      <strong>Sunday</strong>
     </div>
     <table class="table table-bordered" style="margin-bottom:35px">
       <tbody>
         <tr>
-          <th scope="row">12 am - 1:30 am</th>
-          <th>Screening of 'Hidden Figures'</th>
-          <th>LVL 17</th>
+          <th scope="row" width=20%>12 am - 1:30 am</th>
+          <th width=60%>Screening of 'Hidden Figures'</th>
+          <th width=20%>LVL 17</th>
         </tr>
         <tr>
           <th scope="row">12 am - 1 am </th>
@@ -273,10 +273,10 @@
           <th>LVL 13</th>
         </tr>
         <tr>
-          <th scope="row" colspan="3" style="color:#FFB6C2;background-color:#fff">SUBMISSIONS DUE @ 11:30 AM!</th>
+          <th scope="row" colspan="3" style="color:#FFFFFF;background-color:#FFB6C2">SUBMISSIONS DUE @ 11:30 AM!</th>
         </tr>
         <tr>
-          <th scope="row" colspan="3" style="color:#FFB6C2;background-color:#fff">HACKING ENDS @ NOON!</th>
+          <th scope="row" colspan="3" style="color:#FFFFFF;background-color:#FFB6C2">HACKING ENDS @ NOON!</th>
         </tr>
         <tr>
           <th scope="row">12 pm - 1:30 pm </th>
@@ -286,12 +286,12 @@
         <tr>
           <th scope="row">1:30 pm - 2:30 pm </th>
           <th>Project Expo</th>
-          <th>LVL 13&16</th>
+          <th>LVL 13 + 16</th>
         </tr>
         <tr>
           <th scope="row">2:30 pm - 3 pm </th>
           <th>Judging</th>
-          <th>LVL 13&16</th>
+          <th>LVL 13 + 16</th>
         </tr>
         <tr>
           <th scope="row">3 pm - 5 pm </th>
