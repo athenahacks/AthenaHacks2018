@@ -66,16 +66,16 @@
     <h1 style="padding-top: 5%">Time Remaining</h1>
     <div class="main" id="clockdiv">
         <div class="timer">
-            <span class="days"></span>
+            <span class="days time"></span>
         </div>
         <div class="timer">
-            <span class="hours"></span>
+            <span class="hours time"></span>
         </div>
         <div class="timer">
-            <span class="minutes"></span>
+            <span class="minutes time"></span>
         </div>
         <div class="timer">
-            <span class="seconds"></span>
+            <span class="seconds time"></span>
         </div>
     </div>
     <script>
@@ -107,10 +107,6 @@
           hoursSpan.innerHTML = ('0' + t.hours).slice(-2) + " hours";
           minutesSpan.innerHTML = ('0' + t.minutes).slice(-2) + " min";
           secondsSpan.innerHTML = ('0' + t.seconds).slice(-2) + " sec";
-          daysSpan.style.fontSize = "30px";
-          hoursSpan.style.fontSize = "30px";
-          minutesSpan.style.fontSize = "30px";
-          secondsSpan.style.fontSize = "30px";
 
           daysSpan.style.width = "100%";
           hoursSpan.style.width = "100%";
