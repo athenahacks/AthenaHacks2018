@@ -8,12 +8,13 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     background-color: #C6E2FF;
+    font-family: Lato;
 }
 
 p {
     font-size: 17px;
-    font-family: "Questrial";
     line-height: 25px;
+    font-family: "Questrial";
 }
 
 /* NAV */
@@ -21,14 +22,15 @@ p {
 header {
     position: fixed;
     width: 100%;
-    background-color: #C6E2FF;
+    background-color: #FBD2D7;
+    opacity: 0.8;
     z-index: 200;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+
     padding-left: .5em;
     text-align: left;
     font-size: 1.2em;
@@ -43,6 +45,11 @@ nav li {
 nav a {
     text-decoration: none;
     color: #36373a;
+}
+.nav-title {
+    font-size: 20px;
+
+
 }
 
 nav a:hover,
@@ -148,6 +155,7 @@ table, tr, th {
 /* ABOUT */
 
 .infoCards {
+    background-color: rgba(251, 210, 215, 0.3);
     padding: 25px;
     text-align: center;
     border: solid 1px #36373a;
@@ -173,11 +181,14 @@ table, tr, th {
 
 .faq {
     list-style: none;
-    padding-left: 75px;
+    padding: 0;
+
+
 }
 
 .faq li {
     margin-bottom: 10px;
+
 }
 
 .faq li.active .answer {
@@ -193,7 +204,7 @@ table, tr, th {
 
 .faq .answer {
     color: #36373a;
-    font-family: "Questrial";
+    font-family: "Lato";
     font-size: 16px;
     line-height: 24px;
     max-height: 0;
@@ -236,11 +247,9 @@ table, tr, th {
 
 .faq .question {
     color: #36373a;
-    font-family: "Questrial";
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    position: relative;
+    font-family: "Lato";
+    font-size: 20px;
+
     cursor: pointer;
     padding-top: 3px;
     transition: color 0.5s ease;
@@ -316,6 +325,13 @@ table, tr, th {
 }
 
 /* SPONSORS */
+
+.sponsor-title {
+    font-family: "Lato";
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
 .tier1 img {
     max-width: 420px !important;
     max-height: 420px !important;
@@ -330,10 +346,16 @@ table, tr, th {
     max-width: 250px !important;
     max-height: 250px !important;
 }
+.email {
+    font-weight: 200;
+}
 
 #sponsor-thank-you {
+    font-size: 18px;
+
     padding-top: .8em;
     text-align: center;
+
 }
 
 @media (min-width: 800px) {
@@ -346,7 +368,10 @@ table, tr, th {
 
 #didyouknow {
     margin-bottom: 0px !important;
+    font-family: Lato;
+
 }
+
 
 /* SOCIAL */
 
@@ -356,6 +381,7 @@ table, tr, th {
     padding-bottom: 5px;
     padding-top: 10px;
     text-align: center;
+    overflow: visible;
 }
 
 .social a {
