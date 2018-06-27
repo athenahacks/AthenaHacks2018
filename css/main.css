@@ -8,13 +8,55 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     background-color: #C6E2FF;
-    font-family: Lato;
+    font-family: "Questrial", Arial, sans-serif;
 }
+
+.intro {
+    padding-top: 40px;
+    background-image: linear-gradient(#FA8297, rgba(250, 130, 151, 0));
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; }
+.intro h1 {
+    padding-top: 20%;
+    font-family: Ardina, sans-serif;
+    font-size: 60px; }
+.intro h2 {
+    font-size: 30px; }
+.intro .main-header {
+    text-align: center;
+    z-index: 100; }
+.intro #logo {
+    display: inline-block;
+    height: 200px;
+    width: 200px; }
+.intro .circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    font-size: 20px;
+    transition: all .3s ease;
+    margin-bottom: 150px; }
+.intro.circle:hover {
+    background-color: #eee;
+    background-color: #fff;
+    color: #FFB6C2; }
 
 p {
     font-size: 17px;
     line-height: 25px;
-    font-family: "Questrial";
+    font-family: "Questrial", Arial, sans-serif;
 }
 
 /* NAV */
@@ -34,7 +76,6 @@ nav ul {
     padding-left: .5em;
     text-align: left;
     font-size: 1.2em;
-    border-bottom: 1px solid #36373a;
 }
 
 nav li {
@@ -109,7 +150,8 @@ table, tr, th {
 }
 
 #logo {
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 0em;
     width: 14em;
 }
 
@@ -119,7 +161,7 @@ table, tr, th {
 
 @media (min-width: 550px) {
     #logo {
-        margin-bottom: 2em;
+        margin-bottom: 1em;
         width: 19em;
     }
 
@@ -155,16 +197,17 @@ table, tr, th {
 /* ABOUT */
 
 .infoCards {
-    background-color: rgba(251, 210, 215, 0.3);
+    background-color: rgba(251, 210, 215, 0.5);
     padding: 25px;
     text-align: center;
-    border: solid 1px #36373a;
 }
 
 .about-img {
     width: 90px;
 }
-
+#about {
+    margin-top: -10.5em;
+}
 /* ALL CONTENT */
 
 .container {
@@ -204,7 +247,7 @@ table, tr, th {
 
 .faq .answer {
     color: #36373a;
-    font-family: "Lato";
+    font-family: "Questrial", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     max-height: 0;
@@ -247,7 +290,7 @@ table, tr, th {
 
 .faq .question {
     color: #36373a;
-    font-family: "Lato";
+    font-family: "Questrial", Arial, sans-serif;;
     font-size: 20px;
 
     cursor: pointer;
@@ -327,7 +370,7 @@ table, tr, th {
 /* SPONSORS */
 
 .sponsor-title {
-    font-family: "Lato";
+    font-family: "Questrial", Arial, sans-serif;;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 10px;
@@ -368,7 +411,7 @@ table, tr, th {
 
 #didyouknow {
     margin-bottom: 0px !important;
-    font-family: Lato;
+    font-family: "Questrial", Arial, sans-serif;;
 
 }
 
