@@ -6,8 +6,9 @@
 
 html, body {
     max-width: 100%;
+
     overflow-x: hidden;
-    background-color: #C6E2FF;
+    background-color: #a9dffe;
     font-family: "Questrial", Arial, sans-serif;
 }
 
@@ -59,13 +60,22 @@ p {
     font-family: "Questrial", Arial, sans-serif;
 }
 
+@media (min-width: 1824px) {
+    p {
+        font-size: 24px;
+        line-height: 35px;
+        font-family: "Questrial", Arial, sans-serif;
+    }
+
+}
+
 /* NAV */
 
 header {
     position: fixed;
     width: 100%;
-    background-color: #FBD2D7;
-    opacity: 0.8;
+    background-color: #FE9BC0;
+
     z-index: 200;
 }
 
@@ -108,6 +118,7 @@ a:hover {
     cursor: pointer;
 }
 
+
 .collapse {
     display: none;
 }
@@ -117,6 +128,16 @@ a:hover {
         display: inline-block;
     }
 }
+@media (min-width: 1824px) {
+    nav ul {
+        font-size: 1.6em;
+    }
+    .nav-title
+    {
+        font-size: 25px;
+    }
+}
+
 
 table, tr, th {
     border: 3px solid #C6E2FF;
@@ -127,51 +148,107 @@ table, tr, th {
 #landing {
     text-align: center;
     height: 100vh;
-    padding-top: 6em;
+    padding-top: 4em;
     z-index: 10;
 }
 
+#logo {
+    margin-top: 4em;
+    margin-bottom: 1em;
+    width: 14em;
+}
+
+#athena-title {
+    font-size: 5.0rem;
+}
+#athena-subtitle {
+    font-size: 2.5rem;
+}
+
+
 @media (min-height: 600px) {
     #landing {
-        padding-top: 7em;
+        padding-top: 5em;
     }
 }
 
 @media (min-height: 700px) {
     #landing {
-        padding-top: 10em;
+        padding-top: 8em;
     }
 }
 
 @media (min-height: 800px) {
     #landing {
-        padding-top: 12em;
+        padding-top: 10em;
     }
 }
 
-#logo {
-    margin-top: 1em;
-    margin-bottom: 0em;
-    width: 14em;
-}
-
-#athena-title {
-    font-size: 4.0rem;
-}
 
 @media (min-width: 550px) {
     #logo {
         margin-bottom: 1em;
-        width: 19em;
+        width: 20em;
     }
 
-    #landing {
-        min-height: 800px;
-    }
 
     #athena-title {
         font-size: 5.5rem;
     }
+    #athena-subtitle {
+        font-size: 3.0rem;
+    }
+    #about
+    {
+        font-size: 3em;
+    }
+}
+@media (min-width: 1824px) {
+
+
+}
+@media (min-width: 1824px) {
+    #logo {
+        margin-bottom: 1em;
+        width: 24em;
+    }
+
+    #athena-title {
+        font-size: 6.5rem;
+    }
+    #athena-subtitle {
+        font-size: 3.5rem;
+    }
+
+    #about
+    {
+        font-size: 4em;
+    }
+
+}
+@media (min-width: 2224px) {
+    #logo {
+        margin-bottom: 1em;
+        width: 30em;
+    }
+
+
+    #athena-title {
+        font-size: 7.5rem;
+    }
+
+
+    #athena-subtitle {
+        font-size: 4.5rem;
+    }
+
+
+    #about
+    {
+        font-size: 5em;
+
+    }
+
 }
 
 #app-closed:hover {
@@ -197,7 +274,7 @@ table, tr, th {
 /* ABOUT */
 
 .infoCards {
-    background-color: rgba(251, 210, 215, 0.5);
+    background-color: rgba(254, 155, 192, 0.5);
     padding: 25px;
     text-align: center;
 }
@@ -206,7 +283,11 @@ table, tr, th {
     width: 90px;
 }
 #about {
-    margin-top: -10.5em;
+
+    padding-top: 0;
+    width: 100%;
+    font-size: 3em;
+
 }
 /* ALL CONTENT */
 
@@ -216,9 +297,12 @@ table, tr, th {
 
 @media (min-width: 500px) {
     .container {
-        padding: 3.5em 0em;
+        padding: 3.5em 0;
     }
 }
+
+
+
 
 /* FAQ */
 
@@ -290,7 +374,7 @@ table, tr, th {
 
 .faq .question {
     color: #36373a;
-    font-family: "Questrial", Arial, sans-serif;;
+    font-family: "Questrial", Arial, sans-serif;
     font-size: 20px;
 
     cursor: pointer;
