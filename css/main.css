@@ -20,7 +20,8 @@ html, body {
 
 
 .intro {
-    min-height: 400px;
+    height: 100vh;
+
     height: 100%;
     display: flex;
     position: relative;
@@ -169,23 +170,30 @@ table, tr, th {
 
 #landing {
     text-align: center;
-    height: 100vh;
-    padding-top: 0em;
     z-index: 10;
+    padding-bottom: 3em;
 }
 
 #logo_text {
     text-align: center;
-    height: 150px;
+    height: 130px;
     position: relative;
     top: 0;
     left: 0;
 }
+#logo_subtext {
+    text-align: center;
+    height: 30px;
+    position: relative;
+    top: 0;
+    left: 20px;
+}
+
 #logo_background {
-    height: 170px;
+    text-align: center;
+    height: 150px;
     position: absolute;
     top: 20px;
-    left: -30px;
     opacity: 0.8;
 
 }
@@ -674,7 +682,6 @@ th {
     position: absolute; }
 
 .cloud {
-    content: 'hi';
     width: 200px;
     height: 60px;
     background: #fff;
@@ -778,10 +785,10 @@ th {
         margin-left: -1000px; } }
 
 .intro {
-    padding-top: 40px;
+    padding-top: 1em;
 
     background-image: linear-gradient(#C6E2FF, rgba(198,226,255, 0));
-    min-height: 400px;
+    min-height: 300px;
     height: 100%;
     display: flex;
     position: relative;
@@ -798,8 +805,12 @@ th {
     z-index: 100; }
 .intro #logo {
     display: inline-block;
+    padding-top: 1em;
     height: 350px;
-    width: 350px; }
+    width: auto;
+
+
+}
 .intro .circle {
     display: inline-block;
     width: 100px;
