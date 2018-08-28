@@ -92,9 +92,9 @@ nav ul {
     list-style: none;
     margin: 0;
 
-    padding-left: .5em;
+    padding-left: .8em;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 nav li {
@@ -107,7 +107,7 @@ nav a {
     color: #36373a;
 }
 .nav-title {
-    font-size: 20px;
+    font-size: 30px;
 
 
 }
@@ -136,9 +136,10 @@ a:hover {
     border: black;
     border-width: thin;
     padding: 10px;
+    font-weight: bold;
     border-style: solid;
 }
-.apply-right
+.test
 {
     justify-content: right;
     text-align: right;
@@ -631,11 +632,17 @@ th {
 }
 
 @media (max-width: 600px) {
-    #mlh-trust-badge {
+    .mlh-trust-badge {
         display: none !important;
     }
 }
 
+.apply-badge
+{
+    max-width: 100px;
+    max-height: 50px;
+
+}
 .timer {
     float: left;
     width: 25%;
@@ -688,7 +695,6 @@ th {
 
 
 .cloud {
-    background: #fff;
     background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
     background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
@@ -708,7 +714,6 @@ th {
 }
 
 .cloud:after, .cloud:before {
-
     background: #fff;
 
     position: absolute;
@@ -799,17 +804,17 @@ th {
 
 @-webkit-keyframes moveclouds {
     0% {
-        margin-left: 1000px; }
+        margin-left: 100%; }
     100% {
         margin-left: -100%; } }
 @-moz-keyframes moveclouds {
     0% {
-        margin-left: 1000px; }
+        margin-left: 100%; }
     100% {
         margin-left: -100%; } }
 @-o-keyframes moveclouds {
     0% {
-        margin-left: 1000px; }
+        margin-left: 100%; }
     100% {
         margin-left: -100%; } }
 
