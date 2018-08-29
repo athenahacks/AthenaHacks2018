@@ -177,14 +177,14 @@ table, tr, th {
     height: 130px;
     position: relative;
     top: 0;
-    left: 0;
+    left: -20px;
 }
 #logo_subtext {
     text-align: center;
     height: 30px;
     position: relative;
     top: 0;
-    left: 20px;
+    left: 0;
 }
 
 #logo_background {
@@ -192,6 +192,7 @@ table, tr, th {
     height: 150px;
     position: absolute;
     top: 20px;
+    left: -10px;
     opacity: 0.8;
 
 }
@@ -633,15 +634,50 @@ th {
     .mlh-trust-badge {
         display: none !important;
     }
-    body{
-        margin-right: 10px;
-        margin-left: 10px;
+    html{
+        max-width: 100%;
+    }
+    #about
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #faq
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #sponsors
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .apply-badge
+    {
+        display: block;
+        max-width:300px;
+        min-width:200px;
+        position:fixed;
+        right:10px;
+        top:90px;
+        width:20%;
+        z-index:10000;
+        max-height: 50px;
     }
 }
 
 .apply-badge
 {
-    max-width: 100px;
+
+    display:block;
+    max-width:300px;
+    min-width:200px;
+    position:fixed;
+    right:10px;
+    bottom:70px;
+    width:20%;
+    z-index:10000;
     max-height: 50px;
 
 }
