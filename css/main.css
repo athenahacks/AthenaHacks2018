@@ -9,7 +9,7 @@
 
 html, body {
     height: 100%;
-    max-width: 100%;
+    max-width: 90%;
     overflow-y: scroll;
     overflow-x: hidden;
     background-image: linear-gradient(#b19cd9, rgba(198,226,255, 0));
@@ -362,6 +362,7 @@ table, tr, th {
     width: 90px;
 }
 #about {
+
 
     padding-top: 0;
     width: 100%;
