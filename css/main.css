@@ -9,7 +9,7 @@
 
 html, body {
     height: 100%;
-    max-width: 90%;
+    max-width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
     background-image: linear-gradient(#b19cd9, rgba(198,226,255, 0));
@@ -18,6 +18,16 @@ html, body {
     font-family: "Questrial", Arial, sans-serif;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #about {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 
 .intro {
 
