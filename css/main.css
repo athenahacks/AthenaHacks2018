@@ -18,17 +18,6 @@ html, body {
     font-family: "Questrial", Arial, sans-serif;
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    #about {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-
 .intro {
 
     display: flex;
@@ -372,8 +361,6 @@ table, tr, th {
     width: 90px;
 }
 #about {
-
-
     padding-top: 0;
     width: 100%;
     font-size: 3em;
@@ -645,6 +632,10 @@ th {
 @media (max-width: 600px) {
     .mlh-trust-badge {
         display: none !important;
+    }
+    body{
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
 
