@@ -12,16 +12,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- FONT
+
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
     <link rel="stylesheet" href="vendors/animate/animate.min.css">
     <link rel="stylesheet" href="vendors/skeleton/normalize.css">
     <link rel="stylesheet" href="vendors/skeleton/skeleton.css">
     <link rel="stylesheet" href="vendors/responsive-nav/responsive-nav.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/main.css">
     <!--<link rel="stylesheet" href="css/flowers.css"> -->
 
@@ -31,13 +39,14 @@
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
 
     <script src="https://use.fontawesome.com/9f7b7f8456.js"></script>
     <script src="vendors/responsive-nav/responsive-nav.min.js"></script>
-
     <script type="text/javascript" src="js/main.js"></script>
+
 
     <!-- contact -->
     <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
@@ -52,6 +61,7 @@
     <script src="js/contact.js"></script>
 
 
+
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon-hand-peace-o.ico">
@@ -59,17 +69,18 @@
 </head>
 
 <header>
-    <nav>
+    <nav id="main-nav">
         <ul>
-            <li><a href="#landing"><b class="nav-title">AthenaHacks</b></a></li>
-            <li class="collapse"><a href="#about">about</a></li>
-            <li class="collapse"><a href="#faq">faq</a></li>
-            <li class="collapse"><a href="#sponsors" >sponsors & partners</a></li>
-            <li class="collapse"><a href="#in-the-news">news</a></li>
-            <li class="collapse"><a href="#didyouknow">contacts</a></li>
-
+            <li><a class="nav-title" href="#landing">AthenaHacks</a></li>
+            <li ><a href="#about">about</a></li>
+            <li><a href="#faq">faq</a></li>
+            <li><a href="#sponsors" >sponsors & partners</a></li>
+            <li><a href="#in-the-news">news</a></li>
+            <li><a href="#didyouknow">contacts</a></li>
             <!-- <li class="collapse"><a href="https://www.facebook.com/events/141764676445799/">fb event</a></li> -->
         </ul>
+
+
     </nav>
 </header>
 
@@ -87,36 +98,47 @@
         <div class="cloud x5"></div>
     </div>
 
-    <div class = "row" id="landing">
-        <img id="logo" src="images/owl_2019.png">
-        <div class="logo">
-            <img id="logo_background" src="images/text_backing.png">
-            <img id="logo_text" src="images/athena_text_black.png">
-            <div class="subtitle">
-                <img id="logo_subtext" src="images/dateusc_blk.png">
-            </div>
+    <div class="container" id="landing">
+        <div class = "row landing justify-content-center" >
+            <img id="logo" src="images/owl_2019.png">
         </div>
+        <div class = "row landing justify-content-center" >
+            <div class="logo">
+                <img id="logo_background" src="images/text_backing.png">
+                <img id="logo_text" src="images/athena_text_black.png">
+                <div class="subtitle">
+                    <img id="logo_subtext" src="images/dateusc_blk.png">
+                </div>
+            </div>
+
+        </div>
+
     </div>
+
+
     <!-- <a href="Schedule.pdf" target="_blank" class="button" id="app-closed"> Schedule </a> -->
     <!-- <a href="dayof.html" target="_blank" class="button"> Day-of Site </a>  -->
 </div>
 
 <!-- ABOUT -->
-<div class="container row" id="about">
-    <h1>about</h1>
-    <p>
-        Join us for a weekend dedicated to <b>filling the gender gap</b>,
-        exploring technology, and building the next big thing! Our mission
-        is to support and nurture women* in tech by hosting Southern
-        California's premiere <b>all female* hackathon</b>. Expect a weekend
-        full of workshops, mentorship, tech talks, social activities, food,
-        and more! No experience necessary, you just need passion.
-    </p>
-    <p>
-        *trans and non-binary inclusive
-    </p>
-
+<div class="container center" id="about">
     <div class="row">
+        <h1 class="section-title">about</h1>
+        <p>
+            Join us for a weekend dedicated to <b>filling the gender gap</b>,
+            exploring technology, and building the next big thing! Our mission
+            is to support and nurture women* in tech by hosting Southern
+            California's premiere <b>all female* hackathon</b>. Expect a weekend
+            full of workshops, mentorship, tech talks, social activities, food,
+            and more! No experience necessary, you just need passion.
+        </p>
+        <p>
+            *trans and non-binary inclusive
+        </p>
+    </div>
+
+
+    <div class="row" id="infoCards">
         <div class="four columns infoCards">
             <img class="about-img" src="images/flame.png" width="150px"></img>
             <p>
@@ -145,241 +167,289 @@
 </div>
 
 <!-- FAQ -->
-<div class="container row" id="faq">
-    <h1>faqs</h1>
-    <div class="seven columns" id="faq-container">
-        <!-- Questions -->
-        <ul class="faq">
-            <li>
-                <h3 class="question">What's a hackathon?
-                </h3>
-                <div class="answer">
-                    A hackathon is a weekend-long gathering of curious minds to learn something new. Often times, attendees do this by picking up a project of their choosing to work on for the weekend. This is a great way to really dive into a topic you've been meaning to explore and you'll get to make new friends as you work in a team! Hackathons provide other ways to learn, too - you can attend workshops, listen to speakers, or network and meet with other students and representatives from companies!
-                </div>
-            </li>
-            <li>
-                <h3 class="question">Can I attend?
-
-                </h3>
-                <div class="answer">
-                    If you are an undergraduate or high school female* who loves to hack, the answer is <b>YES</b>! Women* in industry are welcome to mentor! If you identify as male, we're sorry to say this hacking environment is not for you. This hackathon is about bringing women together in a comfortable setting. However, if you are a male interested in helping our cause, we'd love to have you as a mentor or volunteer! Mentor applications are currently closed for this year but if you still want to get involved, reach out to us at athenahacks@gmail.com.
-                </div>
-            </li>
-            <li>
-                <h3 class="question">What are the rules about high schoolers?
-
-                </h3>
-                <div class="answer">
-                    If you're a high schooler who will be at least 17 years old by AthenaHacks, you are invited to AthenaHacks! You will need to have your parent/guardian pick you up for the evening and then return you back on Sunday morning, however.
-                </div>
-            </li>
-            <li>
-                <h3 class="question">Do I need to be a CS major or minor?
-
-                </h3>
-                <div class="answer">
-                    No! This is the perfect place for any student to create their first coding project or for more experienced individuals to learn even more and build a great project! We'll have plenty of resources for beginners to get started!
-                </div>
-            </li>
-            <li>
-                <h3 class="question">How do I register?
-
-                </h3>
-                <div class="answer">
-                    Applications will be opening in winter 2018. Fill out the interest form found above to get updates about when it's available!
-                </div>
-            </li>
-            <li>
-                <h3 class="question">Does this cost money?
-
-                </h3>
-                <div class="answer">
-                    Nope! Admission is free and covers overnight stay, food, all the snacks you could ever want, and of course, our sponsors and AthenaHacks will provide you with the free swag!!
-                </div>
-            </li>
-            <li>
-                <h3 class="question">How do I get to USC?
-
-                </h3>
-                <div class="answer">
-                    We'll be sending buses to UCI, UCSD, and UCLA. We'll have Lyft codes to get you to and from AthenaHacks and you can request parking passes if you're driving yourself. More details here: http://bit.ly/AthenaTransportation
-                </div>
-            </li>
-            <li>
-                <h3 class="question">What about travel reimbursements?
-
-                </h3>
-                <div class="answer">
-                    Unfortunately, we will not be able to provide travel reimbursements this year. Sorry for the inconvenience :(
-                </div>
-            </li>
-            <li>
-                <h3 class="question">How do teams work?
-
-                </h3>
-                <div class="answer">
-                    You can form teams of at most 4 people. You can have your teammates in mind before the event, or you can make a team at our team formation event before opening ceremony or the team formation event after opening ceremony!
-                </div>
-            </li>
-            <li>
-                <h3 class="question">Will there be hardware available?
-
-                </h3>
-                <div class="answer">
-                    Yes! Hardware will be provided by MLH.
-                </div>
-            </li>
-            <li>
-                <h3 class="question">Where do I sleep?
-
-                </h3>
-                <div class="answer">
-                    If hacking all night isn't your way to go, we'll have places provided for you to catch a few Z's!
-                </div>
-            </li>
-            <li>
-                <h3 class="question">What should I bring?
-
-                </h3>
-                <div class="answer">
-                    Remember to bring a valid student ID for admission and anything you need to hack away!
-                </div>
-            </li>
-            <li>
-                <h3 class="question">is there a code of conduct?
-
-                </h3>
-                <div class="answer">
-                    Yes, we want to make AthenaHacks enjoyable for everyone! You can find the code of conduct <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a>.
-                </div>
-            </li>
-        </ul>
+<div class="container center" id="faq">
+    <div class="row">
+        <h1 class="section-title">faqs</h1>
     </div>
+    <div class="row">
+        <div class="seven columns" id="faq-container">
+            <!-- Questions -->
+            <ul class="faq">
+                <li>
+                    <h3 class="question">What's a hackathon?
+                    </h3>
+                    <div class="answer">
+                        A hackathon is a weekend-long gathering of curious minds to learn something new. Often times, attendees do this by picking up a project of their choosing to work on for the weekend. This is a great way to really dive into a topic you've been meaning to explore and you'll get to make new friends as you work in a team! Hackathons provide other ways to learn, too - you can attend workshops, listen to speakers, or network and meet with other students and representatives from companies!
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">Can I attend?
 
-    <div class="four columns faq-right">
-        <img src="images/faq.gif" class="u-max-full-width faq-img side"></img>
-        <div style="text-align: center">
+                    </h3>
+                    <div class="answer">
+                        If you are an undergraduate or high school female* who loves to hack, the answer is <b>YES</b>! Women* in industry are welcome to mentor! If you identify as male, we're sorry to say this hacking environment is not for you. This hackathon is about bringing women together in a comfortable setting. However, if you are a male interested in helping our cause, we'd love to have you as a mentor or volunteer! Mentor applications are currently closed for this year but if you still want to get involved, reach out to us at athenahacks@gmail.com.
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">What are the rules about high schoolers?
+
+                    </h3>
+                    <div class="answer">
+                        If you're a high schooler who will be at least 17 years old by AthenaHacks, you are invited to AthenaHacks! You will need to have your parent/guardian pick you up for the evening and then return you back on Sunday morning, however.
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">Do I need to be a CS major or minor?
+
+                    </h3>
+                    <div class="answer">
+                        No! This is the perfect place for any student to create their first coding project or for more experienced individuals to learn even more and build a great project! We'll have plenty of resources for beginners to get started!
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">How do I register?
+
+                    </h3>
+                    <div class="answer">
+                        Applications will be opening in winter 2018. Fill out the interest form found above to get updates about when it's available!
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">Does this cost money?
+
+                    </h3>
+                    <div class="answer">
+                        Nope! Admission is free and covers overnight stay, food, all the snacks you could ever want, and of course, our sponsors and AthenaHacks will provide you with the free swag!!
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">How do I get to USC?
+
+                    </h3>
+                    <div class="answer">
+                        We'll be sending buses to UCI, UCSD, and UCLA. We'll have Lyft codes to get you to and from AthenaHacks and you can request parking passes if you're driving yourself. More details here: http://bit.ly/AthenaTransportation
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">What about travel reimbursements?
+
+                    </h3>
+                    <div class="answer">
+                        Unfortunately, we will not be able to provide travel reimbursements this year. Sorry for the inconvenience :(
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">How do teams work?
+
+                    </h3>
+                    <div class="answer">
+                        You can form teams of at most 4 people. You can have your teammates in mind before the event, or you can make a team at our team formation event before opening ceremony or the team formation event after opening ceremony!
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">Will there be hardware available?
+
+                    </h3>
+                    <div class="answer">
+                        Yes! Hardware will be provided by MLH.
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">Where do I sleep?
+
+                    </h3>
+                    <div class="answer">
+                        If hacking all night isn't your way to go, we'll have places provided for you to catch a few Z's!
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">What should I bring?
+
+                    </h3>
+                    <div class="answer">
+                        Remember to bring a valid student ID for admission and anything you need to hack away!
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">is there a code of conduct?
+
+                    </h3>
+                    <div class="answer">
+                        Yes, we want to make AthenaHacks enjoyable for everyone! You can find the code of conduct <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a>.
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">How do I become a mentor?
+
+                    </h3>
+                    <div class="answer">
+                        Mentor Apps for 2019 are coming soon!
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="four columns faq-right">
+            <img src="images/faq.gif" class="u-max-full-width faq-img side"></img>
+            <div style="text-align: center">
+                <p> if we missed your question, hit us up at <a href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div  class="eleven" id="faq-text">
             <p> if we missed your question, hit us up at <a href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></p>
         </div>
     </div>
 
-    <div  class="eleven" id="faq-text">
-        <p> if we missed your question, hit us up at <a href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></p>
-    </div>
 </div>
 
 
 <!-- SPONSORS -->
-<div class="container row" id="sponsors">
-    <div class = "sponsor-title">
-        <h1>2019 Partners</h1>
-        <div class="collage-images tier1">
+<div class="container center" id="sponsors">
+    <div class="row">
+        <h1 class="sponsor-title">Partners for 2019</h1>
+    </div>
+    <div class="row">
+        <div class="collage-images center tier1">
             <a href="https://www.neudesic.com/"><img src="images/sponsors/neudesic.png"></a>
         </div>
     </div>
-    <div class = "sponsor-title">
-        <h2>2019 Sponsors</h2>
-    </div>
-    <hr/>
-    <div class = "sponsor-title">
-        <h2>Thanks to our 2018 sponsors!</h2>
-    </div>
-
-    <!-- alpha level sponsors -->
-    <div class="collage-images tier1">
-        <a href="https://www.neudesic.com/" target="_blank"><img src="images/sponsors/neudesic.png"></a>
-    </div>
-
-    <div class="collage-images tier2">
-        <a href="https://www.bloomberg.com/" target="_blank"><img src="images/sponsors/bloomberg.png"></a>
-        <a href="https://www.zynga.com/" target="_blank"><img src="images/sponsors/zynga-logo.png"></a>
-        <a href="https://www.sledgehammergames.com/" target="_blank"><img src="images/sponsors/sledgehammergames.png"></a>
-    </div>
-
-    <div class="collage-images tier3">
-        <a href="https://www.google.com/" target="_blank"><img src="images/sponsors/google.png"></a>
-        <a href="https://www.twilio.com/" target="_blank"><img src="images/sponsors/twilio-logo.png"></a>
-        <a href="https://www.microsoft.com/" target="_blank"><img src="images/sponsors/microsoft.png"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/sponsors/facebook.png"></a>
-        <a href="https://www.redfin.com/" target="_blank"><img src="images/sponsors/redfin.png"></a>
-        <a href="https://www.blackrock.com/" target="_blank"><img src="images/sponsors/blackrock.png"></a>
-    </div>
-
-    <div class="collage-images">
-        <a href="https://mule.to/athenahacks19" target="_blank"><img src="images/sponsors/stickermule.png"></a>
-        <a href="http://www.gogosqueez.com/" target="_blank"><img src="images/sponsors/gogo.png"></a>
-        <a href="http://www.drinkhint.com/" target="_blank"><img src="images/sponsors/hint.png"></a>
-        <a href="http://www.rebullusa.com/" target="_blank"><img src="images/sponsors/redbull.png"></a>
-        <a href="http://www.imperfectproduce.com/" target="_blank"><img src="images/sponsors/imperfectproduce.png"></a>
-        <a href="http://guayaki.com/" target="_blank"><img src="images/sponsors/yerbamate.png"></a>
-    </div>
-
-    <div class = "sponsor-title">
-        <h2>2018 partners</h2>
-    </div>
-
-    <div class="collage-images tier2">
-        <a href="http://bit.ly/2h8LncK" target="_blank"><img src="images/sponsors/challengerocket_logo_color_rgb.png"></a>
-        <a href="https://www.neudesic.com/" target="_blank"><img src="images/sponsors/neudesic.png"></a>
-    </div>
-    <div id = "sponsor-thank-you">
-        <h4>A <b>huge</b> thank you to all our sponsors and partners!  <i class="fa fa-heart-o" aria-hidden="true"></i></h4>
-        We are now accepting sponsors for 2019!
-        <br/>
-        Please contact us at:
-        <br/>
-        <div class="email">athenahacks@gmail.com</div>
-        <br/>
-        <h5>Mentor Apps for 2019 are coming soon!</h5>
-    </div>
-    <!-- IN THE NEWS -->
-    <div class="container row" id="in-the-news">
-        <div class = "sponsor-title">
-            <hr/>
-            <h1>2017 recap</h1>
-
+    <div class="row">
+        <h1 class = "sponsor-title">Sponsors for 2019</h1>
+        <div class="collage-images center">
+            <a href="https://www.neudesic.com/"><img src="images/sponsors/stickermule.png"></a>
         </div>
-        <div class="row news-container" style="text-align:center">
-            <div class="collage-images tier2">
-                <a href="http://www.huffingtonpost.com/entry/spotlight-on-athenahacks-why-female-hackathons-are_us_58ebf5fae4b0145a227cb797" target="_blank">
-                    <img src="images/huffpost.png">
-                </a>
-                <a href="http://dailytrojan.com/2017/02/28/spotlight-on-athenahacks/" target="_blank">
-                    <img src="images/dailytrojan.png">
-                </a>
-                <a href="https://viterbischool.usc.edu/news/2017/04/hackathon-created-women/" target="_blank">
-                    <img src="images/viterbilogo.png">
-                </a>
+    </div>
+
+    <hr/>
+
+
+    <div class="row">
+
+        <!--<nav id="sponsors-nav" class="navbar">
+            <div style="width: 100%; text-align: center; justify-content: center;" class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">2018</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">2017</a>
+
+            </div>
+        </nav>-->
+
+        <div class="tab-content" id="old-sponsors" style="width: 100%;">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                <div class="row center">
+                    <h1 class="sponsor-title old">Check out last year!</h1>
+                    <!-- alpha level sponsors -->
+                    <h2 class="sponsor-title">Sponsors</h2>
+
+                    <div class="collage-images tier1">
+                        <a href="https://www.neudesic.com/" target="_blank"><img src="images/sponsors/neudesic.png"></a>
+                    </div>
+
+                    <div class="collage-images tier2">
+                        <a href="https://www.bloomberg.com/" target="_blank"><img src="images/sponsors/bloomberg.png"></a>
+                        <a href="https://www.zynga.com/" target="_blank"><img src="images/sponsors/zynga-logo.png"></a>
+                        <a href="https://www.sledgehammergames.com/" target="_blank"><img src="images/sponsors/sledgehammergames.png"></a>
+                    </div>
+
+                    <div class="collage-images tier3">
+                        <a href="https://www.google.com/" target="_blank"><img src="images/sponsors/google.png"></a>
+                        <a href="https://www.twilio.com/" target="_blank"><img src="images/sponsors/twilio-logo.png"></a>
+                        <a href="https://www.microsoft.com/" target="_blank"><img src="images/sponsors/microsoft.png"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="images/sponsors/facebook.png"></a>
+                        <a href="https://www.redfin.com/" target="_blank"><img src="images/sponsors/redfin.png"></a>
+                        <a href="https://www.blackrock.com/" target="_blank"><img src="images/sponsors/blackrock.png"></a>
+                    </div>
+
+                    <div class="collage-images">
+                        <a href="https://mule.to/athenahacks19" target="_blank"><img src="images/sponsors/stickermule.png"></a>
+                        <a href="http://www.gogosqueez.com/" target="_blank"><img src="images/sponsors/gogo.png"></a>
+                        <a href="http://www.drinkhint.com/" target="_blank"><img src="images/sponsors/hint.png"></a>
+                        <a href="http://www.rebullusa.com/" target="_blank"><img src="images/sponsors/redbull.png"></a>
+                        <a href="http://www.imperfectproduce.com/" target="_blank"><img src="images/sponsors/imperfectproduce.png"></a>
+                        <a href="http://guayaki.com/" target="_blank"><img src="images/sponsors/yerbamate.png"></a>
+                    </div>
+
+                    <h2 class="sponsor-title">Partners</h2>
+
+                    <div class="collage-images tier2">
+                        <a href="http://bit.ly/2h8LncK" target="_blank"><img src="images/sponsors/challengerocket_logo_color_rgb.png"></a>
+                        <a href="https://www.neudesic.com/" target="_blank"><img src="images/sponsors/neudesic.png"></a>
+                    </div>
+
+                </div>
             </div>
 
-            <!--<a href="http://athenahacks.com/2017Site/index.html" class="button"> View our 2017 hackathon page! </a> -->
+
+
         </div>
+        <div class="container" id="in-the-news">            <!-- IN THE NEWS -->
+            <div class="row center">
+                <h1 class="sponsor-title">
+                    Check us out in the news!
+                </h1>
+                <div class="collage-images tier2">
+                    <a href="http://www.huffingtonpost.com/entry/spotlight-on-athenahacks-why-female-hackathons-are_us_58ebf5fae4b0145a227cb797" target="_blank">
+                        <img src="images/huffpost.png">
+                    </a>
+                    <a href="http://dailytrojan.com/2017/02/28/spotlight-on-athenahacks/" target="_blank">
+                        <img src="images/dailytrojan.png">
+                    </a>
+                    <a href="https://viterbischool.usc.edu/news/2017/04/hackathon-created-women/" target="_blank">
+                        <img src="images/viterbilogo.png">
+                    </a>
+                </div>
+
+                <!--<a href="http://athenahacks.com/2017Site/index.html" class="button"> View our 2017 hackathon page! </a> -->
+            </div>
+
+        </div>
+        <div class="container" >
+            <div id = "sponsor-thank-you" style="text-align:center; width: 100%;">
+                <h2>A <b>huge</b> thank you to all our sponsors and partners!  </h2>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <br/>
+                We are now accepting sponsors for 2019!
+
+                <p>Contact us: <b>athenahacks@gmail.com</b></p>
+
+
+            </div>
+        </div>
+
+
     </div>
 
-    <img class="content" src="images/dividerimages.jpg" style="width:100%">
 
-    <!-- DID YOU KNOW? -->
-    <div class="container row" id="didyouknow">
-        <div style="text-align:center">
-            <h2>Did you know?</h2>
-            <p>The sacred image of Athena, a wooden statue called Palladium, protected the trojans as long as they had it.
-                <br/> Fight on from the Trojan Family! <i class="fa fa-hand-peace-o" aria-hidden="true"></i></p>
-        </div>
 
-        <!-- SOCIAL MEDIA -->
-        <div class="container row social">
-            <a href="https://www.facebook.com/athenaHacks" target="_blank">
-                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.instagram.com/athena_hacks/?hl=en" target="_blank">
-                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-            </a>
-            <a href="mailto:athenahacks@gmail.com" target="_blank">
-                <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-            </a>
-        </div>
+
+    <div class="row" style="width:auto; justify-content: center;">
+        <img class="content" src="images/dividerimages.jpg" >
     </div>
-    <hr/>
+    <div class="row">
+        <!-- DID YOU KNOW? -->
+        <div class="container" id="didyouknow">
+            <div style="text-align:center; width: 100%; padding-top: 10px;">
+                <h2>Did you know?</h2>
+                <p>The sacred image of Athena, a wooden statue called Palladium, protected the trojans as long as they had it.
+                    <br/> Fight on from the Trojan Family! <i class="fa fa-hand-peace-o" aria-hidden="true"></i></p>
+            </div>
+
+            <!-- SOCIAL MEDIA -->
+            <div class="container center row social">
+                <a href="https://www.facebook.com/athenaHacks" target="_blank">
+                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/athena_hacks/?hl=en" target="_blank">
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:athenahacks@gmail.com" target="_blank">
+                    <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <hr/>
+    </div>
 </div>
 
 <!--
@@ -467,7 +537,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <!-- MLH -->
-<a class="apply-badge" href="https://projectathena.typeform.com/to/LM2rM0" target="_blank"><img src="images/apply_ad.png" alt="Major League Hacking 2017 Hackathon Season" style="width:100%;"></a>
+<!--<a class="apply-badge" href="https://projectathena.typeform.com/to/LM2rM0" target="_blank"><img src="images/apply_ad.png" alt="Major League Hacking 2017 Hackathon Season" style="width:100%;"></a>-->
 
 <a class="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/gray.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
 </body>

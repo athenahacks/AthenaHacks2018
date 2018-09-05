@@ -1,5 +1,6 @@
 @-ms-viewport {
-    width: device-width; }
+    width: device-width;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,10 +10,12 @@
 
 html, body {
     height: 100%;
-    max-width: 100%;
+    min-width: 100%;
+    margin: auto;
     overflow-y: scroll;
     overflow-x: hidden;
     background-image: linear-gradient(#b19cd9, rgba(198,226,255, 0));
+    text-align: center;
 
 
     font-family: "Questrial", Arial, sans-serif;
@@ -87,7 +90,7 @@ header {
     z-index: 200;
 }
 
-nav ul {
+#main-nav ul {
     list-style: none;
     margin: 0;
 
@@ -96,23 +99,22 @@ nav ul {
     font-size: 1.5em;
 }
 
-nav li {
+#main-nav li {
     display: inline-block;
     margin: .7em;
+    font-size: 20px;
 }
 
-nav a {
+#main-nav a {
     text-decoration: none;
     color: #36373a;
 }
 .nav-title {
     font-size: 30px;
-
-
 }
 
-nav a:hover,
-nav a:focus {
+#main-nav a:hover,
+#main-nav a:focus {
     color: #000000;
 }
 
@@ -166,9 +168,13 @@ table, tr, th {
 
 /* LANDING PAGE */
 
-#landing {
+.landing {
     text-align: center;
     z-index: 10;
+
+}
+#landing
+{
     padding-bottom: 3em;
 }
 
@@ -337,23 +343,42 @@ table, tr, th {
 
 .infoCards {
     background-color: rgba(254, 155, 192, 0.5);
-    padding: 25px;
+    padding: 20px;
+    margin: 10px;
     text-align: center;
 }
 
+#infoCards
+{
+    justify-content: center;
+    text-align: center;
+}
 .about-img {
     width: 90px;
 }
+
+
 #about {
-    padding-top: 0;
-    width: 100%;
-    font-size: 3em;
-
-
+    text-align: left;
+    min-width: 100%;
+    margin: 20px;
 }
 
-/* ALL CONTENT */
+.section-title
+{
+    font-size: 40px;
+}
+.center
+{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
 
+}
+/* ALL CONTENT */
 
 
 
@@ -362,7 +387,6 @@ table, tr, th {
 .faq {
     list-style: none;
     padding: 0;
-
 
 }
 
@@ -454,11 +478,17 @@ table, tr, th {
     text-align: center;
 }
 
+
 #faq {
     padding-top: 2em;
-    width: 100%;
+    text-align: left;
+    min-width: 100%;
+    margin: auto;
 
-
+}
+#faq-container
+{
+    margin: 20px;
 }
 
 #faq-text {
@@ -493,7 +523,14 @@ table, tr, th {
 /* IN THE NEWS */
 
 .news-container {
+
+    margin: auto;
+    min-width: 100%;
     padding-top: 25px;
+}
+.nav-profile
+{
+    display: flex;
 }
 
 /* IMAGE COLLAGE */
@@ -513,11 +550,89 @@ table, tr, th {
 
 /* SPONSORS */
 
-.sponsor-title {
-    font-family: "Questrial", Arial, sans-serif;;
+
+#sponsors
+{
+    justify-content: center;
+    min-width: 100%;
+    margin: auto;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 10px;
+}
+
+#sponsors-nav
+{
+    border-bottom: 0;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    min-width: 100%;
+    font-size: 2.5em;
+
+}
+
+#old-sponsors
+{
+    margin-top: -5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgba(177, 156, 217, 0.3);
+
+}
+#old-sponsor
+{
+    margin-top: -5px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background: rgba(177, 156, 217, 0.3);
+
+}
+#nav-profile
+{
+
+}
+
+#sponsors-nav a {
+    border: none;
+    text-decoration: none;
+
+    color: #b19cd9;
+    background: rgba(198, 226, 255, 0.3);
+
+}
+#sponsors-nav li.active > a
+{
+    border-bottom: 0 ;
+}
+#sponsors-nav a:hover,
+#sponsors-nav a:focus {
+    border-bottom: 0 ;
+    color: #a8739a;
+}
+#sponsors-nav a.active {
+    border-bottom: 0 ;
+    color: #c6e2ff;
+    background: rgba(177, 156, 217, 0.5);
+}
+#sponsors-nav a.nav-item
+{
+    width: 50%;
+}
+
+
+
+.sponsor-title {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Questrial", Arial, sans-serif;;
+    margin: auto;
+    width: 100%;
+    padding-top: 20px;
+
+}
+.sponsor-title.old {
+    font-size: 30px;
+
 }
 .tier1 img {
     max-width: 420px !important;
@@ -550,7 +665,10 @@ table, tr, th {
         padding-top: 2em;
     }
 }
-
+#in-the-news
+{
+    padding-top: 20px;
+}
 /* DID YOU KNOW */
 
 #didyouknow {
@@ -565,7 +683,8 @@ table, tr, th {
 .social {
     height: 40px;
     line-height: 40px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     padding-top: 10px;
     text-align: center;
     overflow: visible;
@@ -858,10 +977,14 @@ th {
     text-align: center;
     z-index: 100; }
 .intro #logo {
-    display: inline-block;
+    position: relative;
+    display: block;
     padding-top: 1em;
     height: 350px;
     width: auto;
+    text-align: center;
+    justify-content: center;
+
 
 
 }
