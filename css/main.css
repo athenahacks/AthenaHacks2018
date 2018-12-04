@@ -547,9 +547,8 @@ table, tr, th {
 }
 
 .collage-images img {
-    max-width: 200px;
-    padding: 20px;
-    max-height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* SPONSORS */
@@ -576,7 +575,7 @@ table, tr, th {
 
 #old-sponsors
 {
-    margin-top: -5px;
+    margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
     background: rgba(177, 156, 217, 0.3);
@@ -624,33 +623,45 @@ table, tr, th {
 }
 
 
-
+.purple-rect {
+    align-self: center;
+    height:5px;
+    background: rgba(177, 156, 217, 0.5);
+    width: 100%;
+}
 .sponsor-title {
     text-align: center;
     font-size: 30px;
     font-family: "Questrial", Arial, sans-serif;;
     margin: auto;
     width: 100%;
-    padding-top: 20px;
+    padding-bottom: 20px;
+
 
 }
 .sponsor-title.old {
     font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
 }
 .tier1 img {
-    max-width: 420px !important;
-    max-height: 420px !important;
+    max-width: 450px !important;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 .tier2 img {
-    max-width: 300px !important;
-    max-height: 300px !important;
+    max-width: 400px !important;
 }
-
 .tier3 img {
+    width: 290px;
+}
+.tier4 img {
     max-width: 250px !important;
-    max-height: 250px !important;
+}
+.tier5 img {
+    max-width: 150px !important
 }
 .email {
     font-weight: 200;
