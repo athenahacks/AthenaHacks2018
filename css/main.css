@@ -11,11 +11,11 @@
 html, body {
     height: 100%;
     min-width: 100%;
-    margin: auto;
     overflow-y: scroll;
     overflow-x: hidden;
     background-image: linear-gradient(#b19cd9, rgba(198,226,255, 0));
     text-align: center;
+
 
 
     font-family: "Questrial", Arial, sans-serif;
@@ -360,8 +360,7 @@ table, tr, th {
 
 #about {
     text-align: left;
-    min-width: 100%;
-    margin: 20px;
+    min-width: 95%;
 }
 
 .section-title
@@ -371,10 +370,10 @@ table, tr, th {
 .center
 {
     margin: auto;
-    width: 100%;
+    width: 90%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
     justify-content: center;
 
 }
@@ -544,11 +543,15 @@ table, tr, th {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
 }
 
 .collage-images img {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
 }
 
 /* SPONSORS */
@@ -649,19 +652,24 @@ table, tr, th {
     max-width: 450px !important;
     padding-top: 10px;
     padding-bottom: 50px;
+
 }
 
 .tier2 img {
     max-width: 400px !important;
 }
 .tier3 img {
-    width: 290px;
+    min-width: 290px;
+    max-width: 290px;
 }
 .tier4 img {
     max-width: 250px !important;
 }
 .tier5 img {
     max-width: 150px !important
+}
+.col-4-sm: {
+    padding: 10px;
 }
 .email {
     font-weight: 200;
@@ -674,6 +682,7 @@ table, tr, th {
     text-align: center;
 
 }
+
 
 @media (min-width: 800px) {
     #sponsor-thank-you {
