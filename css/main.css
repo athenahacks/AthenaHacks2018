@@ -545,13 +545,14 @@ table, tr, th {
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+
 }
 
 .collage-images img {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 /* SPONSORS */
@@ -651,7 +652,6 @@ table, tr, th {
 .tier1 img {
     max-width: 350px !important;
     padding-top: 10px;
-    padding-bottom: 50px;
 
 }
 
@@ -661,17 +661,20 @@ table, tr, th {
 .tier3 img {
     min-width: 250px;
     max-width: 250px;
+    padding-bottom: -10px;
 }
 .tier4 img {
-    max-width: 200px !important;
+    width: 200px;
 }
 
 .tier5 img {
-    max-width: 150px !important
+    max-width: 150px !important;
 }
-.col-4-sm: {
-    padding: 10px;
+/* their logo has a weird thing that makes it small looking so u gotta fake it being bigger */
+#northrop {
+    width: 250px;
 }
+
 .email {
     font-weight: 200;
 }
