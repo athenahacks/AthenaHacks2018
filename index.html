@@ -59,6 +59,14 @@
         firebase.initializeApp(config);
     </script>
     <script src="js/contact.js"></script>
+    <script>jQuery(document).ready(function() {
+            jQuery('.toggle-nav').click(function(e) {
+                jQuery(this).toggleClass('active');
+                jQuery('.menu ul').toggleClass('active');
+
+                e.preventDefault();
+            });
+        });</script>
 
 
 
@@ -69,7 +77,21 @@
 </head>
 
 <header>
-    <nav id="main-nav">
+        <nav class="menu">
+                <ul class="active">
+                        <li>
+                            <li ><a href="#about_landing">about</a></li>
+                            <li><a href="#faq_landing">faq</a></li>
+                            <li><a href="#sponsors_landing" >sponsors & partners</a></li>
+                            <li><a href="#in-the-news_landing">news</a></li>
+                            <li><a href="#didyouknow_landing">contacts</a></li>
+
+                </ul>
+
+                <a class="toggle-nav" href="#">&#9776;</a>
+            </nav>
+
+    <!-- <nav id="main-nav">
         <ul>
             <li>
                 <ul><a class="nav-title" href="#landing">AthenaHacks</a></ul>
@@ -124,6 +146,8 @@
 </div>
 
 <!-- ABOUT -->
+<span class="anchor" id="about_landing"></span>
+
 <div class="container center" id="about">
     <div class="row">
         <h1 class="section-title">about</h1>
@@ -170,6 +194,8 @@
 </div>
 
 <!-- FAQ -->
+<span class="anchor" id="faq_landing"></span>
+
 <div class="container center" id="faq">
     <div class="row">
         <h1 class="section-title">faqs</h1>
@@ -308,6 +334,8 @@
 
 
 <!-- SPONSORS -->
+<span class="anchor" id="sponsor_landing"></span>
+
 <div class="container" id="sponsors">
     <div class = "row center">
         <div class = "col-4 purple-rect">
@@ -328,7 +356,7 @@
     </div>
     <! -- Gamma Tier -->
     <div class="row center collage-images tier3">
-   
+
             <div class = "col-4-sm">
                 <a href="https://www.zynga.com/" target="_blank"><img src="images/sponsors/zynga-logo.png"></a>
             </div>
@@ -456,14 +484,16 @@
 
 
         </div>
+        <span class="anchor" id="in-the-news_landing"></span>
+
         <div class="container" id="in-the-news">            <!-- IN THE NEWS -->
             <div class="row center">
                 <h1 class="sponsor-title">
                     Check us out in the news!
                 </h1>
-                <div class="collage-images tier2">
+                <div class="collage-images tier2" >
                     <a href="http://www.huffingtonpost.com/entry/spotlight-on-athenahacks-why-female-hackathons-are_us_58ebf5fae4b0145a227cb797" target="_blank">
-                        <img src="images/huffpost.png">
+                        <img src="images/huffpost.png" style="padding-bottom: 20px;">
                     </a>
                     <a href="http://dailytrojan.com/2017/02/28/spotlight-on-athenahacks/" target="_blank">
                         <img src="images/dailytrojan.png">
@@ -477,6 +507,7 @@
             </div>
 
         </div>
+
         <div class="container" >
             <div id = "sponsor-thank-you" style="text-align:center; width: 100%;">
                 <h2>A <b>huge</b> thank you to all our sponsors and partners!  </h2>
@@ -501,6 +532,8 @@
     </div>
     <div class="row">
         <!-- DID YOU KNOW? -->
+        <span class="anchor" id="didyouknow_landing"></span>
+
         <div class="container" id="didyouknow">
             <div style="text-align:center; width: 100%; padding-top: 10px;">
                 <h2>Did you know?</h2>
