@@ -551,6 +551,9 @@ th {
   transition: color 0.5s ease;
   margin-bottom: 1rem !important;
 }
+.faq-right {
+  width: 100%;
+}
 
 @media screen and (max-width: 800px) {
   .faq .question {
@@ -559,8 +562,11 @@ th {
 }
 
 .side {
+  height: 300px;
   margin-top: 25%;
   margin-bottom: 5px;
+  text-align: center;
+  display: block;
 }
 
 .bottom {
@@ -573,11 +579,11 @@ th {
 #faq {
   padding-top: 2em;
   text-align: left;
-  min-width: 100%;
   margin: 20px;
 }
 #faq-container {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #faq-text {
