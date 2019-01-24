@@ -1082,11 +1082,9 @@ th {
   z-index: 100;
 }
 .intro #logo {
-  position: relative;
-  display: block;
-  padding-top: 1em;
+  display: flex;
+  padding-top: 4em;
   height: 350px;
-  width: auto;
   text-align: center;
   justify-content: center;
 }
