@@ -296,7 +296,10 @@ th {
   z-index: 10;
 }
 #landing {
-  padding-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 #logo_text {
@@ -1083,7 +1086,6 @@ th {
 }
 .intro #logo {
   display: flex;
-  padding-top: 4em;
   height: 350px;
   text-align: center;
   justify-content: center;
