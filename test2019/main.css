@@ -1,53 +1,110 @@
-body {
-  margin: 0;
-  font-family: 'Oswald';
+/* FONTS */
+@font-face {
+  font-family: 'Lato Light';
+  src: url('fonts/Lato/Lato-Light.ttf');
 }
+@font-face {
+  font-family: 'Lato Italic';
+  src: url('fonts/Lato/Lato-Italic.ttf');
+}
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('fonts/Lato/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato/Lato-Regular.ttf');
+}
+body {
+  margin-top: -10px;
+  font-family: 'Oswald';
+  width: 100vw;
+}
+
+/* nav area */
+/* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  height: 40px;
+}
+
+/* Parallax */
 .parallax-area {
+  background-size: 100%;
+
   background-image: linear-gradient(#c6e2ff, #ffce9f);
   position: fixed;
-  overflow: visible;
-  width: 100%;
+  overflow: hidden;
+  width: 100vw;
   height: 850px;
 }
 .parallax-layer {
   width: 100%;
-  height: 500px;
+  height: 100%;
   position: fixed;
   left: 0;
-  top: 0;
+  top: -400px;
   background-position: bottom center;
   background-repeat: repeat-x;
-  background-size: 1000px 253px;
 }
-
 .layer-0 {
+  width: 200px;
   top: 0;
+  left: 0;
   z-index: 5;
+  background-position: top left;
+
   background: url('assets/text_color.png') no-repeat top 40px center;
-  background-size: 500px;
 }
 .layer-1 {
-  top: 30px;
+  opacity: 1;
+  top: -10px;
   z-index: 5;
-  background-image: url('assets/mountain_range.png');
+  filter: saturate(40%);
+
+  background-size: 100%;
+  background-image: url('assets/sangabriel.svg');
+  background-position: bottom center;
 }
 .layer-2 {
-  top: 150px;
+  opacity: 0.8;
+  filter: saturate(80%);
+
+  background-size: 100%;
+  top: 20px;
   z-index: 10;
-  background-image: url('assets/hills.png');
-  opacity: 1;
+  background-image: url('assets/hills.svg');
 }
 .layer-3 {
-  top: 250px;
+  filter: saturate(10%);
+  background-size: 90%;
+  top: 0px;
+  left: -60px;
+
   z-index: 15;
-  background-image: url('assets/LA.png');
+
+  background-image: url('assets/city.svg');
+}
+.layer-4 {
+  background-size: 50%;
+  left: 300px;
+  top: 40px;
+  z-index: 15;
+
+  background-image: url('assets/usc.svg');
+  background-repeat: no-repeat;
 }
 
 .main {
+  overflow: hidden;
+  width: 100vw;
   position: absolute;
   top: 740px;
-  background-image: linear-gradient(#111111, rgba(198, 226, 255, 1));
-  width: 100%;
+
+  left: 0;
+  background-color: #003663;
   min-height: 1500px;
 }
 .main h1 {
@@ -55,6 +112,119 @@ body {
   font-size: 2em;
   text-align: center;
 }
+/* ABOUT */
+
+#about {
+  color: #fff;
+  font-family: 'Lato Light', Arial, sans-serif;
+  font-weight: 1;
+  font-size: 2.3em;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+#about h2 {
+  font-family: 'Lato Light', Arial, sans-serif;
+  font-size: 52px;
+  padding-bottom: 20px;
+}
+
+/* FAQ */
+#faq {
+  width: 100%;
+  color: white;
+}
+
+#faq h2 {
+  font-family: 'Lato Light', Arial, sans-serif;
+  text-align: center;
+  font-size: 52px;
+}
+.faq-row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.question {
+  font-family: 'Lato Light', Arial, sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  color: rgb(184, 194, 238);
+}
+.answer {
+  font-family: 'Lato Light', Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+/* SPONSORS */
+#sponsors {
+  width: 100%;
+  color: black;
+  background-color: rgb(255, 219, 140);
+  flex-direction: column;
+}
+
+#sponsors h2 {
+  font-family: 'Lato Light', Arial, sans-serif;
+  text-align: center;
+  font-size: 52px;
+}
+.sponsors-row {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.collage-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.collage-images img {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.tier1 img {
+  max-width: 350px !important;
+  padding-top: 10px;
+}
+
+.tier2 img {
+  max-width: 300px !important;
+}
+.tier3 img {
+  min-width: 250px;
+  max-width: 250px;
+  padding-bottom: -10px;
+}
+.tier4 img {
+  width: 200px;
+}
+.col-6 {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+.tier5 img {
+  max-width: 150px !important;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/*/
+
 
 /* SOCIAL */
 
