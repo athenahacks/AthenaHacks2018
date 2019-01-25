@@ -159,6 +159,80 @@ body {
   color: white;
 }
 
+/* STORIES */
+
+#stories h2 {
+  font-family: 'Lato Light', Arial, sans-serif;
+  text-align: center;
+  font-size: 52px;
+  color: white;
+}
+
+.card-title {
+  color: rgb(107, 117, 163);
+  font-family: 'Lato Light', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.card-text {
+  color: black;
+  font-size: 14px;
+  font-family: 'Lato Light', Arial, sans-serif;
+  text-align: left;
+}
+
+#stories .btn {
+  font-family: 'Lato Light', Arial, sans-serif;
+  font-size: 14px;
+  background-color: rgb(184, 194, 238);
+  border-color: rgb(107, 117, 163);
+}
+
+#stories .btn:hover {
+  background-color: rgb(107, 117, 163);
+}
+/*#stories {
+  max-width: 480px;
+  max-height: 480px;
+}
+
+#stories .name {
+  font-family: 'Lato Light', Arial, sans-serif;
+  font-size: 16px;
+  color: rgb(184, 194, 238);
+}*/
+
+/*Thanks to codeply for the carousel example*/
+.carousel-inner {
+  visibility: visible;
+  display: block;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(33%);
+}
+
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-33%);
+}
+  
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+/*.carousel-control-next, .carousel-control-prev {
+    width: 30%;
+}*/
+
 /* SPONSORS */
 #sponsors {
   width: 100%;
@@ -222,9 +296,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-/*/
-
 
 /* SOCIAL */
 
