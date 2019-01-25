@@ -432,8 +432,9 @@ th {
 }
 
 #infoCards {
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
+  width: 100%;
 }
 .about-img {
   width: 90px;
@@ -441,7 +442,6 @@ th {
 
 #about {
   text-align: left;
-  min-width: 95%;
 }
 
 .section-title {
@@ -561,7 +561,6 @@ th {
 #faq {
   padding-top: 2em;
   text-align: left;
-  margin: 20px;
 }
 #faq-container {
   margin-top: 20px;
