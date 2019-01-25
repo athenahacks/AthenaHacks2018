@@ -436,11 +436,12 @@ th {
   text-align: center;
   width: 100%;
 }
-.about-img {
+#about_land .about-img {
   width: 90px;
 }
 
 #about {
+  padding-top: 50px;
   text-align: left;
 }
 
@@ -1048,7 +1049,7 @@ th {
   position: relative;
   align-items: center;
   justify-content: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .intro h1 {
