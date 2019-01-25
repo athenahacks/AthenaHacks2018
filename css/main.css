@@ -210,7 +210,7 @@ header {
   width: 100%;
   background-color: #9dbddf;
   opacity: 0.8;
-
+  top: 0;
   z-index: 200;
   flex-direction: row;
   justify-content: flex-start;
@@ -257,13 +257,25 @@ a:hover {
 .collapse {
   display: none;
 }
-.apply {
-  border: black;
-  border-width: thin;
+
+#apply_link a {
+  border-bottom: 0;
+  font-size: 30px;
+  background-color: #ffb6c2;
+  color: #fff;
+  border-radius: 10%;
+  border: 1px solid #fff;
   padding: 10px;
-  font-weight: bold;
-  border-style: solid;
+  z-index: 10000;
+  margin-top: 20px;
+  font-family: 'Questrial', Arial, sans-serif;
 }
+#apply_link a:hover,
+#apply_link a:focus {
+  text-decoration: none;
+  background-color: #9dbddf;
+}
+
 .test {
   justify-content: right;
   text-align: right;
@@ -299,7 +311,7 @@ th {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  padding-top: 3em;
 }
 
 #logo_text {
@@ -351,30 +363,7 @@ th {
   font-size: 2.5rem;
 }
 
-@media (min-height: 600px) {
-  #landing {
-    padding-top: 5em;
-  }
-}
-
-@media (min-height: 700px) {
-  #landing {
-    padding-top: 8em;
-  }
-}
-
-@media (min-height: 800px) {
-  #landing {
-    padding-top: 10em;
-  }
-}
-
 @media (min-width: 550px) {
-  #logo {
-    margin-bottom: 1em;
-    width: 40em;
-  }
-
   #athena-title {
     font-size: 5.5rem;
   }
@@ -388,11 +377,6 @@ th {
 @media (min-width: 1824px) {
 }
 @media (min-width: 1824px) {
-  #logo {
-    margin-bottom: 1em;
-    width: 40em;
-  }
-
   #athena-title {
     font-size: 6.5rem;
   }
@@ -405,11 +389,6 @@ th {
   }
 }
 @media (min-width: 2224px) {
-  #logo {
-    margin-bottom: 1em;
-    width: 45em;
-  }
-
   #athena-title {
     font-size: 7.5rem;
   }
@@ -1062,16 +1041,17 @@ th {
 }
 
 .intro {
-  padding-top: 1em;
   width: 100vw;
   height: 100vh;
+
   background-image: linear-gradient(#c6e2ff, rgba(198, 226, 255, 0));
-  min-height: 300px;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10px;
 }
+
 .intro h1 {
   padding-top: 20%;
   font-family: Ardina, sans-serif;
@@ -1086,9 +1066,10 @@ th {
 }
 .intro #logo {
   display: flex;
-  height: 350px;
   text-align: center;
   justify-content: center;
+  height: 100%;
+  margin-bottom: 1em;
 }
 .intro .circle {
   display: inline-block;
