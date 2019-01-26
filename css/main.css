@@ -254,9 +254,13 @@ a:hover {
   display: none;
 }
 
+#apply_link {
+  align-self: center;
+}
 #apply_link a {
+  width: 30vw;
   border-bottom: 0;
-  font-size: 30px;
+  font-size: 4vw;
   background-color: #ffb6c2;
   color: #fff;
   border-radius: 10%;
@@ -289,6 +293,10 @@ a:hover {
   .nav-title {
     font-size: 25px;
   }
+  #landing {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 table,
@@ -306,7 +314,7 @@ th {
 #landing {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 2em;
   width: 100vw;
   height: 100vh;
@@ -315,46 +323,51 @@ th {
   display: flex;
   text-align: center;
   align-self: center;
-  margin-bottom: 1em;
+  align-content: center;
 }
 #header-right {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   text-align: center;
   align-self: center;
-  margin-bottom: 1em;
+  width: 40vh;
 }
 #logo {
-  height: 350px;
-  width: 350px;
+  height: 40vh;
+  width: 40vh;
+  align-self: center;
 }
-
-#logo_text {
-  text-align: center;
-  height: 130px;
+.logo {
   position: relative;
-  top: 0;
-  left: -20px;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+#logo_text {
+  align-self: center;
+  text-align: center;
+  width: 40vh;
 }
 #logo_subtext {
   text-align: center;
-  height: 30px;
-  position: relative;
-  top: 0;
-  left: 0;
+  width: 30vh;
 }
 
 #logo_background {
   text-align: center;
-  height: 150px;
-  position: absolute;
-  top: 20px;
-  left: -10px;
+
+  left: -40px;
+  top: 0px;
+  height: 20vh;
+  padding-top: 10px;
+
   opacity: 0.8;
-}
-.logo {
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 #form_message {
@@ -391,33 +404,24 @@ th {
 @media (min-width: 992px) {
   #landing {
     flex-direction: row;
+    justify-content: space-around;
   }
-}
-@media (min-width: 1824px) {
-}
-@media (min-width: 1824px) {
-  #athena-title {
-    font-size: 6.5rem;
+  #logo {
+    height: 60vh;
+    width: 60vh;
   }
-  #athena-subtitle {
-    font-size: 3.5rem;
+  #logo_text {
+    width: 80vh;
   }
-
-  #about {
-    font-size: 4em;
+  #header-right {
+    padding-left: 20px;
   }
-}
-@media (min-width: 2224px) {
-  #athena-title {
-    font-size: 7.5rem;
+  #header-left {
+    padding-right: 20px;
   }
-
-  #athena-subtitle {
-    font-size: 4.5rem;
-  }
-
-  #about {
-    font-size: 5em;
+  #apply_link a {
+    width: 20vw;
+    font-size: 2vw;
   }
 }
 
