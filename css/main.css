@@ -39,11 +39,7 @@ body {
   text-align: center;
   z-index: 100;
 }
-.intro #logo {
-  display: inline-block;
-  height: 350px;
-  width: 350px;
-}
+
 .intro .circle {
   display: inline-block;
   width: 100px;
@@ -310,7 +306,7 @@ th {
 #landing {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 2em;
   width: 100vw;
   height: 100vh;
@@ -326,6 +322,10 @@ th {
   text-align: center;
   align-self: center;
   margin-bottom: 1em;
+}
+#logo {
+  height: 350px;
+  width: 350px;
 }
 
 #logo_text {
