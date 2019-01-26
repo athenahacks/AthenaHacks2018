@@ -309,9 +309,22 @@ th {
 }
 #landing {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 3em;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+}
+#header-left {
+  display: flex;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 1em;
+}
+#header-right {
+  display: flex;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 1em;
 }
 
 #logo_text {
@@ -718,7 +731,7 @@ th {
 }
 
 .tier5 img {
-  max-width: 150px !important;
+  width: 150px;
 }
 /* their logo has a weird thing that makes it small looking so u gotta fake it being bigger */
 #northrop {
@@ -1049,7 +1062,6 @@ th {
   position: relative;
   align-items: center;
   justify-content: center;
-  padding-bottom: 20px;
 }
 
 .intro h1 {
@@ -1064,13 +1076,7 @@ th {
   text-align: center;
   z-index: 100;
 }
-.intro #logo {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  height: 100%;
-  margin-bottom: 1em;
-}
+
 .intro .circle {
   display: inline-block;
   width: 100px;
