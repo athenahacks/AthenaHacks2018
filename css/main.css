@@ -309,8 +309,9 @@ th {
 }
 #landing {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  padding-top: 2em;
   width: 100vw;
   height: 100vh;
 }
@@ -385,6 +386,11 @@ th {
   }
   #about {
     font-size: 3em;
+  }
+}
+@media (min-width: 992px) {
+  #landing {
+    flex-direction: row;
   }
 }
 @media (min-width: 1824px) {
