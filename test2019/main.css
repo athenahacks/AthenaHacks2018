@@ -53,23 +53,21 @@ body {
 /* san gabriel */
 .layer-0 {
   opacity: 1;
-  top: -20px;
+  top: -5vh;
   z-index: 5;
   filter: saturate(40%);
-
   width: 100vw;
-
   background: url('assets/parallax_layers/mountains.svg') no-repeat top 40px
     center;
 }
 /* hollywood hills */
 .layer-1 {
-  opacity: 1;
-  top: 20px;
-  z-index: 5;
   filter: saturate(40%);
+  opacity: 1;
+  top: 1vh;
+  z-index: 5;
 
-  left: -80px;
+  left: -6vw;
   width: 110vw;
   background-repeat: no-repeat;
   background-image: url('assets/parallax_layers/hills.svg');
@@ -77,9 +75,8 @@ body {
 }
 /* downtown LA */
 .layer-2 {
-  left: 230px;
-  width: 60vw;
-  top: -90px;
+  left: 20%;
+  top: -8vh;
   width: 70vw;
   z-index: 10;
   background-image: url('assets/parallax_layers/city.svg');
@@ -98,7 +95,8 @@ body {
 
 /* tree ground */
 .layer-4 {
-  top: 90px;
+  top: 10vh;
+
   z-index: 15;
   opacity: 1;
   width: 100vw;
@@ -110,8 +108,8 @@ body {
 .main {
   overflow: hidden;
   width: 100vw;
+  top: 100vh;
   position: absolute;
-  top: 740px;
 
   left: 0;
   background-color: #47424c;
@@ -234,7 +232,74 @@ body {
 }
 
 /*/
+/* STORIES */
 
+#stories h2 {
+  font-family: 'Lato Light', Arial, sans-serif;
+  text-align: center;
+  font-size: 52px;
+  color: white;
+}
+
+.card-title {
+  color: rgb(107, 117, 163);
+  font-family: 'Lato Light', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.card-text {
+  color: black;
+  font-size: 14px;
+  font-family: 'Lato Light', Arial, sans-serif;
+  text-align: left;
+}
+
+#stories .btn {
+  font-family: 'Lato Light', Arial, sans-serif;
+  font-size: 14px;
+  background-color: rgb(184, 194, 238);
+  border-color: rgb(107, 117, 163);
+}
+
+#stories .btn:hover {
+  background-color: rgb(107, 117, 163);
+}
+/*#stories {
+  max-width: 480px;
+  max-height: 480px;
+}
+ #stories .name {
+  font-family: 'Lato Light', Arial, sans-serif;
+  font-size: 16px;
+  color: rgb(184, 194, 238);
+}*/
+
+/*Thanks to codeply for the carousel example*/
+.carousel-inner {
+  visibility: visible;
+  display: block;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(33%);
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-33%);
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
 
 /* SOCIAL */
 
