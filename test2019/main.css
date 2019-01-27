@@ -32,69 +32,79 @@ body {
 
 /* Parallax */
 .parallax-area {
-  background-size: 100%;
-
   background-image: linear-gradient(#c6e2ff, #ffce9f);
   position: fixed;
   overflow: hidden;
   width: 100vw;
-  height: 850px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-position: bottom right;
 }
 .parallax-layer {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  left: 0;
   top: -400px;
-  background-position: bottom center;
+  background-position: bottom right;
   background-repeat: repeat-x;
 }
+/* san gabriel */
 .layer-0 {
-  width: 200px;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  background-position: top left;
-
-  background: url('assets/text_color.png') no-repeat top 40px center;
-}
-.layer-1 {
   opacity: 1;
-  top: -10px;
+  top: -20px;
   z-index: 5;
   filter: saturate(40%);
 
-  background-size: 100%;
-  background-image: url('assets/sangabriel.svg');
+  width: 100vw;
+
+  background: url('assets/parallax_layers/mountains.svg') no-repeat top 40px
+    center;
+}
+/* hollywood hills */
+.layer-1 {
+  opacity: 1;
+  top: 20px;
+  z-index: 5;
+  filter: saturate(40%);
+
+  left: -80px;
+  width: 110vw;
+  background-repeat: no-repeat;
+  background-image: url('assets/parallax_layers/hills.svg');
   background-position: bottom center;
 }
+/* downtown LA */
 .layer-2 {
-  opacity: 0.8;
-  filter: saturate(80%);
-
-  background-size: 100%;
-  top: 20px;
+  left: 230px;
+  width: 60vw;
+  top: -90px;
+  width: 70vw;
   z-index: 10;
-  background-image: url('assets/hills.svg');
+  background-image: url('assets/parallax_layers/city.svg');
 }
+
+/* USC */
 .layer-3 {
-  filter: saturate(10%);
-  background-size: 90%;
   top: 0px;
-  left: -60px;
-
+  right: 0px;
+  width: 70vw;
+  align-self: flex-end;
   z-index: 15;
-
-  background-image: url('assets/city.svg');
-}
-.layer-4 {
-  background-size: 50%;
-  left: 300px;
-  top: 40px;
-  z-index: 15;
-
-  background-image: url('assets/usc.svg');
   background-repeat: no-repeat;
+  background-image: url('assets/parallax_layers/usc.svg');
+}
+
+/* tree ground */
+.layer-4 {
+  top: 90px;
+  z-index: 15;
+  opacity: 1;
+  width: 100vw;
+
+  background-repeat: no-repeat;
+  background-image: url('assets/parallax_layers/treeground.svg');
 }
 
 .main {
@@ -104,7 +114,7 @@ body {
   top: 740px;
 
   left: 0;
-  background-color: #003663;
+  background-color: #47424c;
   min-height: 1500px;
 }
 .main h1 {
@@ -158,80 +168,6 @@ body {
   font-size: 16px;
   color: white;
 }
-
-/* STORIES */
-
-#stories h2 {
-  font-family: 'Lato Light', Arial, sans-serif;
-  text-align: center;
-  font-size: 52px;
-  color: white;
-}
-
-.card-title {
-  color: rgb(107, 117, 163);
-  font-family: 'Lato Light', Arial, sans-serif;
-  font-size: 16px;
-}
-
-.card-text {
-  color: black;
-  font-size: 14px;
-  font-family: 'Lato Light', Arial, sans-serif;
-  text-align: left;
-}
-
-#stories .btn {
-  font-family: 'Lato Light', Arial, sans-serif;
-  font-size: 14px;
-  background-color: rgb(184, 194, 238);
-  border-color: rgb(107, 117, 163);
-}
-
-#stories .btn:hover {
-  background-color: rgb(107, 117, 163);
-}
-/*#stories {
-  max-width: 480px;
-  max-height: 480px;
-}
-
-#stories .name {
-  font-family: 'Lato Light', Arial, sans-serif;
-  font-size: 16px;
-  color: rgb(184, 194, 238);
-}*/
-
-/*Thanks to codeply for the carousel example*/
-.carousel-inner {
-  visibility: visible;
-  display: block;
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
-}
-
-.carousel-inner .carousel-item-right.active,
-.carousel-inner .carousel-item-next {
-  transform: translateX(33%);
-}
-
-.carousel-inner .carousel-item-left.active, 
-.carousel-inner .carousel-item-prev {
-  transform: translateX(-33%);
-}
-  
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left{ 
-  transform: translateX(0);
-}
-
-/*.carousel-control-next, .carousel-control-prev {
-    width: 30%;
-}*/
 
 /* SPONSORS */
 #sponsors {
@@ -296,6 +232,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/*/
+
 
 /* SOCIAL */
 
