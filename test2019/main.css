@@ -3,123 +3,215 @@
   font-family: 'Lato Light';
   src: url('fonts/Lato/Lato-Light.ttf');
 }
+
 @font-face {
   font-family: 'Lato Italic';
   src: url('fonts/Lato/Lato-Italic.ttf');
 }
+
 @font-face {
   font-family: 'Lato Bold';
   src: url('fonts/Lato/Lato-Bold.ttf');
 }
+
 @font-face {
   font-family: 'Lato';
   src: url('fonts/Lato/Lato-Regular.ttf');
 }
+
 body {
   margin-top: -10px;
   font-family: 'Oswald';
   width: 100vw;
 }
 
-/* nav area */
-/* Style the header */
-.header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
-  height: 40px;
+/* Title + Parallax Area */
+#top {
+  height: 240vh;
+
+  background-image: linear-gradient(#c6e2ff, #ffce9f);
 }
 
-/* Parallax */
-.parallax-area {
-  background-image: linear-gradient(#c6e2ff, #ffce9f);
+/* Title + Apply links */
+#landing {
+}
+
+#logo_text {
+  width: 30vw;
+  z-index: 2;
+}
+
+#logo_subtext {
+  width: 15vw;
+}
+#apply_link {
+  padding-top: 20px;
+  display: flex;
+  width: 15vw;
+  flex-direction: column;
+  z-index: 1000;
+}
+#apply_link a {
+  border-radius: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-color: rgb(107, 117, 163);
+  border-bottom: 0;
+  font-size: 18px;
+  border: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+  z-index: 1000;
+
+  font-family: 'Questrial', Arial, sans-serif;
+}
+#apply_link a:hover,
+#apply_link a:focus {
+  background: rgba(255, 182, 194, 0.7);
+  text-decoration: none;
+  z-index: 1000;
+}
+
+/* Parallax - Desktop View*/
+#parallax-area {
   position: fixed;
   overflow: hidden;
   width: 100vw;
-  height: 100vh;
-  display: flex;
   flex-direction: column;
   align-content: center;
   background-position: bottom right;
+  display: none;
 }
+
+#mobile-view {
+  background-image: linear-gradient(#c6e2ff, #ffce9f);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  display: block;
+  background-size: auto 100%;
+}
+
 .parallax-layer {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  top: -400px;
   background-position: bottom right;
   background-repeat: repeat-x;
 }
+
+.parallax-layer-mobile {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-position: bottom right;
+  background-repeat: repeat-x;
+}
+
+@media (min-width: 992px) {
+  #mobile-view {
+    display: none;
+  }
+
+  #parallax-area {
+    display: flex;
+  }
+}
+
+/* san gabriel */
+.layer-5 {
+  right: 80vh;
+  top: 2vh;
+  width: 10vw;
+  z-index: 2;
+}
 /* san gabriel */
 .layer-0 {
+  top: 15vh;
   opacity: 1;
-  top: -5vh;
   z-index: 5;
   filter: saturate(40%);
   width: 100vw;
+  background-position: bottom center;
   background: url('assets/parallax_layers/mountains.svg') no-repeat top 40px
     center;
 }
+
 /* hollywood hills */
 .layer-1 {
   filter: saturate(40%);
+  top: 25vh;
   opacity: 1;
-  top: 1vh;
-  z-index: 5;
-
-  left: -6vw;
   width: 110vw;
+  z-index: 10;
   background-repeat: no-repeat;
   background-image: url('assets/parallax_layers/hills.svg');
   background-position: bottom center;
 }
+
 /* downtown LA */
 .layer-2 {
-  left: 20%;
-  top: -8vh;
+  left: 15%;
+  top: 70vh;
   width: 70vw;
-  z-index: 10;
+  z-index: 15;
   background-image: url('assets/parallax_layers/city.svg');
 }
 
 /* USC */
+.layer-test {
+  /*background-image: linear-gradient(#c6e2ff, #ffce9f);*/
+  opacity: 0.2;
+  height: 100vh;
+  width: 90vw;
+  z-index: 24;
+}
+
+/* USC */
 .layer-3 {
-  top: 0px;
   right: 0px;
-  width: 70vw;
+  top: 100vh;
+  filter: hue-rotate(-10deg);
+  filter: contrast(80%);
+  width: 60vw;
   align-self: flex-end;
-  z-index: 15;
+  z-index: 20;
+  background-position: bottom center;
   background-repeat: no-repeat;
-  background-image: url('assets/parallax_layers/usc.svg');
+  background-image: url('assets/parallax_layers/usc-01.svg');
 }
 
 /* tree ground */
 .layer-4 {
-  top: 10vh;
-
-  z-index: 15;
+  left: 0vw;
+  top: 130vh;
   opacity: 1;
+  z-index: 25;
   width: 100vw;
-
   background-repeat: no-repeat;
+  background-position: bottom center;
   background-image: url('assets/parallax_layers/treeground.svg');
 }
 
+/* Main Content area */
 .main {
   overflow: hidden;
   width: 100vw;
-  top: 100vh;
+  top: 240vh;
   position: absolute;
 
   left: 0;
   background-color: #47424c;
-  min-height: 1500px;
+  min-height: 1300px;
 }
+
 .main h1 {
   color: #fff;
   font-size: 2em;
   text-align: center;
 }
+
 /* ABOUT */
 
 #about {
@@ -148,6 +240,7 @@ body {
   text-align: center;
   font-size: 52px;
 }
+
 .faq-row {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -161,6 +254,7 @@ body {
   padding-bottom: 10px;
   color: rgb(184, 194, 238);
 }
+
 .answer {
   font-family: 'Lato Light', Arial, sans-serif;
   font-size: 16px;
@@ -171,7 +265,9 @@ body {
 #sponsors {
   width: 100%;
   color: black;
-  background-color: rgb(255, 219, 140);
+  background-color: #c6e2ff;
+  padding-top: 50px;
+
   flex-direction: column;
 }
 
@@ -179,7 +275,9 @@ body {
   font-family: 'Lato Light', Arial, sans-serif;
   text-align: center;
   font-size: 52px;
+  margin-bottom: 40px;
 }
+
 .sponsors-row {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -201,6 +299,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .tier1 img {
   max-width: 350px !important;
   padding-top: 10px;
@@ -209,20 +308,24 @@ body {
 .tier2 img {
   max-width: 300px !important;
 }
+
 .tier3 img {
   min-width: 250px;
   max-width: 250px;
   padding-bottom: -10px;
 }
+
 .tier4 img {
   width: 200px;
 }
+
 .col-6 {
   justify-content: center;
   align-items: center;
   align-content: center;
   align-self: center;
 }
+
 .tier5 img {
   max-width: 150px !important;
   align-self: center;
@@ -264,6 +367,7 @@ body {
 #stories .btn:hover {
   background-color: rgb(107, 117, 163);
 }
+
 /*#stories {
   max-width: 480px;
   max-height: 480px;

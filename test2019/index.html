@@ -1,479 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>AthenaHacks 2019</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <link rel="stylesheet" href="vendors/animate/animate.min.css" />
-    <link rel="stylesheet" href="vendors/skeleton/normalize.css" />
-    <link rel="stylesheet" href="vendors/skeleton/skeleton.css" />
-    <link rel="stylesheet" href="vendors/responsive-nav/responsive-nav.css" />
+<head>
+  <meta charset="utf-8" />
+  <title>AthenaHacks 2019</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
+  <link rel="stylesheet" href="vendors/animate/animate.min.css" />
+  <link rel="stylesheet" href="vendors/skeleton/normalize.css" />
+  <link rel="stylesheet" href="vendors/skeleton/skeleton.css" />
+  <link rel="stylesheet" href="vendors/responsive-nav/responsive-nav.css" />
 
-    <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous" />
 
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="images/favicon-hand-peace-o.ico" />
-  </head>
-  <body>
+  <link rel="stylesheet" href="main.css" />
 
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/favicon-hand-peace-o.ico" />
+</head>
+
+<body>
+  <div id="top">
 
     <!-- Thanks to https://medium.com/@hamstu/recreating-the-firewatch-parallax-effect-213694d42f4e for tutorial on parallax scrolling-->
 
     <!-- Parallax area -->
-    <div class="parallax-area">
-      <div
-        class="parallax-layer layer-0"
-        data-parallax-speed="0.1"
-        data-max-scroll="1400"
-      ></div>
-      <div
-        class="parallax-layer layer-1"
-        data-parallax-speed="0.2"
-        data-max-scroll="1400"
-      ></div>
-      <div
-        class="parallax-layer layer-2"
-        data-parallax-speed="0.3"
-        data-max-scroll="1400"
-      ></div>
-      <div
-        class="parallax-layer layer-3"
-        data-parallax-speed="0.6"
-        data-max-scroll="1400"
-      ></div>
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 975 621" style="enable-background:new 0 0 975 621;" xml:space="preserve">
+    <div id="parallax-area">
 
-      <div
-        class="parallax-layer layer-4"
-        data-parallax-speed="1.0"
-        data-max-scroll="1400"
-      ></div>
-      </svg>
+      <div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="2500"></div>
+      <div class="parallax-layer layer-1" data-parallax-speed="0.2" data-max-scroll="2500"></div>
+      <div class="parallax-layer layer-2" data-parallax-speed="0.6" data-max-scroll="2500"></div>
+      <div class="parallax-layer layer-3" data-parallax-speed="0.75" data-max-scroll="2500"></div>
+      <div class="parallax-layer layer-4" data-parallax-speed="0.9" data-max-scroll="2500"></div>
+      <div class="parallax-layer layer-5" id="landing"  data-parallax-speed="-0.1" data-max-scroll="2500">
+          <div class="logo">
+            <img id="logo_text" src="assets/athena_text_black.png">
+            <img id="logo_subtext" src="assets/dateusc_blk.png">
+            <div class="row center"  id="apply_link">
+              <a href="http://apply.athenahacks.com" target="_blank">apply now</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="mobile-view">
+      <div class="parallax-layer-mobile layer-0"></div>
+      <div class="parallax-layer-mobile layer-1"></div>
+      <div class="parallax-layer-mobile layer-2"></div>
+      <div class="parallax-layer-mobile layer-3"></div>
+      <div class="parallax-layer-mobile layer-4"></div>
     </div>
 
 
-    <!-- Main content area -->
-    <div class="main">
-      <div class = "container content">
-      <!-- About section -->
-        <div id="about">
-          <div class="container">
-            <div class="row center text-center">
-              <div class="col-2">
-              </div>
-              <div class="col-8">
-                <h2>About</h2>
-                <p>
-                  Join us for a weekend dedicated to filling the <span style="color: rgb(184, 194, 238); font-family: 'Lato Bold';">gender gap</span>, exploring technology, and building the next big thing! Our mission is to support and nurture women <span style="color: rgb(184, 194, 238); font-family: 'Lato Italic';">(trans and non-binary inclusive)</span> in tech by hosting Southern California's premiere all female* hackathon. Expect a weekend full of workshops, mentorship, tech talks, social activities, food, and more! No experience necessary, you just need passion.
-                </p>
-              </div>
-              <div class="col-2">
-              </div>
-            </div>
-          </div>
-        </div>
-      <!-- FAQ section -->
-        <div id="faq">
-          <div class = "container center">
-          <h2>FAQ section</h2>
-            <div class="row text-left faq-row">
-              <div class="col-4">
-                <div class="question">What is a hackathon?</div>
-                <div class="answer">
-                    A hackathon is a 24 hour event where students with similar interests come together to work on a project. You can attend workshops, hear from people in the computer science field and network with students and reps from companies!                </div>
-              </div>
-              <div class="col-4">
-                <div class="question">Who can attend?</div>
-                <div class="answer">
-                    Female* undergraduates and high schoolers are welcome to attend; we'd love to have any males interested in helping our cause and any women in the industry to mentor or volunteer!
-                </div>
-
-                <div class="answer " style="padding-top: 10px;">
-                    *trans and non-binary inclusive              </div>
-
-              </div>
-              <div class="col-4">
-                  <div class="question">How do I register?</div>
-                  <div class="answer">
-                    Applications will be opening in the beginning of 2019.
-                  </div>
-                </div>
-
-            </div>
-
-            <div class="row text-left faq-row">
-                <div class="col-4">
-                    <div class="question">Do I need to be a CS major or minor?</div>
-                    <div class="answer">
-                      No! This is the perfect place for any student to create their first coding project. We'll have plenty of resources for beginners to get started!
-                    </div>
-                  </div>
-              <div class="col-4">
-                <div class="question">Can high schoolers attend?</div>
-                <div class="answer">
-                  If you're a high schooler who will be at least 17 years old by AthenaHacks, you are invited to attend! However, you can not stay overnight. You'll need your parent/guardian to pick you up for the evening and  return you on Sunday morning.
-                </div>
-              </div>
-
-              <div class="col-4">
-                <div class="question">Does it cost money?</div>
-                <div class="answer">
-                  Nope! Admission is free and covers overnight stay, food, all the snacks you could ever want, and of course, our sponsors and AthenaHacks will provide you with the free swag!!
-                </div>
-              </div>
-
-            </div>
-            <div class="row text-left faq-row">
-              <div class="col-4">
-                <div class="question">How do I get to USC?</div>
-                <div class="answer">
-                  Buses will be going to UCI, UCSD, UCLA and SLO. Lyft codes will be provided for those in the LA area not taking buses. You can also request parking passes if you're driving yourself. More details coming soon!              </div>
-              </div>
-              <div class="col-4">
-                <div class="question">What about travel reimbursements</div>
-                <div class="answer">
-                    Unfortunately, we will not be able to provide travel reimbursements this year. Sorry for the inconvenience :(
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="question">How do teams work?</div>
-                <div class="answer">
-                    At most teams can have 4 people. You can have your teammates in mind before the event, or you can find a team during our team formation activity before and after opening ceremony!              </div>
-              </div>
-            </div>
-              <div class="row text-left faq-row">
-                <div class="col-4">
-                  <div class="question">Will there be hardware available?</div>
-                  <div class="answer">
-                      Yes! Hardware will be provided by MLH.
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="question">Where do I sleep?</div>
-                  <div class="answer">
-                      If hacking all night isn't your way to go, we'll have places provided for you to catch a few Z's!
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="question">What should I bring?</div>
-                  <div class="answer">
-                      Remember to bring a valid student ID for admission and anything you need to hack away!
-                  </div>
-                </div>
-              </div>
-              <div class="row text-left faq-row">
-                <div class="col-4">
-                  <div class="question">Is there a code of conduct?</div>
-                  <div class="answer">
-                      Yes, we want to make AthenaHacks enjoyable for everyone! You can find the code of conduct <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">here</a>.
-                    </div>
-                </div>
-                <div class="col-4">
-                  <div class="question">How do I become a mentor or volunteer?</div>
-                  <div class="answer">
-                      Mentor and volunteer apps for 2019 are coming soon!
-                    </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-      <!-- Sponsors -->
-      <div id="sponsors">
-        <div class="container center">
-            <h2>Sponsors</h2>
-            <! -- Neudesic Tier -->
-            <div class="row center collage-images tier1">
-                    <a href="https://www.neudesic.com/" target="_blank"><img src="assets/sponsors/neudesic.png"></a>
-            </div>
-            <! -- Beta Tier -->
-            <div class="row center collage-images tier2">
-                        <a href="https://www.microsoft.com/en-us/" target="_blank"><img src="assets/sponsors/microsoft.png"></a>
-            </div>
-            <! -- Gamma Tier -->
-            <div class="row center collage-images tier3">
-
-                    <div class = "col-4-sm">
-                        <a href="https://www.zynga.com/" target="_blank"><img src="assets/sponsors/zynga-logo.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="https://www.raytheon.com/ourcompany" target="_blank"><img src="assets/sponsors/raytheon-logo.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="https://www.joinhoney.com/" target="_blank"><img src="assets/sponsors/honey-logo.svg"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="https://www.activision.com/" target="_blank"><img src="assets/sponsors/activision.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="https://www.bloomberg.com/" target="_blank"><img src="assets/sponsors/bloomberg.png"></a>
-                    </div>
 
 
-            </div>
-            <! -- Delta Tier -->
-            <div class="row center collage-images tier4">
-                    <div class = "col-4-sm">
-                        <a href="https://www.invoca.com/" target="_blank"><img src="assets/sponsors/invoca-logo.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="http://usg.usc.edu/" target="_blank"><img src="assets/sponsors/USG-logo.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="https://www.chevron.com/" target="_blank"><img src="assets/sponsors/chevron-new.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="http://www.northropgrumman.com/" target="_blank"><img src="assets/sponsors/northrop-grumman.png" id="northrop"></a>
-                    </div>
-            </div>
-            <! -- Other Tier -->
-            <div class="row center">
-                <div class="collage-images tier5">
-
-              <div class = "col-4-sm">
-                <a href="https://www.stickermule.com/supports/hackathons" target="_blank"><img src="assets/sponsors/stickermule.png"></a>
-              </div>
-              <div class = "col-4-sm">
-                <a href="https://resed.usc.edu/get_involved/rha-2/s" target="_blank"><img src="assets/sponsors/RHA-logo.png"></a>
-              </div>
-              <div class = "col-4-sm">
-                <a href="https://smartcar.com/" target="_blank"><img src="assets/sponsors/smart_car.png"></a>
-            </div>
-            </div>
-
-          </div>
-
-
-            <! -- Food Sponsors -->
-            <div class="row center">
-                <div class="collage-images tier5">
-                    <div class = "col-4-sm">
-                        <a href="https://guayaki.com/yerba-mate/" target="_blank"><img src="assets/sponsors/yerbamate.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="https://rawrev.com/" target="_blank"><img src="assets/sponsors/rawrev.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="http://www.gogosqueez.com/" target="_blank"><img src="assets/sponsors/gogo.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="https://www.coba.coffee/" target="_blank"><img src="assets/sponsors/coba.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="https://www.kindsnacks.com/" target="_blank"><img src="assets/sponsors/kindbar.jpeg"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="http://www.thebobatruck.com/" target="_blank"><img src="assets/sponsors/bobatruck.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="https://skinnydipped.com/" target="_blank"><img src="assets/sponsors/skinny_dipped.png"></a>
-                    </div>
-                    <div class = "col-4-sm">
-                        <a href="https://eatbobos.com/" target="_blank"><img src="assets/sponsors/bobos_snacks.jpeg"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row center">
-                <div class = "col-4 purple-rect">
-                </div>
-                <div class = "col-4">
-                    <h1 class="sponsor-title">Partners</h1>
-
-                </div>
-                <div class = "col-4 purple-rect">
-                </div>
-            </div>
-
-        </div>
-      </div>
-
-      <!-- STORIES-->
-      <div id="stories">
-        <div class = "container center">
-        <h2>Stories</h2>
-          <div class="container text-center my-3">
-              <div class="row mx-auto my-auto">
-                <!-- Thanks to Codeply for the carousel example https://www.codeply.com/go/SgN7j7h4dV -->
-                  <div id="storiesCarousel" class="carousel slide w-100" data-ride="carousel">
-                      <div class="carousel-inner w-100" role="listbox">
-                          <div class="carousel-item active">
-                            <div class="d-block col-md-4 col-sm-12">
-                              <div class="card">
-                                <div class="card-inner">
-                                  <img class="card-img-top" src="assets/stories/DailyTrojan.png" alt="Card image cap">
-                                  <div class="card-body">
-                                    <h5 class="card-title">The Daily Trojan</h5>
-                                    <p class="card-text">"AthenaHacks will host a slew of skill-building, social and professional workshops for all who identify as female..."</p>
-                                    <a href="http://dailytrojan.com/2017/02/28/spotlight-on-athenahacks/" class="btn btn-primary">Read More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="d-block col-md-4 col-sm-12">
-                              <div class="card">
-                                <div class="card-inner">
-                                  <img class="card-img-top" src="assets/stories/ElizabethGonzalez.jpg" alt="Card image cap">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Meet our Team</h5>
-                                    <p class="card-text">"I've always enjoyed computer science, but I've struggled with not seeing myself represented in industry and schools."
-                                    <!-- <div class="card-src">&mdash; Elizabeth Gonzalez '22</div> -->
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Read More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="d-block col-md-4 col-sm-12">
-                              <div class="card">
-                                <div class="card-inner">
-                                  <img class="card-img-top" src="assets/stories/HuffPost.jpeg" alt="Card image cap">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Huffington Post</h5>
-                                    <p class="card-text">"How do we begin to build community around women in tech, outside of simply having more women pursue degrees?"
-                                    <!-- <div class="card-src">&mdash;Ilona Bodnar, Finance</div> -->
-                                    </p>
-                                    <a href="https://www.huffingtonpost.com/entry/spotlight-on-athenahacks-why-female-hackathons-are_us_58ebf5fae4b0145a227cb797" class="btn btn-primary">Read More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="d-block col-md-4 col-sm-12">
-                              <div class="card">
-                                <div class="card-inner">
-                                  <img class="card-img-top" src="assets/stories/IlonaBodnar.jpeg" alt="Card image cap">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Meet our Team</h5>
-                                    <p class="card-text">"It's been awesome seeing the group expand to continue to include super smart, very creative, very compassionate people."
-                                    <!-- <div class="card-src">&mdash;Ilona Bodnar, Finance</div> -->
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Read More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="d-block col-md-4 col-sm-12">
-                              <div class="card">
-                                <div class="card-inner">
-                                  <img class="card-img-top" src="assets/stories/Viterbi.jpg" alt="Card image cap">
-                                  <div class="card-body">
-                                    <h5 class="card-title">USC Viterbi</h5>
-                                    <p class="card-text">"Kelly is used to being the girl. Not a girl, not one of many or even one of a few. But the singular female on a hackathon team..."</p>
-                                    <a href="https://viterbischool.usc.edu/news/2017/04/hackathon-created-women/" class="btn btn-primary">Read More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#storiesCarousel" role="button" data-slide="prev">
-                          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                          <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#storiesCarousel" role="button" data-slide="next">
-                          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                          <span class="sr-only">Next</span>
-                      </a>
-                  </div>
-              </div>
-          </div>
-        </div>
-      </div>
-        <!-- SOCIAL MEDIA -->
-        <div class="social">
-          <a href="https://www.facebook.com/athenaHacks" target="_blank">
-            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/athena_hacks/?hl=en"
-            target="_blank"
-          >
-            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="mailto:athenahacks@gmail.com" target="_blank">
-            <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-          </a>
-        </div>
-        <hr />
-      </div>
-      <hr />
-    </div>
   </div>
 
-    <!-- script includes -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="https://use.fontawesome.com/9f7b7f8456.js"></script>
-
-    <script src="parallax.js"></script>
-    <script src="storiesscript.js"></script>
-    <script>
-      // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-      </script>
 
 
-    <a
-      id="mlh-trust-badge"
-      style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
-      href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white"
-      target="_blank"
-    >
-      <img
-        src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg"
-        alt="Major League Hacking 2019 Hackathon Season"
-        style="width:100%"
-      />
-    </a>
-  </body>
+
+  <!-- Main content area -->
+  <div class="main">
+    <div class="container content">
+      <!-- About section -->
+      <div id="about">
+        <div class="container">
+          <div class="row center text-center">
+            <div class="col-2">
+            </div>
+            <div class="col-8">
+              <h2>About</h2>
+              <p>
+                Join us for a weekend dedicated to filling the <span style="color: rgb(184, 194, 238); font-family: 'Lato Bold';">gender
+                  gap</span>, exploring technology, and building the next big thing! Our mission is to support and
+                nurture women <span style="color: rgb(184, 194, 238); font-family: 'Lato Italic';">(trans and
+                  non-binary inclusive)</span> in tech by hosting Southern California's premiere all female* hackathon.
+                Expect a weekend full of workshops, mentorship, tech talks, social activities, food, and more! No
+                experience necessary, you just need passion.
+              </p>
+            </div>
+            <div class="col-2">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FAQ section -->
+      <div id="faq">
+        <div class="container center">
+          <h2>FAQ section</h2>
+          <div class="row text-left faq-row">
+            <div class="col-4">
+              <div class="question">What is a hackathon?</div>
+              <div class="answer">
+                A hackathon is a 24 hour event where students with similar interests come together to work on a
+                project. You can attend workshops, hear from people in the computer science field and network with
+                students and reps from companies! </div>
+            </div>
+            <div class="col-4">
+              <div class="question">Who can attend?</div>
+              <div class="answer">
+                Female* undergraduates and high schoolers are welcome to attend; we'd love to have any males interested
+                in helping our cause and any women in the industry to mentor or volunteer!
+              </div>
+
+              <div class="answer " style="padding-top: 10px;">
+                *trans and non-binary inclusive </div>
+
+            </div>
+            <div class="col-4">
+              <div class="question">How do I register?</div>
+              <div class="answer">
+                Applications will be opening in the beginning of 2019.
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row text-left faq-row">
+            <div class="col-4">
+              <div class="question">Do I need to be a CS major or minor?</div>
+              <div class="answer">
+                No! This is the perfect place for any student to create their first coding project. We'll have plenty
+                of resources for beginners to get started!
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="question">Can high schoolers attend?</div>
+              <div class="answer">
+                If you're a high schooler who will be at least 17 years old by AthenaHacks, you are invited to attend!
+                However, you can not stay overnight. You'll need your parent/guardian to pick you up for the evening
+                and return you on Sunday morning.
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="question">Does it cost money?</div>
+              <div class="answer">
+                Nope! Admission is free and covers overnight stay, food, all the snacks you could ever want, and of
+                course, our sponsors and AthenaHacks will provide you with the free swag!!
+              </div>
+            </div>
+
+          </div>
+          <div class="row text-left faq-row">
+            <div class="col-4">
+              <div class="question">How do I get to USC?</div>
+              <div class="answer">
+                Buses will be going to UCI, UCSD, UCLA and SLO. Lyft codes will be provided for those in the LA area
+                not taking buses. You can also request parking passes if you're driving yourself. More details coming
+                soon! </div>
+            </div>
+            <div class="col-4">
+              <div class="question">What about travel reimbursements</div>
+              <div class="answer">
+                Unfortunately, we will not be able to provide travel reimbursements this year. Sorry for the
+                inconvenience :(
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="question">How do teams work?</div>
+              <div class="answer">
+                At most teams can have 4 people. You can have your teammates in mind before the event, or you can find
+                a team during our team formation activity before and after opening ceremony! </div>
+            </div>
+          </div>
+          <div class="row text-left faq-row">
+            <div class="col-4">
+              <div class="question">Will there be hardware available?</div>
+              <div class="answer">
+                Yes! Hardware will be provided by MLH.
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="question">Where do I sleep?</div>
+              <div class="answer">
+                If hacking all night isn't your way to go, we'll have places provided for you to catch a few Z's!
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="question">What should I bring?</div>
+              <div class="answer">
+                Remember to bring a valid student ID for admission and anything you need to hack away!
+              </div>
+            </div>
+          </div>
+          <div class="row text-left faq-row">
+            <div class="col-4">
+              <div class="question">Is there a code of conduct?</div>
+              <div class="answer">
+                Yes, we want to make AthenaHacks enjoyable for everyone! You can find the code of conduct <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                  target="_blank">here</a>.
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="question">How do I become a mentor or volunteer?</div>
+              <div class="answer">
+                Mentor and volunteer apps for 2019 are coming soon!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sponsors -->
+    <div id="sponsors">
+      <div class="container center">
+        <h2>Sponsors</h2>
+        <! -- Neudesic Tier -->
+        <div class="row center collage-images tier1">
+          <a href="https://www.neudesic.com/" target="_blank"><img src="assets/sponsors/neudesic.png"></a>
+        </div>
+        <! -- Beta Tier -->
+        <div class="row center collage-images tier2">
+          <a href="https://www.microsoft.com/en-us/" target="_blank"><img src="assets/sponsors/microsoft.png"></a>
+        </div>
+        <! -- Gamma Tier -->
+        <div class="row center collage-images tier3">
+
+          <div class="col-4-sm">
+            <a href="https://www.zynga.com/" target="_blank"><img src="assets/sponsors/zynga-logo.png"></a>
+          </div>
+          <div class="col-4-sm">
+            <a href="https://www.raytheon.com/ourcompany" target="_blank"><img src="assets/sponsors/raytheon-logo.png"></a>
+          </div>
+          <div class="col-4-sm">
+            <a href="https://www.joinhoney.com/" target="_blank"><img src="assets/sponsors/honey-logo.svg"></a>
+          </div>
+          <div class="col-4-sm">
+            <a href="https://www.activision.com/" target="_blank"><img src="assets/sponsors/activision.png"></a>
+          </div>
+          <div class="col-4-sm">
+            <a href="https://www.bloomberg.com/" target="_blank"><img src="assets/sponsors/bloomberg.png"></a>
+          </div>
+
+
+        </div>
+        <! -- Delta Tier -->
+        <div class="row center collage-images tier4">
+          <div class="col-4-sm">
+            <a href="https://www.invoca.com/" target="_blank"><img src="assets/sponsors/invoca-logo.png"></a>
+          </div>
+          <div class="col-4-sm">
+            <a href="http://usg.usc.edu/" target="_blank"><img src="assets/sponsors/USG-logo.png"></a>
+          </div>
+          <div class="col-4-sm">
+            <a href="https://www.chevron.com/" target="_blank"><img src="assets/sponsors/chevron-new.png"></a>
+          </div>
+          <div class="col-4-sm">
+            <a href="http://www.northropgrumman.com/" target="_blank"><img src="assets/sponsors/northrop-grumman.png"
+                id="northrop"></a>
+          </div>
+        </div>
+        <! -- Other Tier -->
+        <div class="row center">
+          <div class="collage-images tier5">
+
+            <div class="col-4-sm">
+              <a href="https://www.stickermule.com/supports/hackathons" target="_blank"><img src="assets/sponsors/stickermule.png"></a>
+            </div>
+            <div class="col-4-sm">
+              <a href="https://resed.usc.edu/get_involved/rha-2/s" target="_blank"><img src="assets/sponsors/RHA-logo.png"></a>
+            </div>
+            <div class="col-4-sm">
+              <a href="https://smartcar.com/" target="_blank"><img src="assets/sponsors/smart_car.png"></a>
+            </div>
+          </div>
+
+        </div>
+
+
+        <! -- Food Sponsors -->
+        <div class="row center">
+          <div class="collage-images tier5">
+            <div class="col-4-sm">
+              <a href="https://guayaki.com/yerba-mate/" target="_blank"><img src="assets/sponsors/yerbamate.png"></a>
+            </div>
+            <div class="col-4-sm">
+              <a href="https://rawrev.com/" target="_blank"><img src="assets/sponsors/rawrev.png"></a>
+            </div>
+            <div class="col-4-sm">
+              <a href="http://www.gogosqueez.com/" target="_blank"><img src="assets/sponsors/gogo.png"></a>
+            </div>
+            <div class="col-4-sm">
+              <a href="https://www.coba.coffee/" target="_blank"><img src="assets/sponsors/coba.png"></a>
+            </div>
+            <div class="col-4-sm">
+              <a href="https://www.kindsnacks.com/" target="_blank"><img src="assets/sponsors/kindbar.jpeg"></a>
+            </div>
+            <div class="col-4-sm">
+              <a href="http://www.thebobatruck.com/" target="_blank"><img src="assets/sponsors/bobatruck.png"></a>
+            </div>
+            <div class="col-4-sm">
+              <a href="https://skinnydipped.com/" target="_blank"><img src="assets/sponsors/skinny_dipped.png"></a>
+            </div>
+            <div class="col-4-sm">
+              <a href="https://eatbobos.com/" target="_blank"><img src="assets/sponsors/bobos_snacks.jpeg"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row center">
+          <div class="col-4 purple-rect">
+          </div>
+          <div class="col-4">
+
+          </div>
+          <div class="col-4 purple-rect">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- STORIES-->
+    <div id="stories">
+      <div class="container center">
+        <h2>Stories</h2>
+        <div class="container text-center my-3">
+          <div class="row mx-auto my-auto">
+            <!-- Thanks to Codeply for the carousel example https://www.codeply.com/go/SgN7j7h4dV -->
+            <div id="storiesCarousel" class="carousel slide w-100" data-ride="carousel">
+              <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                  <div class="d-block col-md-4 col-sm-12">
+                    <div class="card">
+                      <div class="card-inner">
+                        <img class="card-img-top" src="assets/stories/DailyTrojan.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">The Daily Trojan</h5>
+                          <p class="card-text">"AthenaHacks will host a slew of skill-building, social and professional
+                            workshops for all who identify as female..."</p>
+                          <a href="http://dailytrojan.com/2017/02/28/spotlight-on-athenahacks/" class="btn btn-primary">Read
+                            More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block col-md-4 col-sm-12">
+                    <div class="card">
+                      <div class="card-inner">
+                        <img class="card-img-top" src="assets/stories/ElizabethGonzalez.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Meet our Team</h5>
+                          <p class="card-text">"I've always enjoyed computer science, but I've struggled with not
+                            seeing myself represented in industry and schools."
+                            <!-- <div class="card-src">&mdash; Elizabeth Gonzalez '22</div> -->
+                          </p>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block col-md-4 col-sm-12">
+                    <div class="card">
+                      <div class="card-inner">
+                        <img class="card-img-top" src="assets/stories/HuffPost.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Huffington Post</h5>
+                          <p class="card-text">"How do we begin to build community around women in tech, outside of
+                            simply having more women pursue degrees?"
+                            <!-- <div class="card-src">&mdash;Ilona Bodnar, Finance</div> -->
+                          </p>
+                          <a href="https://www.huffingtonpost.com/entry/spotlight-on-athenahacks-why-female-hackathons-are_us_58ebf5fae4b0145a227cb797"
+                            class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block col-md-4 col-sm-12">
+                    <div class="card">
+                      <div class="card-inner">
+                        <img class="card-img-top" src="assets/stories/IlonaBodnar.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Meet our Team</h5>
+                          <p class="card-text">"It's been awesome seeing the group expand to continue to include super
+                            smart, very creative, very compassionate people."
+                            <!-- <div class="card-src">&mdash;Ilona Bodnar, Finance</div> -->
+                          </p>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block col-md-4 col-sm-12">
+                    <div class="card">
+                      <div class="card-inner">
+                        <img class="card-img-top" src="assets/stories/Viterbi.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">USC Viterbi</h5>
+                          <p class="card-text">"Kelly is used to being the girl. Not a girl, not one of many or even
+                            one of a few. But the singular female on a hackathon team..."</p>
+                          <a href="https://viterbischool.usc.edu/news/2017/04/hackathon-created-women/" class="btn btn-primary">Read
+                            More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#storiesCarousel" role="button" data-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#storiesCarousel" role="button" data-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SOCIAL MEDIA -->
+    <div class="social">
+      <a href="https://www.facebook.com/athenaHacks" target="_blank">
+        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.instagram.com/athena_hacks/?hl=en" target="_blank">
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+      </a>
+      <a href="mailto:athenahacks@gmail.com" target="_blank">
+        <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+    <hr />
+  </div>
+  <hr />
+  </div>
+  </div>
+
+  <!-- script includes -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script src="https://use.fontawesome.com/9f7b7f8456.js"></script>
+
+  <script src="parallax.js"></script>
+  <script src="storiesscript.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () {
+      myFunction()
+    };
+
+    // Get the header
+    var header = document.getElementById("myHeader");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+    href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white"
+    target="_blank">
+    <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season"
+      style="width:100%" />
+  </a>
+</body>
+
 </html>
