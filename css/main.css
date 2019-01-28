@@ -270,10 +270,12 @@ a:hover {
   margin-top: 20px;
   font-family: 'Questrial', Arial, sans-serif;
 }
-#apply_link a:hover,
-#apply_link a:focus {
-  text-decoration: none;
+#apply_link a:hover {
   background-color: #9dbddf;
+  text-decoration: none;
+}
+#apply_link a:focus {
+  background-color: #ffb6c2;
 }
 
 .test {
