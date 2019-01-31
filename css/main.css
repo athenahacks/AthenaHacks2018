@@ -257,6 +257,10 @@ a:hover {
 #apply_link {
   align-self: center;
 }
+#appply_link p {
+  text-align: center;
+  align-self: center;
+}
 #apply_link a {
   width: 30vw;
   border-bottom: 0;
@@ -278,9 +282,9 @@ a:hover {
   background-color: #ffb6c2;
 }
 
-.test {
-  justify-content: right;
-  text-align: right;
+.app_info {
+  width: 40vw;
+  margin-top: 10px;
 }
 
 @media (min-width: 800px) {
