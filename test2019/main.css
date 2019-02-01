@@ -160,7 +160,7 @@ body {
 /* downtown LA */
 .layer-2 {
   left: 15%;
-  top: 70vh;
+  top: 40vh;
   width: 70vw;
   z-index: 15;
   background-image: url('assets/parallax_layers/city.svg');
@@ -169,7 +169,7 @@ body {
 /* USC */
 .layer-3 {
   right: 0px;
-  top: 100vh;
+  top: 65vh;
   filter: hue-rotate(-10deg);
   filter: contrast(80%);
   width: 60vw;
@@ -183,7 +183,7 @@ body {
 /* tree ground */
 .layer-4 {
   left: 0vw;
-  top: 130vh;
+  top: 96vh;
   opacity: 1;
   z-index: 25;
   width: 100vw;
@@ -196,7 +196,7 @@ body {
 .main {
   overflow: hidden;
   width: 100vw;
-  top: 240vh;
+  top: 200vh;
   position: absolute;
 
   left: 0;
@@ -259,6 +259,23 @@ body {
   color: white;
 }
 
+.question-box {
+  padding-bottom: 20px;
+}
+
+.owl-question {
+  width: 260px;
+  height: auto;
+  display: block;
+  margin: auto;
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 767px) {
+  .owl-question-box {
+    display: none;
+  }
+}
 /* SPONSORS */
 #sponsors {
   width: 100%;
@@ -401,6 +418,34 @@ body {
 .carousel-inner .carousel-item-right,
 .carousel-inner .carousel-item-left {
   transform: translateX(0);
+}
+
+#storiesCarouselSmall {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(100%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-100%);
+  }
+
+  .carousel-inner .carousel-item-right,
+  .carousel-inner .carousel-item-left {
+    transform: translateX(0);
+  }
+
+  #storiesCarouselSmall {
+    display: block;
+  }
+  #storiesCarousel {
+    display: none;
+  }
 }
 
 /* SOCIAL */
