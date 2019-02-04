@@ -253,33 +253,57 @@ a:hover {
 .collapse {
   display: none;
 }
-
-#apply_link {
-  align-self: center;
-}
-#appply_link p {
-  text-align: center;
-  align-self: center;
-}
-#apply_link a {
-  width: 30vw;
+#hacker_link a {
+  width: 15vw;
   border-bottom: 0;
-  font-size: 4vw;
-  background-color: #ffb6c2;
+  font-size: 2vw;
+  background-color: #ffccdc;
   color: #fff;
   border-radius: 10%;
   border: 1px solid #fff;
-  padding: 10px;
   z-index: 10000;
-  margin-top: 20px;
+  margin-top: 30px;
   font-family: 'Questrial', Arial, sans-serif;
 }
-#apply_link a:hover {
+#hacker_link a:hover {
+  background-color: #ffb6c2;
+  text-decoration: none;
+}
+
+#mentor_link a {
+  width: 15vw;
+  border-bottom: 0;
+  font-size: 2vw;
+  background-color: #a7d3ff;
+  color: #fff;
+  border-radius: 10%;
+  margin-top: 10px;
+
+  border: 1px solid #fff;
+  z-index: 10000;
+
+  font-family: 'Questrial', Arial, sans-serif;
+}
+#mentor_link a:hover {
   background-color: #9dbddf;
   text-decoration: none;
 }
-#apply_link a:focus {
-  background-color: #ffb6c2;
+
+#volunteer_link a {
+  width: 15vw;
+  border-bottom: 0;
+  font-size: 2vw;
+  background-color: #ffce9f;
+  color: #fff;
+  border-radius: 10%;
+  border: 1px solid #fff;
+  z-index: 10000;
+  margin-top: 10px;
+  font-family: 'Questrial', Arial, sans-serif;
+}
+#volunteer_link a:hover {
+  background-color: #fcbc81;
+  text-decoration: none;
 }
 
 .app_info {
@@ -424,10 +448,6 @@ th {
   }
   #header-left {
     padding-right: 20px;
-  }
-  #apply_link a {
-    width: 20vw;
-    font-size: 2vw;
   }
 }
 
