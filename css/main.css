@@ -258,13 +258,11 @@ a:hover {
 }
 #hacker_link a {
   align-self: center;
-  width: 68vw;
+  width: 70vw;
   border-bottom: 0;
   font-size: 8.2vw;
-  margin-bottom: 15px;
   background-color: #ffccdc;
   color: #fff;
-  border-radius: 10%;
   border: 1px solid #fff;
   z-index: 10000;
   margin-top: 30px;
@@ -275,22 +273,32 @@ a:hover {
   text-decoration: none;
 }
 #other_links {
-  width: 80vw;
+  width: 70vw;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+}
+#mentor_link {
+  width: 20vw;
+  display: flex;
+  flex: 1;
+}
+#volunteer_link {
+  width: 20vw;
+  display: flex;
+  flex: 1;
 }
 #mentor_link a {
+  flex: 1;
+  align-self: flex-end;
+  padding: 1vw;
   width: 30vw;
   border-bottom: 0;
   font-size: 5vw;
-  padding: 7px;
-  margin-right: 6px;
   background-color: #a7d3ff;
   color: #fff;
-  border-radius: 10%;
-  margin-top: 10px;
-  border: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   z-index: 10000;
 
   font-family: 'Questrial', Arial, sans-serif;
@@ -301,21 +309,22 @@ a:hover {
 }
 
 #volunteer_link a {
+  flex: 1;
+  align-self: flex-end;
+  padding: 1vw;
   width: 30vw;
   border-bottom: 0;
   font-size: 5vw;
-  padding: 7px;
-  margin-left: 6px;
-  background-color: #ffce9f;
+  background-color: #ddd0f6;
   color: #fff;
-  border-radius: 10%;
-  border: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   z-index: 10000;
-  margin-top: 10px;
   font-family: 'Questrial', Arial, sans-serif;
 }
 #volunteer_link a:hover {
-  background-color: #fcbc81;
+  background-color: rgb(206, 187, 243);
   text-decoration: none;
 }
 
@@ -462,24 +471,46 @@ th {
   #header-left {
     padding-right: 20px;
   }
-  #hacker_link a {
-    width: 21vw;
-    font-size: 2vw;
-    margin-bottom: 20px;
+  #hacker_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
   }
-  #other_link {
-    width: 82vw;
+  #hacker_link a {
+    width: 25vw;
+    font-size: 2.5vw;
+    padding: 1vw;
+  }
+  #other_links {
+    width: 25vw;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 0;
+    margin-left: 0;
+    align-items: center;
+  }
+  #mentor_link {
+    width: 8vw;
+    display: flex;
+    flex: 1;
+  }
+  #volunteer_link {
+    width: 8vw;
+    display: flex;
+    flex: 1;
   }
   #mentor_link a {
-    padding: 8px;
-    margin-right: 6px;
-    width: 10vw;
+    flex: 1;
+    align-self: flex-start;
+    padding: 1vw;
     font-size: 1.5vw;
   }
   #volunteer_link a {
-    padding: 8px;
-    margin-left: 6px;
-    width: 10vw;
+    flex: 1;
+    align-self: flex-end;
+    padding: 1vw;
     font-size: 1.5vw;
   }
   .app_info p {
@@ -492,28 +523,34 @@ th {
   .app_info p {
     font-size: 3vw;
   }
-  #hacker_link a {
+
+  #other_links {
     width: 40vw;
-    font-size: 4vw;
-    margin-bottom: 20px;
-  }
-  #other_link {
-    width: 82vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  #mentor_link a {
-    padding: 8px;
-    margin-right: 7px;
+  #mentor_link {
     width: 20vw;
-    font-size: 3vw;
+    display: flex;
+    flex: 1;
+  }
+  #volunteer_link {
+    width: 20vw;
+    display: flex;
+    flex: 1;
+  }
+  #mentor_link a {
+    flex: 1;
+    align-self: flex-end;
+    padding: 1vw;
+    font-size: 2.5vw;
   }
   #volunteer_link a {
-    padding: 8px;
-    margin-left: 7px;
-    width: 20vw;
-    font-size: 3vw;
+    flex: 1;
+    align-self: flex-end;
+    padding: 1vw;
+    font-size: 2.5vw;
   }
   .app_info p {
     padding-top: 20px;
