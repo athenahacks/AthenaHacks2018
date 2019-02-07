@@ -590,7 +590,7 @@ th {
 }
 
 #infoCards {
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   width: 100%;
 }
@@ -859,24 +859,27 @@ th {
   padding-bottom: 30px;
 }
 .tier1 img {
-  max-width: 350px !important;
+  max-width: 370px !important;
   padding-top: 10px;
 }
 
 .tier2 img {
-  max-width: 300px !important;
+  max-width: 320px !important;
+  padding-bottom: 10px;
 }
 .tier3 img {
   min-width: 250px;
   max-width: 250px;
-  padding-bottom: -10px;
+  padding-bottom: 10px;
 }
 .tier4 img {
   width: 200px;
+  padding-bottom: 10px;
 }
 
 .tier5 img {
   width: 150px;
+  padding-bottom: 10px;
 }
 /* their logo has a weird thing that makes it small looking so u gotta fake it being bigger */
 #northrop {
