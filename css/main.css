@@ -6,7 +6,9 @@
   margin: 0;
   padding: 0;
 }
-
+#preload-01 {
+  background: url('/images/owl_2019.png') no-repeat -9999px -9999px;
+}
 html,
 body {
   height: 100%;
