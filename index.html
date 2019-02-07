@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- Basic Page Needs
@@ -28,20 +29,22 @@
     <link rel="stylesheet" href="vendors/responsive-nav/responsive-nav.css">
 
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/main.css">
     <!--<link rel="stylesheet" href="css/flowers.css"> -->
 
     <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script
-            src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
+        crossorigin="anonymous"></script>
 
     <script src="https://use.fontawesome.com/9f7b7f8456.js"></script>
     <script src="vendors/responsive-nav/responsive-nav.min.js"></script>
@@ -59,8 +62,8 @@
         firebase.initializeApp(config);
     </script>
     <script src="js/contact.js"></script>
-    <script>jQuery(document).ready(function() {
-            jQuery('.toggle-nav').click(function(e) {
+    <script>jQuery(document).ready(function () {
+            jQuery('.toggle-nav').click(function (e) {
                 jQuery(this).toggleClass('active');
                 jQuery('.menu ul').toggleClass('active');
 
@@ -81,7 +84,7 @@
 
 <header>
 
-        <!-- <nav class="menu" >
+    <!-- <nav class="menu" >
                 <ul class="active">
                         <li>
                             <li ><a href="#about_landing">about</a></li>
@@ -109,7 +112,7 @@
             <li><a href="#"> | </a></li>
             <li><b>Hacker apps open in February!</b></li>
             <!-- <li class="collapse"><a href="https://www.facebook.com/events/141764676445799/">fb event</a></li> -->
-        </ul>
+    </ul>
 
 
     </nav>
@@ -117,386 +120,416 @@
 
 <body>
 
-<!-- Primary Page Layout
+    <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="intro">
-    <div class="clouds">
-        <div class="cloud x1"></div>
-        <div class="cloud x2"></div>
-        <div class="cloud x3"></div>
-        <div class="cloud x4"></div>
-        <div class="cloud x5"></div>
-    </div>
-
-    <div class="container" id="landing">
-        <div class = "row landing" id="header-left" >
-            <img id="logo" src="images/owl_2019.png">
+    <div class="intro">
+        <div class="clouds">
+            <div class="cloud x1"></div>
+            <div class="cloud x2"></div>
+            <div class="cloud x3"></div>
+            <div class="cloud x4"></div>
+            <div class="cloud x5"></div>
         </div>
-        <div class = "row landing" id="header-right">
-            <div class="logo">
-                <img id="logo_text" src="images/text_color.png">
 
-                <div class="subtitle">
-                    <img id="logo_subtext" src="images/dateusc_blk.png">
+        <div class="container" id="landing">
+            <div class="row landing" id="header-left">
+                <img id="logo" src="images/owl_2019.png">
+            </div>
+            <div class="row landing" id="header-right">
+                <div class="logo">
+                    <img id="logo_text" src="images/text_color.png">
+
+                    <div class="subtitle">
+                        <img id="logo_subtext" src="images/dateusc_blk.png">
+                    </div>
+
+                </div>
+                <div id="hacker_link" class="row">
+                    <a href="http://apply.athenahacks.com" target="_blank">hacker app</a>
+
+                </div>
+                <div class="row" id="other_links">
+                    <div id="mentor_link">
+                        <a href="http://bit.ly/AthenaMentorApp" target="_blank">mentor app</a>
+                    </div>
+                    <div id="volunteer_link">
+                        <a href="http://bit.ly/AthenaVolunteerApp" target="_blank">volunteer app</a>
+                    </div>
+                </div>
+
+                <div class="app_info">
+                    <p class="app_info"> All apps close <strong>March 18th!</strong> </p>
                 </div>
 
             </div>
-            <div id="hacker_link"  class = "row" >
-                <a href="http://apply.athenahacks.com" target="_blank">hacker app</a>
 
+
+
+            <!-- c6e2ff-->
+        </div>
+
+
+        <!-- <a href="Schedule.pdf" target="_blank" class="button" id="app-closed"> Schedule </a> -->
+        <!-- <a href="dayof.html" target="_blank" class="button"> Day-of Site </a>  -->
+    </div>
+
+    <!-- ABOUT -->
+    <span class="anchor" id="about_landing"></span>
+
+    <div class="container center" id="about">
+        <div class="row">
+            <h1 class="section-title">about</h1>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <p>
+
+                    Join us for a weekend dedicated to <b>filling the gender gap</b>,
+                    exploring technology, and building the next big thing! Our mission
+                    is to support and nurture women* in tech by hosting Southern
+                    California's premiere <b>all female* hackathon</b>. Expect a weekend
+                    full of workshops, mentorship, tech talks, social activities, food,
+                    and more! No experience necessary, you just need passion.
+                </p>
+                <p>
+                    *trans and non-binary inclusive
+                </p>
             </div>
-            <div class = "row" id="other_links">
-                <div id="mentor_link" >
-                    <a href="http://bit.ly/AthenaMentorApp" target="_blank">mentor app</a>
+
+        </div>
+
+
+        <div class="row" id="infoCards">
+            <div class="four columns infoCards">
+                <img class="about-img" src="images/flame.png" width="150px"></img>
+                <p>
+                    From hardware to mobile, there are so many fields to
+                    explore! We want women to explore their ideas and interests, and
+                    are looking forward to some amazing projects!
+                </p>
+            </div>
+            <div class="four columns infoCards">
+                <img class="about-img" src="images/hands.png" width="150px"></img>
+                <p>
+                    We're all about helping each other grow! We hope to foster a
+                    supportive environment so that each participant at AthenaHacks
+                    feels welcome and comfortable.
+                </p>
+            </div>
+            <div class="four columns infoCards">
+                <img class="about-img" src="images/flowers.png" width="150px"></img>
+                <p>
+                    Right now, only 20% of hackathon participants are women. We hope
+                    to fill that gap by providing a comfortable environment that is
+                    focused on learning and exploring!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <span class="anchor" id="faq_landing"></span>
+
+    <div class="container center" id="faq">
+        <div class="row">
+            <h1 class="section-title">faqs</h1>
+        </div>
+        <div class="row">
+            <div class="six columns" id="faq-container">
+                <!-- Questions -->
+                <ul class="faq">
+                    <li>
+                        <h3 class="question">What's a hackathon?
+                        </h3>
+                        <div class="answer">
+                            A hackathon is a 24 hour event where students with similar interests come together to work
+                            on a
+                            project. You can attend workshops, hear from people in the computer science field and
+                            network with
+                            students and reps from companies! </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Who can attend?
+
+                        </h3>
+                        <div class="answer">
+                            Female* undergraduates and high schoolers are welcome to attend; we'd love to have any
+                            males interested
+                            in helping our cause and any women in the industry to mentor or volunteer! <br/>
+                            *trans and non-binary inclusive </div>
+
+                    </li>
+                    <li>
+                        <h3 class="question">What are the rules about high schoolers?
+
+                        </h3>
+                        <div class="answer">
+                            If you're a high schooler who will be at least 17 years old by AthenaHacks, you are invited
+                            to
+                            AthenaHacks! You will need to have your parent/guardian pick you up for the evening and
+                            then return
+                            you back on Sunday morning, however.
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">How do I get to USC?
+                        </h3>
+                        <div class="answer">
+                            This year we are sending buses to UCLA, UCI, Cal Poly SLO, and UC Berkeley! More will be coming soon so keep a look
+                            out. Registering for a spot on a bus will happen after application acceptances go out.
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Do I need to be a CS major or minor?
+
+                        </h3>
+                        <div class="answer">
+                            No! This is the perfect place for any student to create their first coding project. We'll
+                            have plenty
+                            of resources for beginners to get started!
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">How do I apply?
+                        </h3>
+                        <div class="answer">
+                            Applications for hackers, mentors and volunteers are now open and can be found by clicking
+                            on the
+                            buttons at the top of our page! All apps close March 18th.
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Does this cost money?
+
+                        </h3>
+                        <div class="answer">
+                            Nope! Admission is free and covers overnight stay, food, all the snacks you could ever
+                            want, and of
+                            course, our sponsors and AthenaHacks will provide you with the free swag!!
+                        </div>
+                    </li>
+
+                    <li>
+                        <h3 class="question">What about travel reimbursements?
+
+                        </h3>
+                        <div class="answer">
+
+                            Unfortunately, we will not be able to provide travel reimbursements this year. Sorry for
+                            the
+                            inconvenience :(
+                        </div>
+                    </li>
+                    <li>
+
+
+                        <h3 class="question">How do teams work?
+
+                        </h3>
+                        <div class="answer">
+                            At most teams can have 4 people. You can have your teammates in mind before the event, or
+                            you can
+                            find a team during our team formation activity before and after opening ceremony!
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Will there be hardware available?
+
+                        </h3>
+                        <div class="answer">
+                            Yes! Hardware will be provided by MLH.
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Where do I sleep?
+
+                        </h3>
+                        <div class="answer">
+                            If hacking all night isn't your way to go, we'll have places provided for you to catch a
+                            few Z's!
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">What should I bring?
+
+                        </h3>
+                        <div class="answer">
+                            Remember to bring a valid student ID for admission and anything you need to hack away!
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Is there a code of conduct?
+
+                        </h3>
+                        <div class="answer">
+                            Yes, we want to make AthenaHacks enjoyable for everyone! You can find the code of conduct
+                            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">here</a>.
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="question">Can I mentor or volunteer?
+
+                        </h3>
+                        <div class="answer">
+                            Yes! We welcome all regardless of gender who want to help. We appreciate all who want to
+                            support our cause. Mentors help hackers during the event
+                            with any technical questions they might have. Volunteers support the organizing team during
+                            the hackathon with various
+                            tasks. Links for both apps are at the top of the page.
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="six columns faq-right">
+                <div class="row center">
+                    <img src="images/graphic_paintbrush.png" class="side"></img>
                 </div>
-                <div id="volunteer_link" >
-                    <a href="http://bit.ly/AthenaVolunteerApp" target="_blank">volunteer app</a>
+                <div style="text-align: right; width: 100%;">
+                    <p> if we missed your question, hit us up at <a href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></p>
                 </div>
             </div>
 
-            <div class = "app_info">
-                <p class = "app_info"> All apps close <strong>March 18th!</strong> </p>
-            </div>
-
-        </div>
-
-
-
-<!-- c6e2ff-->
-    </div>
-
-
-    <!-- <a href="Schedule.pdf" target="_blank" class="button" id="app-closed"> Schedule </a> -->
-    <!-- <a href="dayof.html" target="_blank" class="button"> Day-of Site </a>  -->
-</div>
-
-<!-- ABOUT -->
-<span class="anchor" id="about_landing"></span>
-
-<div class="container center" id="about">
-    <div class="row">
-        <h1 class="section-title">about</h1>
-    </div>
-    <div class = "row">
-        <div class = "twelve columns">
-        <p>
-
-            Join us for a weekend dedicated to <b>filling the gender gap</b>,
-            exploring technology, and building the next big thing! Our mission
-            is to support and nurture women* in tech by hosting Southern
-            California's premiere <b>all female* hackathon</b>. Expect a weekend
-            full of workshops, mentorship, tech talks, social activities, food,
-            and more! No experience necessary, you just need passion.
-        </p>
-        <p>
-            *trans and non-binary inclusive
-        </p>
-    </div>
-
-    </div>
-
-
-    <div class="row" id="infoCards">
-        <div class="four columns infoCards">
-            <img class="about-img" src="images/flame.png" width="150px"></img>
-            <p>
-                From hardware to mobile, there are so many fields to
-                explore! We want women to explore their ideas and interests, and
-                are looking forward to some amazing projects!
-            </p>
-        </div>
-        <div class="four columns infoCards">
-            <img class="about-img" src="images/hands.png" width="150px"></img>
-            <p>
-                We're all about helping each other grow! We hope to foster a
-                supportive environment so that each participant at AthenaHacks
-                feels welcome and comfortable.
-            </p>
-        </div>
-        <div class="four columns infoCards">
-            <img class="about-img" src="images/flowers.png" width="150px"></img>
-            <p>
-                Right now, only 20% of hackathon participants are women. We hope
-                to fill that gap by providing a comfortable environment that is
-                focused on learning and exploring!
-            </p>
-        </div>
-    </div>
-</div>
-
-<!-- FAQ -->
-<span class="anchor" id="faq_landing"></span>
-
-<div class="container center" id="faq">
-    <div class="row">
-        <h1 class="section-title">faqs</h1>
-    </div>
-    <div class="row">
-        <div class="six columns" id="faq-container">
-            <!-- Questions -->
-            <ul class="faq">
-                <li>
-                    <h3 class="question">What's a hackathon?
-                    </h3>
-                    <div class="answer">
-                        A hackathon is a weekend-long gathering of curious minds to learn something new. Often times, attendees do this by picking up a project of their choosing to work on for the weekend. This is a great way to really dive into a topic you've been meaning to explore and you'll get to make new friends as you work in a team! Hackathons provide other ways to learn, too - you can attend workshops, listen to speakers, or network and meet with other students and representatives from companies!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Can I attend?
-
-                    </h3>
-                    <div class="answer">
-                        If you are an undergraduate or high school female* who loves to hack, the answer is <b>YES</b>! Women* in industry are welcome to mentor! If you identify as male, we're sorry to say this hacking environment is not for you. This hackathon is about bringing women together in a comfortable setting. However, if you are a male interested in helping our cause, we'd love to have you as a mentor or volunteer! Mentor applications are currently closed for this year but if you still want to get involved, reach out to us at athenahacks@gmail.com.
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">What are the rules about high schoolers?
-
-                    </h3>
-                    <div class="answer">
-                        If you're a high schooler who will be at least 17 years old by AthenaHacks, you are invited to AthenaHacks! You will need to have your parent/guardian pick you up for the evening and then return you back on Sunday morning, however.
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Do I need to be a CS major or minor?
-
-                    </h3>
-                    <div class="answer">
-                        No! This is the perfect place for any student to create their first coding project or for more experienced individuals to learn even more and build a great project! We'll have plenty of resources for beginners to get started!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">How do I register?
-
-                    </h3>
-                    <div class="answer">
-                        Applications will be opening in winter 2018. Fill out the interest form found above to get updates about when it's available!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Does this cost money?
-
-                    </h3>
-                    <div class="answer">
-                        Nope! Admission is free and covers overnight stay, food, all the snacks you could ever want, and of course, our sponsors and AthenaHacks will provide you with the free swag!!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">How do I get to USC?
-
-                    </h3>
-                    <div class="answer">
-                        We'll be sending buses to UCLA, UCI, Caltech, Cal Poly SLO and more coming!. We will provide lyft codes to hackers from UCLA. More details will come when our app opens on Jan. 24th.
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">What about travel reimbursements?
-
-                    </h3>
-                    <div class="answer">
-                        Unfortunately, we will not be able to provide travel reimbursements this year. Sorry for the inconvenience :(
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">How do teams work?
-
-                    </h3>
-                    <div class="answer">
-                        You can form teams of at most 4 people. You can have your teammates in mind before the event, or you can make a team at our team formation event before opening ceremony or the team formation event after opening ceremony!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Will there be hardware available?
-
-                    </h3>
-                    <div class="answer">
-                        Yes! Hardware will be provided by MLH.
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Where do I sleep?
-
-                    </h3>
-                    <div class="answer">
-                        If hacking all night isn't your way to go, we'll have places provided for you to catch a few Z's!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">What should I bring?
-
-                    </h3>
-                    <div class="answer">
-                        Remember to bring a valid student ID for admission and anything you need to hack away!
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">Is there a code of conduct?
-
-                    </h3>
-                    <div class="answer">
-                        Yes, we want to make AthenaHacks enjoyable for everyone! You can find the code of conduct <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">here</a>.
-                    </div>
-                </li>
-                <li>
-                    <h3 class="question">How do I become a mentor?
-
-                    </h3>
-                    <div class="answer">
-                        Mentor Apps for 2019 are coming soon!
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-        <div class="six columns faq-right">
-            <div class = "row center">
-                <img src="images/graphic_paintbrush.png" class="side"></img>
-            </div>
-            <div style="text-align: right; width: 100%;">
+            <div class="eleven" id="faq-text">
                 <p> if we missed your question, hit us up at <a href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></p>
             </div>
         </div>
 
-        <div  class="eleven" id="faq-text">
-            <p> if we missed your question, hit us up at <a href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></p>
-        </div>
     </div>
 
-</div>
 
+    <!-- SPONSORS -->
+    <span class="anchor" id="sponsors_landing"></span>
 
-<!-- SPONSORS -->
-<span class="anchor" id="sponsors_landing"></span>
-
-<div class="container" id="sponsors">
-    <div class = "row center">
-        <div class = "col-4 purple-rect">
+    <div class="container" id="sponsors">
+        <div class="row center">
+            <div class="col-4 purple-rect">
+            </div>
+            <div class="col-4">
+                <h1 class="sponsor-title">Sponsors</h1>
+            </div>
+            <div class="col-4 purple-rect">
+            </div>
         </div>
-        <div class = "col-4">
-            <h1 class = "sponsor-title">Sponsors</h1>
-        </div>
-        <div class = "col-4 purple-rect">
-        </div>
-    </div>
-    <! -- Neudesic Tier -->
-    <div class="row center collage-images tier1">
+        <! -- Neudesic Tier -->
+        <div class="row center collage-images tier1">
             <a href="https://www.neudesic.com/" target="_blank"><img src="images/sponsors/neudesic.png"></a>
-    </div>
-    <! -- Beta Tier -->
-    <div class="row center collage-images tier2">
-                <a href="https://www.microsoft.com/en-us/" target="_blank"><img src="images/sponsors/microsoft.png"></a>
-    </div>
-    <! -- Gamma Tier -->
-    <div class="row center collage-images tier3">
+        </div>
+        <! -- Beta Tier -->
+        <div class="row center collage-images tier2">
+            <a href="https://www.microsoft.com/en-us/" target="_blank"><img src="images/sponsors/microsoft.png"></a>
+        </div>
+        <! -- Gamma Tier -->
+        <div class="row center collage-images tier3">
 
-            <div class = "col-4-sm">
+            <div class="col-4-sm">
                 <a href="https://www.zynga.com/" target="_blank"><img src="images/sponsors/zynga-logo.png"></a>
             </div>
-            <div class = "col-4-sm">
+            <div class="col-4-sm">
                 <a href="https://www.raytheon.com/" target="_blank"><img src="images/sponsors/raytheon-logo.png"></a>
             </div>
-            <div class = "col-4-sm">
+            <div class="col-4-sm">
                 <a href="https://www.joinhoney.com/" target="_blank"><img src="images/sponsors/honey-logo.svg"></a>
             </div>
-            <div class = "col-4-sm">
+            <div class="col-4-sm">
                 <a href="https://www.activision.com/" target="_blank"><img src="images/sponsors/activision.png"></a>
             </div>
-            <div class = "col-4-sm">
+            <div class="col-4-sm">
                 <a href="https://www.bloomberg.com/" target="_blank"><img src="images/sponsors/bloomberg.png"></a>
             </div>
 
 
-    </div>
-    <! -- Delta Tier -->
-    <div class="row center collage-images tier4">
-            <div class = "col-sm">
+        </div>
+        <! -- Delta Tier -->
+        <div class="row center collage-images tier4">
+            <div class="col-sm">
                 <a href="https://www.invoca.com/" target="_blank"><img src="images/sponsors/invoca-logo.png"></a>
             </div>
-            <div class = "col-sm">
+            <div class="col-sm">
                 <a href="http://usg.usc.edu/" target="_blank"><img src="images/sponsors/USG-logo.png"></a>
             </div>
-            <div class = "col-sm">
+            <div class="col-sm">
                 <a href="https://www.chevron.com/" target="_blank"><img src="images/sponsors/chevron-new.png"></a>
             </div>
-            <div class = "col-sm">
-                <a href="http://www.northropgrumman.com/" target="_blank"><img src="images/sponsors/northrop-grumman.png" id="northrop"></a>
+            <div class="col-sm">
+                <a href="http://www.northropgrumman.com/" target="_blank"><img src="images/sponsors/northrop-grumman.png"
+                        id="northrop"></a>
             </div>
-            <div class = "col-sm">
+            <div class="col-sm">
                 <a href="http:/google.com/" target="_blank"><img src="images/sponsors/google.png" id="northrop"></a>
             </div>
-    </div>
-    <! -- Other Tier -->
-    <div class="row center">
-        <div class="collage-images tier5">
-            <div class = "col-4-sm">
-                <a href="https://www.stickermule.com/supports/hackathons" target="_blank"><img src="images/sponsors/stickermule.png"></a>
-            </div>
-            <div class = "col-4-sm">
-                <a href="https://resed.usc.edu/get_involved/rha-2/s" target="_blank"><img src="images/sponsors/RHA-logo.png"></a>
+        </div>
+        <! -- Other Tier -->
+        <div class="row center">
+            <div class="collage-images tier5">
+                <div class="col-4-sm">
+                    <a href="https://www.stickermule.com/supports/hackathons" target="_blank"><img src="images/sponsors/stickermule.png"></a>
+                </div>
+                <div class="col-4-sm">
+                    <a href="https://resed.usc.edu/get_involved/rha-2/s" target="_blank"><img src="images/sponsors/RHA-logo.png"></a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <! -- Food Sponsors -->
-    <div class="row center">
-        <div class="collage-images tier5">
-            <div class = "col-4-sm">
-                <a href="https://guayaki.com/yerba-mate/" target="_blank"><img src="images/sponsors/yerbamate.png"></a>
-            </div>
-            <div class = "col-4-sm">
-                <a href="https://rawrev.com/" target="_blank"><img src="images/sponsors/rawrev.png"></a>
-            </div>
-            <div class = "col-4-sm">
-                <a href="http://www.gogosqueez.com/" target="_blank"><img src="images/sponsors/gogo.png"></a>
-            </div>
-            <div class = "col-4-sm">
-                <a href="https://www.coba.coffee/" target="_blank"><img src="images/sponsors/coba.png"></a>
-            </div>
-            <div class = "col-4-sm">
-                <a href="https://www.kindsnacks.com/" target="_blank"><img src="images/sponsors/kindbar.jpeg"></a>
-            </div>
-            <div class = "col-4-sm">
-                <a href="http://www.thebobatruck.com/" target="_blank"><img src="images/sponsors/bobatruck.png"></a>
-            </div>
-            <div class = "col-4-sm">
-                <a href="https://skinnydipped.com/" target="_blank"><img src="images/sponsors/skinny_dipped.png"></a>
-            </div>
-            <div class = "col-4-sm">
-                <a href="https://eatbobos.com/" target="_blank"><img src="images/sponsors/bobos_snacks.jpeg"></a>
-            </div>
-            <div class = "col-4-sm">
-                <a href="https://baresnacks.com/" target="_blank"><img src="images/sponsors/bare snacks.png"></a>
+        <! -- Food Sponsors -->
+        <div class="row center">
+            <div class="collage-images tier5">
+                <div class="col-4-sm">
+                    <a href="https://guayaki.com/yerba-mate/" target="_blank"><img src="images/sponsors/yerbamate.png"></a>
+                </div>
+                <div class="col-4-sm">
+                    <a href="https://rawrev.com/" target="_blank"><img src="images/sponsors/rawrev.png"></a>
+                </div>
+                <div class="col-4-sm">
+                    <a href="http://www.gogosqueez.com/" target="_blank"><img src="images/sponsors/gogo.png"></a>
+                </div>
+                <div class="col-4-sm">
+                    <a href="https://www.coba.coffee/" target="_blank"><img src="images/sponsors/coba.png"></a>
+                </div>
+                <div class="col-4-sm">
+                    <a href="https://www.kindsnacks.com/" target="_blank"><img src="images/sponsors/kindbar.jpeg"></a>
+                </div>
+                <div class="col-4-sm">
+                    <a href="http://www.thebobatruck.com/" target="_blank"><img src="images/sponsors/bobatruck.png"></a>
+                </div>
+                <div class="col-4-sm">
+                    <a href="https://skinnydipped.com/" target="_blank"><img src="images/sponsors/skinny_dipped.png"></a>
+                </div>
+                <div class="col-4-sm">
+                    <a href="https://eatbobos.com/" target="_blank"><img src="images/sponsors/bobos_snacks.jpeg"></a>
+                </div>
+                <div class="col-4-sm">
+                    <a href="https://baresnacks.com/" target="_blank"><img src="images/sponsors/bare snacks.png"></a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="row center">
-        <div class = "col-4 purple-rect">
+        <div class="row center">
+            <div class="col-4 purple-rect">
+            </div>
+            <div class="col-4">
+                <h1 class="sponsor-title">Partners</h1>
+
+            </div>
+            <div class="col-4 purple-rect">
+            </div>
         </div>
-        <div class = "col-4">
-            <h1 class="sponsor-title">Partners</h1>
+        <! -- Parnters -->
 
+        <div class="row center">
+            <div class="collage-images tier3">
+                <a href="https://www.neudesic.com/" target="_blank"><img src="images/sponsors/neudesic.png"></a>
+            </div>
+            <div class="collage-images tier3">
+                <a href="http://bit.ly/2R5A2Pc" target="_blank"><img src="images/sponsors/challengerocket_logo_color_rgb.png"></a>
+            </div>
         </div>
-        <div class = "col-4 purple-rect">
-        </div>
-    </div>
-    <! -- Parnters -->
-
-    <div class="row center">
-        <div class="collage-images tier3">
-            <a href="https://www.neudesic.com/" target="_blank"><img src="images/sponsors/neudesic.png"></a>
-        </div>
-        <div class="collage-images tier3">
-            <a href="http://bit.ly/2R5A2Pc" target="_blank"><img src="images/sponsors/challengerocket_logo_color_rgb.png"></a>
-        </div>
-    </div>
-    <hr/>
+        <hr />
 
 
-    <div class="row">
+        <div class="row">
 
-        <!--<nav id="sponsors-nav" class="navbar">
+            <!--<nav id="sponsors-nav" class="navbar">
             <div style="width: 100%; text-align: center; justify-content: center;" class="nav nav-tabs" id="nav-tab" role="tablist">
                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">2018</a>
                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">2017</a>
@@ -505,13 +538,13 @@
         </nav>-->
 
 
-<!--         <div class="tab-content" id="old-sponsors" style="width: 100%;">
+            <!--         <div class="tab-content" id="old-sponsors" style="width: 100%;">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
                 <div class="row center">
                     <h1 class="sponsor-title old">Check out last year!</h1> -->
-                    <!-- alpha level sponsors -->
-<!--                     <h2 class="sponsor-title">Sponsors</h2>
+            <!-- alpha level sponsors -->
+            <!--                     <h2 class="sponsor-title">Sponsors</h2>
 
                     <div class="collage-images tier2">
                         <a href="https://www.neudesic.com/" target="_blank"><img src="images/sponsors/neudesic.png"></a>
@@ -551,81 +584,84 @@
                 </div>
             </div>
         </div> -->
-        <span class="anchor" id="in-the-news_landing"></span>
+            <span class="anchor" id="in-the-news_landing"></span>
 
-        <div class="container" id="in-the-news">            <!-- IN THE NEWS -->
-            <div class="row center">
-                <h1 class="sponsor-title">
-                    Check us out in the news!
-                </h1>
-                <div class="collage-images tier2" >
-                    <a href="http://www.huffingtonpost.com/entry/spotlight-on-athenahacks-why-female-hackathons-are_us_58ebf5fae4b0145a227cb797" target="_blank">
-                        <img src="images/huffpost.png" style="padding-bottom: 20px;">
-                    </a>
-                    <a href="http://dailytrojan.com/2017/02/28/spotlight-on-athenahacks/" target="_blank">
-                        <img src="images/dailytrojan.png">
-                    </a>
-                    <a href="https://viterbischool.usc.edu/news/2017/04/hackathon-created-women/" target="_blank">
-                        <img src="images/viterbilogo.png">
-                    </a>
+            <div class="container" id="in-the-news">
+                <!-- IN THE NEWS -->
+                <div class="row center">
+                    <h1 class="sponsor-title">
+                        Check us out in the news!
+                    </h1>
+                    <div class="collage-images tier2">
+                        <a href="http://www.huffingtonpost.com/entry/spotlight-on-athenahacks-why-female-hackathons-are_us_58ebf5fae4b0145a227cb797"
+                            target="_blank">
+                            <img src="images/huffpost.png" style="padding-bottom: 20px;">
+                        </a>
+                        <a href="http://dailytrojan.com/2017/02/28/spotlight-on-athenahacks/" target="_blank">
+                            <img src="images/dailytrojan.png">
+                        </a>
+                        <a href="https://viterbischool.usc.edu/news/2017/04/hackathon-created-women/" target="_blank">
+                            <img src="images/viterbilogo.png">
+                        </a>
+                    </div>
+
+                    <!--<a href="http://athenahacks.com/2017Site/index.html" class="button"> View our 2017 hackathon page! </a> -->
                 </div>
 
-                <!--<a href="http://athenahacks.com/2017Site/index.html" class="button"> View our 2017 hackathon page! </a> -->
             </div>
+
+            <div class="container">
+                <div id="sponsor-thank-you" style="text-align:center; width: 100%;">
+                    <h2>A <b>huge</b> thank you to all our sponsors and partners! </h2>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    <br />
+                    We are now accepting sponsors for 2019!
+
+                    <p>Contact us: <b>athenahacks@gmail.com</b></p>
+
+
+                </div>
+            </div>
+
 
         </div>
 
-        <div class="container" >
-            <div id = "sponsor-thank-you" style="text-align:center; width: 100%;">
-                <h2>A <b>huge</b> thank you to all our sponsors and partners!  </h2>
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                <br/>
-                We are now accepting sponsors for 2019!
-
-                <p>Contact us: <b>athenahacks@gmail.com</b></p>
 
 
-            </div>
+
+        <div class="row" style="width:auto; justify-content: center;">
+            <img class="content" src="images/dividerimages.jpg">
         </div>
+        <div class="row">
+            <!-- DID YOU KNOW? -->
+            <span class="anchor" id="didyouknow_landing"></span>
 
+            <div class="container" id="didyouknow">
+                <div style="text-align:center; width: 100%; padding-top: 10px;">
+                    <h2>Did you know?</h2>
+                    <p>The sacred image of Athena, a wooden statue called Palladium, protected the Trojans as long as
+                        they had it.
+                        <br /> Fight on from the Trojan Family! <i class="fa fa-hand-peace-o" aria-hidden="true"></i></p>
+                </div>
 
-    </div>
-
-
-
-
-    <div class="row" style="width:auto; justify-content: center;">
-        <img class="content" src="images/dividerimages.jpg" >
-    </div>
-    <div class="row">
-        <!-- DID YOU KNOW? -->
-        <span class="anchor" id="didyouknow_landing"></span>
-
-        <div class="container" id="didyouknow">
-            <div style="text-align:center; width: 100%; padding-top: 10px;">
-                <h2>Did you know?</h2>
-                <p>The sacred image of Athena, a wooden statue called Palladium, protected the Trojans as long as they had it.
-                    <br/> Fight on from the Trojan Family! <i class="fa fa-hand-peace-o" aria-hidden="true"></i></p>
+                <!-- SOCIAL MEDIA -->
+                <div class="container center row social">
+                    <a href="https://www.facebook.com/athenaHacks" target="_blank">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/athena_hacks/?hl=en" target="_blank">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:athenahacks@gmail.com" target="_blank">
+                        <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
-
-            <!-- SOCIAL MEDIA -->
-            <div class="container center row social">
-                <a href="https://www.facebook.com/athenaHacks" target="_blank">
-                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.instagram.com/athena_hacks/?hl=en" target="_blank">
-                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                </a>
-                <a href="mailto:athenahacks@gmail.com" target="_blank">
-                    <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-                </a>
-            </div>
+            <hr />
         </div>
-        <hr/>
     </div>
-</div>
 
-<!--
+    <!--
 <div class = "container" id="contact-form">
     <form id="contact-form" method="post" action="contact.php" role="form">
         <h2>Contact Us</h2>
@@ -674,43 +710,48 @@
     </form>
 </div>
 -->
-<!--<div class="row">-->
-<!--<div class="col-md-8 ml-auto mr-auto">-->
-<!--<h2 class="text-center title">Contact Us</h2>-->
-<!--&lt;!&ndash;<h5 class="text-center">Have a question? Don't hesitate to send us an email at <a href="mailto:sponsors@scopeusc.com">sponsors@scopeusc.com</a></h5>&ndash;&gt;-->
-<!--<div class="contact-form">-->
-<!--<div class="row">-->
-<!--<div class="col-md-6">-->
-<!--<label>First Name</label>-->
-<!--<input id="firstName" class="form-control" placeholder="First Name">-->
-<!--</div>-->
-<!--<div class="col-md-6">-->
-<!--<label>Last Name</label>-->
-<!--<input id="lastName" class="form-control" placeholder="Last Name">-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="row">-->
-<!--<div class="col-md-12">-->
-<!--<label>Email</label>-->
-<!--<input id="email" class="form-control" placeholder="Email">-->
-<!--</div>-->
-<!--</div>-->
-<!--<label>Message</label>-->
-<!--<textarea id="contactMessage" class="form-control" rows="4" placeholder="Message"></textarea>-->
-<!--<div class="row">-->
-<!--<div class="col-md-4 offset-md-4">-->
-<!--<button onclick="submit()" class="btn btn-scope btn-lg btn-fill">Send Message</button>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-8 ml-auto mr-auto">-->
+    <!--<h2 class="text-center title">Contact Us</h2>-->
+    <!--&lt;!&ndash;<h5 class="text-center">Have a question? Don't hesitate to send us an email at <a href="mailto:sponsors@scopeusc.com">sponsors@scopeusc.com</a></h5>&ndash;&gt;-->
+    <!--<div class="contact-form">-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-6">-->
+    <!--<label>First Name</label>-->
+    <!--<input id="firstName" class="form-control" placeholder="First Name">-->
+    <!--</div>-->
+    <!--<div class="col-md-6">-->
+    <!--<label>Last Name</label>-->
+    <!--<input id="lastName" class="form-control" placeholder="Last Name">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-12">-->
+    <!--<label>Email</label>-->
+    <!--<input id="email" class="form-control" placeholder="Email">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<label>Message</label>-->
+    <!--<textarea id="contactMessage" class="form-control" rows="4" placeholder="Message"></textarea>-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-4 offset-md-4">-->
+    <!--<button onclick="submit()" class="btn btn-scope btn-lg btn-fill">Send Message</button>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
 
-<!-- End Document
+    <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<!-- MLH -->
-<!--<a class="apply-badge" href="https://projectathena.typeform.com/to/LM2rM0" target="_blank"><img src="images/apply_ad.png" alt="Major League Hacking 2017 Hackathon Season" style="width:100%;"></a>-->
+    <!-- MLH -->
+    <!--<a class="apply-badge" href="https://projectathena.typeform.com/to/LM2rM0" target="_blank"><img src="images/apply_ad.png" alt="Major League Hacking 2017 Hackathon Season" style="width:100%;"></a>-->
 
-<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a></body>
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+        href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white"
+        target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg"
+            alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
+</body>
+
 </html>
