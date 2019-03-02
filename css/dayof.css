@@ -185,3 +185,92 @@ body {
     margin-left: -100%;
   }
 }
+
+.schedule {
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  padding-right: 5%;
+  height: 400px;
+  width: 80%;
+  opacity: 0.63;
+  overflow: scroll;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.schedule tr {
+  font-size: 15px;
+}
+
+.schedule td {
+  height: 50px;
+  text-align: center;
+  width: 30%;
+  font-size: 13px;
+}
+
+#left-time {
+  width: 10%;
+  float: left;
+  margin-top: 43px;
+  font-size: 11px;
+}
+
+.clock {
+  margin-bottom: 34px;
+}
+
+.event {
+  background-color: pink;   
+  border: 5px double white;
+  border-radius: 25px; 
+}
+
+.pink {
+  background-color: pink;
+}
+
+.orange {
+  background: #fca446;
+}
+
+.purple {
+  background: #d3a8ff;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
