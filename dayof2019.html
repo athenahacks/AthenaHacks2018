@@ -7,7 +7,7 @@
     <title>Day of AthenaHacks 2019</title>
     <!-- Mobile Specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- FONT
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -28,19 +28,17 @@
     <link rel="stylesheet" href="vendors/skeleton/normalize.css" />
     <link rel="stylesheet" href="vendors/skeleton/skeleton.css" />
     <link rel="stylesheet" href="vendors/responsive-nav/responsive-nav.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
 
     <link rel="stylesheet" href="css/dayof.css" />
     <!--<link rel="stylesheet" href="css/flowers.css"> -->
 
     <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -95,22 +93,265 @@
 
   <body>
     <!-- Primary Page Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+–––––––––––––––––––––––––––––––––––––––––––––––––– --> 
     <div class="intro">
       <div class="clouds">
         <div class="cloud x1"></div>
         <div class="cloud x2"></div>
         <div class="cloud x3"></div>
         <div class="cloud x4"></div>
-        <div class="cloud x5"></div>
+        <div class="cloud x5"></div>        
       </div>
+      
+      <!-- Schedule -->
+      
+      <div class="schedule" style="width: 100%">
+          <div class="time" id="left-time"></div>
+          <table style="width: 90%">
+              <!--
+              <tr>
+                <th>Events</th>
+                <th>Workshop</th> 
+                <th>Food</th>
+              </tr>
+              -->
+              <tr id="Sat9:00">                
+                <td></td>
+                <td rowspan="5">
+                    <div class="event pink">Check In <br> @TCC</div>
+                  </td> 
+                <td></td>
+              </tr>
+              <tr id="Sat9:30">
+                <td></td> 
+                <td></td>
+              </tr>
+              <tr id="Sat10:00">
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat10:30">
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat11:00">                
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat11:30">
+                  <td></td> 
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat12:00">                  
+                  <td></td> 
+                  <td rowspan="3">
+                      <div class="event pink">Opening Ceremony <br> @Bovard</div>
+                  </td>
+                  <td></td>
+              </tr>
+              <tr id="Sat12:30">
+                  <td></td> 
+                   <!--Opening Ceremony-->                 
+                  <td></td>
+              </tr>
+              <tr id="Sat13:00">
+                  <td></td>
+                  <!--Opening Ceremony-->
+                  <td></td>
+              </tr>
+              <tr id="Sat13:30">
+                  <td></td> 
+                  <td></td>
+                  <td rowspan="2">
+                      <div class="event orange">Lunch <br> @TCC Plaza</div>
+                  </td>
+              </tr>
+              <tr id="Sat14:00">
+                  <td rowspan="2">
+                      <div class="event purple">Industry Networking event <br> @TCC Ballroom</div>
+                  </td>
+                  <td></td>                  
+                  <!-- Lunch -->
+              </tr>
+              <tr id="Sat14:30">
+                  <!-- Industry Networking Session-->
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat15:00">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat15:30">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat16:00">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat16:30">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat17:00">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat17:30">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat18:00">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat18:30">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat19:00">
+                  <td></td>
+                  <td></td> 
+                  <td rowspan="2">
+                      <div class="event orange">Dinner<br> @TCC Plaza</div>
+                  </td>
+              </tr>
+              <tr id="Sat19:30">
+                  <td></td>
+                  <td></td> 
+              </tr>
+              <tr id="Sat20:00">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat20:30">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat21:00">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat21:30">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat22:00">
+                  <td></td>
+                  <td></td> 
+                  <td rowspan="2">
+                      <div class="event orange">Social</div>
+                  </td>
+              </tr>
+              <tr id="Sat22:30">
+                  <td></td>
+                  <td></td> 
+              </tr>
+              <tr id="Sat23:00">
+                  <td></td>
+                  <td></td> 
+                  <td></td>
+              </tr>
+              <tr id="Sat23:30">
+                  <td></td>
+                  <td></td> 
+                  <td rowspan="1">
+                      <div class="event orange">Boba & Karaoke</div>
+                  </td>
+              </tr>
+          </table>
+        </div>
     </div>
-
-    <div class="container"></div>
+    
+    <div class="container">
+        
+    </div>
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!-- MLH -->
 
     <img id="logo" src="images/owl_2019.png" />
+
+    <!-- Script to populate the time in half an hour interval-->
+    <script type="text/javascript">
+      var time = document.getElementById("left-time");
+      //
+      for (var i=19; i<24; i++) {     
+        var c = document.createElement("div");
+        c.classList.add("clock"); 
+        if (i%2 == 0) {
+          c.innerHTML = (i/2).toString() + " am"; 
+        } else {
+          c.innerHTML = (i/2-0.5).toString() + ":30 am"; 
+        }        
+        time.appendChild(c);
+      }
+
+      var c = document.createElement("div");
+      c.classList.add("clock");
+      c.innerHTML = "12:00 pm";
+      time.appendChild(c);
+      var ch = document.createElement("div");
+      ch.classList.add("clock");
+      ch.innerHTML = "12:30 pm"
+      time.appendChild(ch);
+
+      for (var i=1; i<12; i++) {
+        var c = document.createElement("div");
+        c.classList.add("clock"); 
+        c.innerHTML = i.toString() + ":00 pm"; 
+        time.appendChild(c);
+        var ch = document.createElement("div");  
+        ch.classList.add("clock");           
+        ch.innerHTML = i.toString() + ":30 pm"
+        time.appendChild(ch);
+      }
+    </script>
+
+    <!-- Script to add padding to events-->
+    <script>
+      var events = document.getElementsByClassName("event");
+      for(var i = 0; i < events.length; i++) {
+        var hr = events[i].parentNode.getAttribute("rowspan");
+        var res = parseInt(hr)*17;
+        if (hr == 1) {
+          res = "3";
+        }
+        else if (hr == 2) {
+          res = parseInt(hr)*7;
+        } 
+        else if (hr < 4) {
+          res = parseInt(hr)*13;
+        }  
+        events[i].style.paddingTop = res + "px";
+        events[i].style.paddingBottom = res + "px";
+      }
+    </script>
+    <!-- Script to auto scroll to current time-->
+    <script>
+      /*var timestamp = Math.floor(Date.now() / 1000);*/
+      var today = new Date();
+      var date = (today.getMonth()+1)+'-'+today.getDate();
+      var time = today.getHours() + ":" + today.getMinutes();
+      var dateTime = date+time;
+
+      var curr = document.getElementById("Sat9:30");
+      curr.scrollIntoView();
+      curr.style.borderTop = "2px dotted red";
+    </script>
   </body>
 </html>
