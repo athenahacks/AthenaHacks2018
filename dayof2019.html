@@ -1,357 +1,782 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8" />
-    <title>Day of AthenaHacks 2019</title>
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- FONT
+<head>
+  <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link
-      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Questrial"
-      rel="stylesheet"
-    />
+  <meta charset="utf-8" />
+  <title>Day of AthenaHacks 2019</title>
+  <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- CSS
+  <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" />
+
+  <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <link rel="stylesheet" href="vendors/animate/animate.min.css" />
-    <link rel="stylesheet" href="vendors/skeleton/normalize.css" />
-    <link rel="stylesheet" href="vendors/skeleton/skeleton.css" />
-    <link rel="stylesheet" href="vendors/responsive-nav/responsive-nav.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="vendors/animate/animate.min.css" />
+  <link rel="stylesheet" href="vendors/skeleton/normalize.css" />
+  <link rel="stylesheet" href="vendors/skeleton/skeleton.css" />
+  <link rel="stylesheet" href="vendors/responsive-nav/responsive-nav.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
+  <link rel="stylesheet" href="css/dayof.css" />
+  <!--<link rel="stylesheet" href="css/flowers.css"> -->
 
-    <link rel="stylesheet" href="css/dayof.css" />
-    <!--<link rel="stylesheet" href="css/flowers.css"> -->
-
-    <!-- JS
+  <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
-      integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
-      crossorigin="anonymous"
-    ></script>
 
-    <script src="https://use.fontawesome.com/9f7b7f8456.js"></script>
-    <script src="vendors/responsive-nav/responsive-nav.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+    integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
 
-    <!-- contact -->
-    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-    <script>
-      var config = {
-        apiKey: 'AIzaSyD9Em1Cj3aMeFob_fgbKdzKm42WS7Q3T6c',
-        authDomain: 'athena-website-59a08.firebaseapp.com',
-        databaseURL: 'https://athena-website-59a08.firebaseio.com/',
-      };
-      firebase.initializeApp(config);
-    </script>
-    <script src="js/contact.js"></script>
-    <script>
-      jQuery(document).ready(function() {
-        jQuery('.toggle-nav').click(function(e) {
-          jQuery(this).toggleClass('active');
-          jQuery('.menu ul').toggleClass('active');
+  <script src="https://use.fontawesome.com/9f7b7f8456.js"></script>
+  <script src="vendors/responsive-nav/responsive-nav.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
-          e.preventDefault();
-        });
-      });
-    </script>
-
-    <!-- Favicon
+  <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/owl_2019.png" />
-  </head>
+  <link rel="icon" type="image/png" href="images/owl_2019.png" />
+</head>
 
-  <body>
-    <!-- Primary Page Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– --> 
-    <div class="intro">
-      <div class="clouds">
-        <div class="cloud x1"></div>
-        <div class="cloud x2"></div>
-        <div class="cloud x3"></div>
-        <div class="cloud x4"></div>
-        <div class="cloud x5"></div>        
+<body>
+  <!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="intro">
+    <div class="clouds">
+      <div class="cloud x1"></div>
+      <div class="cloud x2"></div>
+      <div class="cloud x3"></div>
+      <div class="cloud x4"></div>
+      <div class="cloud x5"></div>
+    </div>
+
+    <!-- Schedule -->
+
+    <div class="schedule">
+      <div id="schedule_header">
+        <div class="col-2">
+          <div style="font-size: 24px; color: white;">Schedule</div>
+        </div>
+        <div class="col-10 event_types">
+          <div class="event_type">
+            <span class="dot" style="background-color: #91cff3;"></span>
+
+            <div class="event_type_text">Main Events</div>
+          </div>
+          <div class="event_type">
+            <span class="dot" style="background-color: rgb(250, 86, 113);"></span>
+
+            <div class="event_type_text">Workshops</div>
+          </div>
+          <div class="event_type">
+            <span class="dot" style="background-color: #ffa011f1;"></span>
+
+            <div class="event_type_text">Food & Social</div>
+          </div>
+          <div class="event_type">
+            <span class="dot" style="background-color: #d3a8ff;"></span>
+
+            <div class="event_type_text">Sponsor Events</div>
+          </div>
+        </div>
       </div>
-      
-      <!-- Schedule -->
-      
-      <div class="schedule" style="width: 100%">
-          <div class="time" id="left-time"></div>
-          <table style="width: 90%">
-              <!--
-              <tr>
-                <th>Events</th>
-                <th>Workshop</th> 
-                <th>Food</th>
-              </tr>
-              -->
-              <tr id="Sat9:00">                
+      <div id="schedule_body">
+        <div class="table">
+          <table class="timetable table" id="table">
+              <div id = "curr_time"></div>
+
+            <tbody>
+
+              <tr id="Sat09:00">
+                <th scope="row">9am</th>
                 <td></td>
-                <td rowspan="5">
-                    <div class="event pink">Check In <br> @TCC</div>
-                  </td> 
+                <td></td>
+                <td></td>
                 <td></td>
               </tr>
-              <tr id="Sat9:30">
-                <td></td> 
+              <tr id="Sat09:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
               </tr>
               <tr id="Sat10:00">
-                  <td></td> 
-                  <td></td>
+                <th scope="row">10:00am</th>
+
+                <td rowspan="4">
+                  <div class="event blue">
+                    Check In <br />
+                    @TCC
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat10:30">
-                  <td></td> 
-                  <td></td>
+                <th scope="row">&nbsp;</th>
+                <!-- Check in-->
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
-              <tr id="Sat11:00">                
-                  <td></td> 
-                  <td></td>
+              <tr id="Sat11:00">
+                <th scope="row">11:00am</th>
+                <!-- Check in-->
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat11:30">
-                  <td></td> 
-                  <td></td> 
-                  <td></td>
+                <th scope="row">&nbsp;</th>
+                <!-- Check in-->
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
-              <tr id="Sat12:00">                  
-                  <td></td> 
-                  <td rowspan="3">
-                      <div class="event pink">Opening Ceremony <br> @Bovard</div>
-                  </td>
-                  <td></td>
+              <tr id="Sat12:00">
+                <th scope="row">12:00pm</th>
+
+                <td rowspan="3">
+                  <div class="event blue">
+                    Opening Ceremony <br />
+                    @Bovard
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat12:30">
-                  <td></td> 
-                   <!--Opening Ceremony-->                 
-                  <td></td>
+                <th scope="row">&nbsp; </th>
+                <!--Opening Ceremony-->
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat13:00">
-                  <td></td>
-                  <!--Opening Ceremony-->
-                  <td></td>
+                <th scope="row">1:00pm</th>
+                 <!--Opening Ceremony-->
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat13:30">
-                  <td></td> 
-                  <td></td>
-                  <td rowspan="2">
-                      <div class="event orange">Lunch <br> @TCC Plaza</div>
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td rowspan="2">
+                    <div class="event orange">
+                      Lunch <br />
+                      @TCC Plaza
+                    </div>
                   </td>
+                <td></td>
               </tr>
               <tr id="Sat14:00">
-                  <td rowspan="2">
-                      <div class="event purple">Industry Networking event <br> @TCC Ballroom</div>
-                  </td>
-                  <td></td>                  
-                  <!-- Lunch -->
+                <th scope="row">2:00pm</th>
+                <td></td>
+                <td></td>
+                <!-- Lunch -->
+                <td rowspan="2">
+                  <div class="event purple">
+                    Industry Networking event <br />
+                    @TCC Ballroom
+                  </div>
+                </td>
+
               </tr>
               <tr id="Sat14:30">
-                  <!-- Industry Networking Session-->
-                  <td></td> 
-                  <td></td>
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <!-- Industry Networking Session-->
               </tr>
               <tr id="Sat15:00">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">3:00pm</th>
+                <td></td>
+                <td rowspan="3">
+                  <div class="event pink">
+                    Intro to Web<br />
+                    @TCC 252
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat15:30">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <!--Intro to Web-->
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat16:00">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">4:00pm</th>
+                <td></td>
+                <!--Intro to Web-->
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat16:30">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">&nbsp;</th>
+                <td>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat17:00">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">5:00pm</th>
+
+                <td>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat17:30">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat18:00">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">6:00pm</th>
+
+                <td>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat18:30">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">&nbsp;</th>
+                <td>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat19:00">
-                  <td></td>
-                  <td></td> 
-                  <td rowspan="2">
-                      <div class="event orange">Dinner<br> @TCC Plaza</div>
-                  </td>
+                <th scope="row">7:00pm</th>
+                <td></td>
+                <td></td>
+                <td rowspan="2">
+                  <div class="event orange">
+                    Dinner<br />
+                    @TCC Plaza
+                  </div>
+                </td>
+                <td></td>
               </tr>
               <tr id="Sat19:30">
-                  <td></td>
-                  <td></td> 
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <!--Dinner-->
+                <td></td>
               </tr>
               <tr id="Sat20:00">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">8:00pm</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat20:30">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat21:00">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">9:00pm</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat21:30">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat22:00">
-                  <td></td>
-                  <td></td> 
-                  <td rowspan="2">
-                      <div class="event orange">Social</div>
-                  </td>
+                <th scope="row">10:00pm</th>
+                <td></td>
+                <td></td>
+                <td rowspan="2">
+                  <div class="event orange">Social</div>
+                </td>
+                <td></td>
               </tr>
               <tr id="Sat22:30">
-                  <td></td>
-                  <td></td> 
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <!-- Social-->
+                <td></td>
               </tr>
               <tr id="Sat23:00">
-                  <td></td>
-                  <td></td> 
-                  <td></td>
+                <th scope="row">11:00pm</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr id="Sat23:30">
-                  <td></td>
-                  <td></td> 
-                  <td rowspan="1">
-                      <div class="event orange">Boba & Karaoke</div>
-                  </td>
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td rowspan="1">
+                  <div class="event orange">Boba & Karaoke</div>
+                </td>
+                <td></td>
               </tr>
+              <tr id="Sun0:00">
+                <th scope="row">12:00am</th>
+                <td></td>
+                <td></td>
+                <!-- Boba-->
+                <td></td>
+              </tr>
+              <tr id="Sun0:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun1:00">
+                <th scope="row">1:00am</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun1:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun2:00">
+                <th scope="row">2:00am</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun2:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun3:00">
+                <th scope="row">3:00am</th>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun3:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun4:00">
+                <th scope="row">4:00am</th>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun4:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun5:00">
+                <th scope="row">5:00am</th>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun5:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun6:00">
+                <th scope="row">6:00am</th>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun6:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun7:00">
+                <th scope="row">7:00am</th>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun7:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun8:00">
+                <th scope="row">8:00am</th>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun8:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun9:00">
+                <th scope="row">9:00am</th>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun9:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun10:00">
+                <th scope="row">10:00am</th>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun10:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun11:00">
+                <th scope="row">11:00am</th>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun11:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun12:00">
+                <th scope="row">12:00pm</th>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun12:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun13:00">
+                <th scope="row">1:00pm</th>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun13:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun14:00">
+                <th scope="row">2:00pm</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun14:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun15:00">
+                <th scope="row">3:00pm</th>
+                <td rowspan="3">
+                  <div class="event blue">
+                    Closing Ceremony <br />
+                    @Bovard
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun15:30">
+                <th scope="row">&nbsp;</th>
+                <!-- Closing-->
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun16:00">
+                <th scope="row">4:00pm</th>
+                <!-- Closing-->
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun16:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun17:00">
+                <th scope="row">5:00pm</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr id="Sun17:30">
+                <th scope="row">&nbsp;</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
           </table>
         </div>
+      </div>
     </div>
-    
-    <div class="container">
-        
-    </div>
-    <!-- End Document
+  </div>
+
+  <div class="container"></div>
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!-- MLH -->
+  <!-- MLH -->
 
-    <img id="logo" src="images/owl_2019.png" />
+  <img id="logo" src="images/owl_2019.png" />
 
-    <!-- Script to populate the time in half an hour interval-->
-    <script type="text/javascript">
-      var time = document.getElementById("left-time");
-      //
-      for (var i=19; i<24; i++) {     
-        var c = document.createElement("div");
-        c.classList.add("clock"); 
-        if (i%2 == 0) {
-          c.innerHTML = (i/2).toString() + " am"; 
-        } else {
-          c.innerHTML = (i/2-0.5).toString() + ":30 am"; 
-        }        
-        time.appendChild(c);
+  <!-- Script to populate the time in half an hour interval-->
+  <script type="text/javascript">
+    /* var time = document.getElementById('left-time');
+    // Saturday
+    for (var i = 19; i < 24; i++) {
+      var c = document.createElement('div');
+      c.classList.add('clock');
+      if (i % 2 == 0) {
+        c.innerHTML = (i / 2).toString() + ' am';
+      } else {
+        c.innerHTML = (i / 2 - 0.5).toString() + ':30 am';
       }
-
-      var c = document.createElement("div");
-      c.classList.add("clock");
-      c.innerHTML = "12:00 pm";
+      console.log(c);
       time.appendChild(c);
-      var ch = document.createElement("div");
-      ch.classList.add("clock");
-      ch.innerHTML = "12:30 pm"
+    }
+
+    var c = document.createElement('div');
+    c.classList.add('clock');
+    c.innerHTML = '12:00 pm';
+    time.appendChild(c);
+    var ch = document.createElement('div');
+    ch.classList.add('clock');
+    ch.innerHTML = '12:30 pm';
+    time.appendChild(ch);
+
+    for (var i = 1; i < 12; i++) {
+      var c = document.createElement('div');
+      c.classList.add('clock');
+      c.innerHTML = i.toString() + ':00 pm';
+      time.appendChild(c);
+      var ch = document.createElement('div');
+      ch.classList.add('clock');
+      ch.innerHTML = i.toString() + ':30 pm';
       time.appendChild(ch);
+    }
 
-      for (var i=1; i<12; i++) {
-        var c = document.createElement("div");
-        c.classList.add("clock"); 
-        c.innerHTML = i.toString() + ":00 pm"; 
+    // Sunday
+    for (var i = 0; i < 24; i++) {
+      var c = document.createElement('div');
+      c.classList.add('clock');
+      if (i === 0) {
+        c.innerHTML = '12 am';
         time.appendChild(c);
-        var ch = document.createElement("div");  
-        ch.classList.add("clock");           
-        ch.innerHTML = i.toString() + ":30 pm"
-        time.appendChild(ch);
-      }
-    </script>
 
-    <!-- Script to add padding to events-->
-    <script>
-      var events = document.getElementsByClassName("event");
-      for(var i = 0; i < events.length; i++) {
-        var hr = events[i].parentNode.getAttribute("rowspan");
-        var res = parseInt(hr)*17;
-        if (hr == 1) {
-          res = "3";
-        }
-        else if (hr == 2) {
-          res = parseInt(hr)*7;
-        } 
-        else if (hr < 4) {
-          res = parseInt(hr)*13;
-        }  
-        events[i].style.paddingTop = res + "px";
-        events[i].style.paddingBottom = res + "px";
+        continue;
       }
-    </script>
-    <!-- Script to auto scroll to current time-->
-    <script>
-      /*var timestamp = Math.floor(Date.now() / 1000);*/
-      var today = new Date();
-      var date = (today.getMonth()+1)+'-'+today.getDate();
-      var time = today.getHours() + ":" + today.getMinutes();
-      var dateTime = date+time;
+      if (i === 1) {
+        c.innerHTML = '12:30 am';
+        time.appendChild(c);
 
-      var curr = document.getElementById("Sat9:30");
-      curr.scrollIntoView();
-      curr.style.borderTop = "2px dotted red";
-    </script>
-  </body>
+        continue;
+      }
+      if (i % 2 == 0) {
+        c.innerHTML = (i / 2).toString() + ' am';
+      } else {
+        c.innerHTML = (i / 2 - 0.5).toString() + ':30 am';
+      }
+      time.appendChild(c);
+    }
+
+    var c = document.createElement('div');
+    c.classList.add('clock');
+    c.innerHTML = '12:00 pm';
+    time.appendChild(c);
+    var ch = document.createElement('div');
+    ch.classList.add('clock');
+    ch.innerHTML = '12:30 pm';
+    time.appendChild(ch);
+
+    for (var i = 1; i < 6; i++) {
+      var c = document.createElement('div');
+      c.classList.add('clock');
+      c.innerHTML = i.toString() + ':00 pm';
+      time.appendChild(c);
+      var ch = document.createElement('div');
+      ch.classList.add('clock');
+      ch.innerHTML = i.toString() + ':30 pm';
+      time.appendChild(ch);
+    } */
+  </script>
+
+  <!-- Script to add padding to events-->
+  <script>
+    var events = document.getElementsByClassName('event');
+    for (var i = 0; i < events.length; i++) {
+      var hr = events[i].parentNode.getAttribute('rowspan');
+      var res = parseInt(hr) * 17;
+      if (hr == 1) {
+        res = '10';
+      } else if (hr == 2) {
+        res = parseInt(hr) * 10;
+      } else if (hr < 4) {
+        res = parseInt(hr) * 15;
+      }
+      events[i].style.paddingTop = res + 'px';
+      events[i].style.paddingBottom = res + 'px';
+    }
+  </script>
+  <!-- Script to auto scroll to current time-->
+  <script>
+    /*var timestamp = Math.floor(Date.now() / 1000);*/
+    var today = new Date();
+    var date = today.getMonth() + 1 + '-' + today.getDate();
+    var time = today.getHours() + ':' + today.getMinutes();
+    var dateTime = date + time;
+    var day = 'Sat'; // can use on actual day
+    if(date === '4/6') {
+      day = 'Sat';
+    }
+    if(date === '4/7') {
+      day = 'Sun';
+    }
+
+    var table = document.getElementById('table').getBoundingClientRect();
+    var curr;
+    var hours = time.substring(0,2);
+    var minutes = parseInt(time.substring(3,5));
+    var sub_offset = 0;
+
+    if(minutes < 30) {
+      var id = day + hours + ':00';
+      curr = document.getElementById(id).getBoundingClientRect();
+      var sub_offset = 50*(minutes/30); // calcs percentage of half hour x 50px per 30 min seg
+    }
+    if(minutes > 30) {
+      var id = day + hours + ':30';
+      curr = document.getElementById(id).getBoundingClientRect();
+      var sub_offset = 50*(minutes/30); // calcs percentage of half hour x 50px per 30 min seg
+    }
+    if(minutes === 30) {
+      var id = day + hours + ':30';
+      curr = document.getElementById(id).getBoundingClientRect();
+    }
+    // calc offset of line
+    var offset = curr.top - table.top + sub_offset;
+    $('#curr_time').offset(function(n, c){
+      newPos = new Object();
+      newPos.top = c.top + offset;
+      return newPos;
+    });
+
+  </script>
+</body>
+
 </html>

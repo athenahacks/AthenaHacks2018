@@ -191,49 +191,117 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 10%;
-  padding-right: 5%;
-  height: 400px;
-  width: 80%;
-  opacity: 0.63;
   overflow: scroll;
+  height: 80vh;
+  width: 80vw;
+  opacity: 0.63;
   text-align: center;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.schedule tr {
+tr {
   font-size: 15px;
 }
 
-.schedule td {
-  height: 50px;
+td {
   text-align: center;
-  width: 30%;
   font-size: 13px;
+  padding: 0px;
+  margin: 0px;
+  width: 20%;
 }
-
+th {
+  height: 50px;
+  vertical-align: bottom;
+  text-align: left;
+  width: 20%;
+}
+table {
+  padding-left: 10px;
+}
+#curr_time {
+  width: 80%;
+  margin-right: 40px;
+  float: right;
+  border-bottom: 2px dotted red;
+  offset:
+}
+#schedule_header {
+  position: fixed;
+  background-color: black;
+  width: 80vw;
+  height: 10vh;
+  text-align: left;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.event_types {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+.event_type {
+  height: 100%;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.dot {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+.event_type_text {
+  padding-left: 5px;
+  font-size: 18px;
+}
+#schedule_body {
+  background-color: white;
+  padding-top: 10vh;
+}
 #left-time {
   width: 10%;
   float: left;
+  text-align: center;
   margin-top: 43px;
   font-size: 11px;
 }
-
+table {
+  border-collapse: separate;
+  padding-right: 40px;
+}
 .clock {
-  margin-bottom: 34px;
+  height: 50px;
+  vertical-align: center;
 }
 
 .event {
-  background-color: pink;   
   border: 5px double white;
-  border-radius: 25px; 
-}
-
-.pink {
+  height: 100%;
   background-color: pink;
 }
 
+.blue {
+  background-color: #91cff3;
+}
+.pink {
+  background-color: rgba(255, 147, 165, 0.692);
+}
+
 .orange {
-  background: #fca446;
+  background: #ffa011f1;
 }
 
 .purple {
@@ -241,7 +309,6 @@ body {
 }
 
 .tab {
-  overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
