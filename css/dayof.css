@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 @-ms-viewport {
   width: device-width;
@@ -194,9 +195,9 @@ body {
   padding-right: 2vw;
 }
 #title {
-  font-size: 60px;
+  font-size: 80px;
   color: pink;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Amatic SC', cursive;
 }
 #logo {
   display: block;
@@ -207,9 +208,9 @@ body {
   z-index: 10000;
 }
 #countdown {
-  font-size: 50px;
-  color: pink;
-  font-family: 'Lato', sans-serif;
+  font-size: 60px;
+  color: white;
+  font-family: 'Amatic SC', cursive;
 }
 .schedule {
   background-color: white;

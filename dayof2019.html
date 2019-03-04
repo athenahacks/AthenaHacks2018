@@ -53,7 +53,7 @@
 
 <body>
   <div id="header">
-    <div id="title">athenahacks<strong style="color: white;">live</strong> </div>
+    <div id="title">athenahacks<strong style="color: white; font-size: 50px;">  live</strong> </div>
     <!-- <img id="logo" src="images/owl_2019.png" /> -->
     <p id="countdown"></p>
   </div>
@@ -802,8 +802,8 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        document.getElementById("countdown").innerHTML = days + "<strong style='color: white;'/>d </strong>" + hours + "<strong style='color: white;'/>h </strong>"
-          + minutes + "<strong style='color: white;'/>m </strong>" + seconds + "<strong style='color: white;'/>s</strong> ";
+        document.getElementById("countdown").innerHTML = days + "<span style='color: pink;'/>d </span>" + hours + "<span style='color: pink;'/>h </span>"
+          + minutes + "<span style='color: pink;'/>m </span>" + seconds + "<span style='color: pink;'/>s</span> ";
 
         // If the count down is finished, write some text
         if (distance < 0) {
