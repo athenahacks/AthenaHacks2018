@@ -773,8 +773,8 @@ th {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5vw;
+  padding-right: 5vw;
   padding-bottom: 30px;
 }
 
@@ -887,6 +887,7 @@ th {
 }
 /* their logo has a weird thing that makes it small looking so u gotta fake it being bigger */
 #northrop {
+  padding-top: 5px;
   width: 250px;
 }
 
