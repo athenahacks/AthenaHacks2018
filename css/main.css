@@ -872,9 +872,13 @@ th {
   padding-bottom: 10px;
 }
 .tier3 img {
-  min-width: 250px;
-  max-width: 250px;
+  height: 60px;
+
   padding-bottom: 10px;
+}
+#honey img {
+  width: 230px;
+  height: 100%;
 }
 .tier4 img {
   width: 200px;
