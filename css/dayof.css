@@ -335,3 +335,12 @@ table {
 .purple {
   background: #d3a8ff;
 }
+
+.icon {
+  /* to make it clickable above the clouds */
+  z-index: 1;
+}
+
+img{
+  z-index: 1;
+}
