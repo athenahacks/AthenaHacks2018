@@ -53,9 +53,25 @@
 
 <body>
   <div id="header">
-    <div id="title">athenahacks<strong style="color: white; font-size: 50px;">  live</strong> </div>
+    <div id="title" class="col-4">
+      athenahacks<strong style="color: white; font-size: 50px;">  live</strong> 
+    </div>
+    <img class="icon" height="90px" src="images/dayof/schedule.png" 
+      onmouseover="this.src='images/dayof/schedule-pink.png'"
+      onmouseout="this.src='images/dayof/schedule.png'">
+    <img class="icon" src="images/dayof/map.png" height="90px"
+      onmouseover="this.src='images/dayof/map-pink.png'"
+      onmouseout="this.src='images/dayof/map.png'">
+    <img class="icon" onclick="javascript:window.open('https://github.com/athenahacks','_blank');" 
+    src="images/dayof/hackpack.png" height="90px" width="70px"
+      onmouseover="this.src='images/dayof/hackpack-pink.png'"
+      onmouseout="this.src='images/dayof/hackpack.png'">
+    <img class="icon" src="images/dayof/devpost.png" height="90px"
+      onmouseover="this.src='images/dayof/devpost-pink.png'"
+      onmouseout="this.src='images/dayof/devpost.png'">
+    
     <!-- <img id="logo" src="images/owl_2019.png" /> -->
-    <p id="countdown"></p>
+    <p class="col-3" id="countdown"></p>
   </div>
   <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -639,87 +655,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- MLH -->
 
-
-  <!-- Script to populate the time in half an hour interval-->
-  <script type="text/javascript">
-    /* var time = document.getElementById('left-time');
-    // Saturday
-    for (var i = 19; i < 24; i++) {
-      var c = document.createElement('div');
-      c.classList.add('clock');
-      if (i % 2 == 0) {
-        c.innerHTML = (i / 2).toString() + ' am';
-      } else {
-        c.innerHTML = (i / 2 - 0.5).toString() + ':30 am';
-      }
-      console.log(c);
-      time.appendChild(c);
-    }
-
-    var c = document.createElement('div');
-    c.classList.add('clock');
-    c.innerHTML = '12:00 pm';
-    time.appendChild(c);
-    var ch = document.createElement('div');
-    ch.classList.add('clock');
-    ch.innerHTML = '12:30 pm';
-    time.appendChild(ch);
-
-    for (var i = 1; i < 12; i++) {
-      var c = document.createElement('div');
-      c.classList.add('clock');
-      c.innerHTML = i.toString() + ':00 pm';
-      time.appendChild(c);
-      var ch = document.createElement('div');
-      ch.classList.add('clock');
-      ch.innerHTML = i.toString() + ':30 pm';
-      time.appendChild(ch);
-    }
-
-    // Sunday
-    for (var i = 0; i < 24; i++) {
-      var c = document.createElement('div');
-      c.classList.add('clock');
-      if (i === 0) {
-        c.innerHTML = '12 am';
-        time.appendChild(c);
-
-        continue;
-      }
-      if (i === 1) {
-        c.innerHTML = '12:30 am';
-        time.appendChild(c);
-
-        continue;
-      }
-      if (i % 2 == 0) {
-        c.innerHTML = (i / 2).toString() + ' am';
-      } else {
-        c.innerHTML = (i / 2 - 0.5).toString() + ':30 am';
-      }
-      time.appendChild(c);
-    }
-
-    var c = document.createElement('div');
-    c.classList.add('clock');
-    c.innerHTML = '12:00 pm';
-    time.appendChild(c);
-    var ch = document.createElement('div');
-    ch.classList.add('clock');
-    ch.innerHTML = '12:30 pm';
-    time.appendChild(ch);
-
-    for (var i = 1; i < 6; i++) {
-      var c = document.createElement('div');
-      c.classList.add('clock');
-      c.innerHTML = i.toString() + ':00 pm';
-      time.appendChild(c);
-      var ch = document.createElement('div');
-      ch.classList.add('clock');
-      ch.innerHTML = i.toString() + ':30 pm';
-      time.appendChild(ch);
-    } */
-  </script>
 
   <!-- Script to add padding to events-->
   <script>
