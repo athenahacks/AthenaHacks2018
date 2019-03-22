@@ -517,15 +517,11 @@ th {
   }
   .app_info p {
     padding-top: 20px;
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-  .app_info p {
-    font-size: 3vw;
-  }
-
   #other_links {
     width: 40vw;
     display: flex;
@@ -556,7 +552,7 @@ th {
   }
   .app_info p {
     padding-top: 20px;
-    font-size: 3vw;
+    font-size: 2vw;
   }
 }
 
