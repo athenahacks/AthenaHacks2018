@@ -318,6 +318,7 @@ table {
   border: 5px double white;
   height: 100%;
   background-color: pink;
+  font-size: 20px;
 }
 
 .blue {
