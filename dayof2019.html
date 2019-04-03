@@ -54,23 +54,23 @@
 <body>
   <div id="header">
     <div id="title" class="col-4">
-      athenahacks<strong style="color: white; font-size: 50px;">  live</strong> 
+      athenahacks<strong style="color: white; font-size: 50px;">  live</strong>
     </div>
-    <img class="icon" height="90px" src="images/dayof/schedule.png" 
+    <img class="icon" height="90px" src="images/dayof/schedule.png"
       onmouseover="this.src='images/dayof/schedule-pink.png'"
       onmouseout="this.src='images/dayof/schedule.png'">
-    <img class="icon" onclick="javascript:window.open('https://maps.mapwize.io/#/v/venue_4dc372d5?k=5b88437f7276f04c','_blank');" 
+    <img class="icon" onclick="javascript:window.open('https://maps.mapwize.io/#/v/venue_4dc372d5?k=5b88437f7276f04c','_blank');"
       src="images/dayof/map.png" height="90px"
       onmouseover="this.src='images/dayof/map-pink.png'"
       onmouseout="this.src='images/dayof/map.png'">
-    <img class="icon" onclick="javascript:window.open('https://github.com/athenahacks','_blank');" 
+    <img class="icon" onclick="javascript:window.open('https://github.com/athenahacks','_blank');"
     src="images/dayof/hackpack.png" height="90px" width="70px"
       onmouseover="this.src='images/dayof/hackpack-pink.png'"
       onmouseout="this.src='images/dayof/hackpack.png'">
     <img class="icon" src="images/dayof/devpost.png" height="90px"
       onmouseover="this.src='images/dayof/devpost-pink.png'"
       onmouseout="this.src='images/dayof/devpost.png'">
-    
+
     <!-- <img id="logo" src="images/owl_2019.png" /> -->
     <p class="col-3" id="countdown"></p>
   </div>
@@ -87,35 +87,35 @@
 
     <!-- Schedule -->
     <div class="container" id="main">
+      <div id="schedule_header">
+        <div class="col-2">
+          <div style="font-size: 24px; color: white;">Schedule</div>
+        </div>
+        <div class="col-10 event_types">
+          <div class="event_type">
+            <span class="dot" style="background-color: #91cff3;"></span>
 
-      <div class="schedule">
-        <div id="schedule_header">
-          <div class="col-2">
-            <div style="font-size: 24px; color: white;">Schedule</div>
+            <div class="event_type_text">Main Events</div>
           </div>
-          <div class="col-10 event_types">
-            <div class="event_type">
-              <span class="dot" style="background-color: #91cff3;"></span>
+          <div class="event_type">
+            <span class="dot" style="background-color: rgb(250, 86, 113);"></span>
 
-              <div class="event_type_text">Main Events</div>
-            </div>
-            <div class="event_type">
-              <span class="dot" style="background-color: rgb(250, 86, 113);"></span>
+            <div class="event_type_text">Workshops</div>
+          </div>
+          <div class="event_type">
+            <span class="dot" style="background-color: #ffa011f1;"></span>
 
-              <div class="event_type_text">Workshops</div>
-            </div>
-            <div class="event_type">
-              <span class="dot" style="background-color: #ffa011f1;"></span>
+            <div class="event_type_text">Food & Social</div>
+          </div>
+          <div class="event_type">
+            <span class="dot" style="background-color: #d3a8ff;"></span>
 
-              <div class="event_type_text">Food & Social</div>
-            </div>
-            <div class="event_type">
-              <span class="dot" style="background-color: #d3a8ff;"></span>
-
-              <div class="event_type_text">Sponsor Events</div>
-            </div>
+            <div class="event_type_text">Sponsor Events</div>
           </div>
         </div>
+      </div>
+      <div class="schedule">
+
         <div id="schedule_body">
           <div class="table">
             <table class="timetable table" id="table">
@@ -222,7 +222,7 @@
                   <th scope="row">3:00pm</th>
                   <td rowspan="3"><div class="event pink">Intro to Unity <br>(Zynga)<br><a href="https://maps.mapwize.io/#/p/venue_4dc372d5/tcc_227?k=5b88437f7276f04c" target="_blank">@TCC 227</a></div></td>
                   <td rowspan="3"><div class="event pink">Intro to Web <br>(Invoca)<br /><a href="https://maps.mapwize.io/#/p/venue_4dc372d5/tcc_352?k=5b88437f7276f04c" target="_blank">@TCC 352</a></div></td>
-                  <td rowspan="3"><div class="event pink">How to Hack the Cloud <br>(Microsoft)<br /><a href="https://maps.mapwize.io/#/p/venue_4dc372d5/tcc_450?k=5b88437f7276f04c" target="_blank">@TCC 450</a></div></td>                 
+                  <td rowspan="3"><div class="event pink">How to Hack the Cloud <br>(Microsoft)<br /><a href="https://maps.mapwize.io/#/p/venue_4dc372d5/tcc_450?k=5b88437f7276f04c" target="_blank">@TCC 450</a></div></td>
                 </tr>
                 <tr id="Sat15:30">
                   <th scope="row">&nbsp;</th>
@@ -276,7 +276,7 @@
                     </div>
                   </td>
                   <td rowspan="6"><div class="event purple">Gaming Tournament<br> (Activision) <br> <a href="https://maps.mapwize.io/#/p/venue_4dc372d5/tcc_450?k=5b88437f7276f04c" target="_blank">@TCC 450</a></div></td>
-                
+
                 </tr>
                 <tr id="Sat19:30">
                   <th scope="row">&nbsp;</th>
@@ -302,15 +302,15 @@
                   <!--Gaming Tournament-->
                 </tr>
                 <tr id="Sat21:30">
-                  <th scope="row">&nbsp;</th>  
-                  <!--MLH Cupstacking-->             
+                  <th scope="row">&nbsp;</th>
+                  <!--MLH Cupstacking-->
                   <td rowspan="2"><div class="event purple">Resume Review <br> <a href="https://maps.mapwize.io/#/p/venue_4dc372d5/sponsors?k=5b88437f7276f04c" target="_blank">@Zynga Booth</a></div></td>
                   <!--Gaming Tournament-->
                 </tr>
                 <tr id="Sat22:00">
                   <th scope="row">10:00pm</th>
                   <td></td>
-                  <!--Resume Review-->  
+                  <!--Resume Review-->
                   <td></td>
                 </tr>
                 <tr id="Sat22:30">
@@ -330,7 +330,7 @@
                 <tr id="Sat23:30">
                   <th scope="row">&nbsp;</th>
                   <!--Karoake-->
-                  <td></td>        
+                  <td></td>
                   <td></td>
                 </tr>
                 <tr id="Sun0:00">
@@ -338,7 +338,7 @@
                   <td></td>
                   <td rowspan="2">
                       <div class="event orange">Midnight Boba<br> <a href="https://maps.mapwize.io/#/p/venue_4dc372d5/tcc_352?k=5b88437f7276f04c" target="_blank">@TCC 352</a></div>
-                  </td>  
+                  </td>
                   <td></td>
                 </tr>
                 <tr id="Sun0:30">
@@ -436,7 +436,7 @@
                   <th scope="row">8:00am</th>
                   <td rowspan="2">
                       <div class="event orange">Yoga with ACM<br> <a href="https://maps.mapwize.io/#/p/venue_4dc372d5/tcc_plaza?k=5b88437f7276f04c" target="_blank">@TCC Plaza</a></div>
-                  </td> 
+                  </td>
                   <td></td>
                   <td></td>
                 </tr>
@@ -451,7 +451,7 @@
                   <td></td>
                   <td rowspan="2">
                       <div class="event orange">Breakfast<br> <a href="https://maps.mapwize.io/#/p/venue_4dc372d5/tcc_plaza?k=5b88437f7276f04c" target="_blank">@TCC Plaza</a></div>
-                  </td> 
+                  </td>
                   <td></td>
                 </tr>
                 <tr id="Sun9:30">
@@ -488,7 +488,7 @@
                   <th scope="row">12:00pm</th>
                   <td rowspan="2">
                       <div class="event orange">Lunch<br> <a href="https://maps.mapwize.io/#/p/venue_4dc372d5/tcc_plaza?k=5b88437f7276f04c" target="_blank">@TCC Plaza</a></div>
-                  </td> 
+                  </td>
                   <td></td>
                   <td></td>
                 </tr>
@@ -503,7 +503,7 @@
                   <td></td>
                   <td rowspan="2">
                       <div class="event blue">Project Expo<br> <a href="https://maps.mapwize.io/#/p/venue_4dc372d5/hacking_space?k=5b88437f7276f04c" target="_blank">@Hacking Space</a></div>
-                  </td> 
+                  </td>
                   <td></td>
                 </tr>
                 <tr id="Sun13:30">
