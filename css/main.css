@@ -333,7 +333,14 @@ a:hover {
 .app_info {
   width: 70vw;
   margin-top: 10px;
+  font-family: 'Amatic SC', bold;
+  font-weight: 600;
+  font-size: 40px;
 }
+.app_info p {
+  font-weight: 400;
+}
+
 
 @media (min-width: 800px) {
   .collapse {
