@@ -193,6 +193,9 @@ p {
     color: #000;
     width: 200px;
   }
+  .app_info p {
+    font-size: 20px;
+  }
 }
 /* what a shit show */
 .anchor {
