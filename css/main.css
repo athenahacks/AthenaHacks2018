@@ -15,7 +15,9 @@ body {
   min-width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-image: linear-gradient(#9dbddf, rgba(198, 226, 255, 0));
+  color: white;
+  /* background-image: linear-gradient(#1C0A32, rgba(198, 226, 255, 0)); */
+  background-color: #0F0D20;
   text-align: center;
 
   font-family: 'Questrial', Arial, sans-serif;
@@ -26,7 +28,7 @@ body {
   position: relative;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#c6e2ff, rgba(198, 226, 255, 0));
+  /* background-image: linear-gradient(red, rgba(198, 226, 255, 0)); */
 }
 
 .intro h1 {
@@ -209,7 +211,7 @@ p {
 header {
   position: fixed;
   width: 100%;
-  background-color: #9dbddf;
+  /* background-color: #9dbddf; */
   opacity: 0.8;
   top: 0;
   z-index: 200;
@@ -380,6 +382,7 @@ th {
   flex-direction: column;
   justify-content: center;
   padding-top: 2em;
+  position: absolute;
   width: 100vw;
   height: 100vh;
 }
@@ -589,10 +592,11 @@ th {
 /* ABOUT */
 
 .infoCards {
-  background-color: rgba(254, 155, 192, 0.5);
+  background-color: white;
   padding: 20px;
   margin: 10px;
   text-align: center;
+  color: #212323;
 }
 
 #infoCards {
@@ -605,7 +609,10 @@ th {
 }
 
 #about {
-  padding-top: 50px;
+  background-color: #A5DFD8;
+  width:100vw;
+  padding-top: 70px;
+  padding-bottom: 70px;
   text-align: left;
 }
 
@@ -626,7 +633,6 @@ th {
 
 .faq {
   list-style: none;
-  padding: 0;
 }
 
 .faq li {
@@ -640,12 +646,12 @@ th {
 }
 
 .faq li.active .question {
-  color: #36373a;
+  /* color: #36373a; */
   transition: color 0.5s ease;
 }
 
 .faq .answer {
-  color: #36373a;
+  /* color: #36373a; */
   font-family: 'Questrial', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -666,7 +672,7 @@ th {
 
 .faq .plus-minus-toggle:before,
 .faq .plus-minus-toggle:after {
-  background: #37363a;
+  /* background: #37363a; */
   content: '';
   height: 3px;
   left: 0;
@@ -689,7 +695,7 @@ th {
 }
 
 .faq .question {
-  color: #36373a;
+  /* color: #36373a; */
   font-family: 'Questrial', Arial, sans-serif;
   font-size: 20px;
 
@@ -724,7 +730,7 @@ th {
 }
 
 #faq {
-  padding-top: 2em;
+  padding-top: 50px;
   text-align: left;
 }
 #faq-container {
@@ -796,6 +802,7 @@ th {
   min-width: 100%;
   margin: auto;
   text-align: center;
+  background-color: #A5DFD8;
 }
 
 #sponsors-nav {
@@ -919,6 +926,8 @@ th {
 }
 #in-the-news {
   padding-top: 20px;
+  background-color:#140625;
+  width: 100vw;
 }
 /* DID YOU KNOW */
 
@@ -1067,7 +1076,6 @@ th {
   bottom: 0;
   left: 0;
   padding-top: 100px;
-  position: fixed;
   right: 0;
   top: 0;
 }
@@ -1220,7 +1228,7 @@ th {
   width: 100vw;
   height: 100vh;
 
-  background-image: linear-gradient(#c6e2ff, rgba(198, 226, 255, 0));
+  /* background-image: linear-gradient(#c6e2ff, rgba(198, 226, 255, 0)); */
   display: flex;
   position: relative;
   align-items: center;
