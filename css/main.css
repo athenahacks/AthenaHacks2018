@@ -7,7 +7,7 @@
   padding: 0;
 }
 #preload-01 {
-  background: url('/images/owl_2019.png') no-repeat -9999px -9999px;
+  background: url("/images/owl_2019.png") no-repeat -9999px -9999px;
 }
 html,
 body {
@@ -17,12 +17,12 @@ body {
   overflow-x: hidden;
   color: white;
   /* background-image: linear-gradient(#1C0A32, rgba(198, 226, 255, 0)); */
-  background-color: #0F0D20;
+  background-color: #0f0d20;
   transition: background-color 1s ease;
 
   text-align: center;
 
-  font-family: 'Questrial', Arial, sans-serif;
+  font-family: "Questrial", Arial, sans-serif;
 }
 
 .intro {
@@ -71,13 +71,14 @@ body {
 p {
   font-size: 17px;
   line-height: 25px;
-  font-family: 'Questrial', Arial, sans-serif;
+  font-family: "Questrial", Arial, sans-serif;
 }
 
 /* Scroll fading */
 .color-blue {
-  background-color: #A5DFD8;
+  background-color: #a5dfd8;
 }
+
 .color-pink {
   background-color: #ffb6c2;
 }
@@ -85,7 +86,6 @@ p {
   background-color: #ffd27e;
 }
 .color-purple {
-  background-color: #0F0D20;
 }
 .panel {
   min-height: 100vh;
@@ -95,9 +95,83 @@ p {
   p {
     font-size: 24px;
     line-height: 35px;
-    font-family: 'Questrial', Arial, sans-serif;
+    font-family: "Questrial", Arial, sans-serif;
   }
 }
+
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* .stars {
+ background: transparent url("../images/twinkle.png") repeat;
+ opacity: 0.7;
+ position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  	z-index: 0;
+} */
+
+/* .twinkling {
+  width: 10000px;
+  height: 100vh;
+
+  background: transparent url("../images/twinkle.png") repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+
+  -moz-animation: move-background 20s linear infinite;
+  -ms-animation: move-background 20s linear infinite;
+  -o-animation: move-background 20s linear infinite;
+  -webkit-animation: move-background 20s linear infinite;
+  animation: move-background 20s linear infinite;
+} */
 
 /* NAV */
 /* new nav stuff */
@@ -185,7 +259,7 @@ p {
     position: absolute;
     top: 0%;
     left: 22px;
-    content: '';
+    content: "";
   }
 
   .menu li {
@@ -292,7 +366,7 @@ a:hover {
   border: 1px solid #fff;
   z-index: 10000;
   margin-top: 30px;
-  font-family: 'Questrial', Arial, sans-serif;
+  font-family: "Questrial", Arial, sans-serif;
 }
 #hacker_link a:hover {
   background-color: #ffb6c2;
@@ -327,7 +401,7 @@ a:hover {
   border-bottom: 1px solid #fff;
   z-index: 10000;
 
-  font-family: 'Questrial', Arial, sans-serif;
+  font-family: "Questrial", Arial, sans-serif;
 }
 #mentor_link a:hover {
   background-color: #9dbddf;
@@ -347,7 +421,7 @@ a:hover {
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
   z-index: 10000;
-  font-family: 'Questrial', Arial, sans-serif;
+  font-family: "Questrial", Arial, sans-serif;
 }
 #volunteer_link a:hover {
   background-color: rgb(206, 187, 243);
@@ -357,14 +431,13 @@ a:hover {
 .app_info {
   width: 70vw;
   margin-top: 10px;
-  font-family: 'Amatic SC', bold;
+  font-family: "Amatic SC", bold;
   font-weight: 600;
   font-size: 40px;
 }
 .app_info p {
   font-weight: 400;
 }
-
 
 @media (min-width: 800px) {
   .collapse {
@@ -404,6 +477,20 @@ th {
   position: absolute;
   width: 100vw;
   height: 100vh;
+  z-index: 101;
+
+
+    /* background-color: #0F0D20; */
+    background: transparent
+      url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat;
+    opacity: 0.7;
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: block; */
+    z-index: 99;
 }
 #header-left {
   display: flex;
@@ -629,15 +716,16 @@ th {
 
 #about {
   /* background-color: #A5DFD8; */
-  width:100vw;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  width: 90vw;
+  /* padding-top: 70px; */
+  /* padding-bottom: 70px; */
   text-align: left;
   /* display: flex; */
 }
 
 .section-title {
-  font-size: 40px;
+  font-size: 60px;
+  margin-bottom: 20px;
 }
 .center {
   margin: auto;
@@ -672,7 +760,7 @@ th {
 
 .faq .answer {
   /* color: #36373a; */
-  font-family: 'Questrial', Arial, sans-serif;
+  font-family: "Questrial", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   max-height: 0;
@@ -693,7 +781,7 @@ th {
 .faq .plus-minus-toggle:before,
 .faq .plus-minus-toggle:after {
   /* background: #37363a; */
-  content: '';
+  content: "";
   height: 3px;
   left: 0;
   position: absolute;
@@ -716,7 +804,7 @@ th {
 
 .faq .question {
   /* color: #36373a; */
-  font-family: 'Questrial', Arial, sans-serif;
+  font-family: "Questrial", Arial, sans-serif;
   font-size: 20px;
 
   cursor: pointer;
@@ -886,8 +974,9 @@ th {
 .sponsor-title {
   align-self: center;
   font-size: 30px;
-  font-family: 'Questrial', Arial, sans-serif;
+  font-family: "Questrial", Arial, sans-serif;
   width: 100%;
+  margin-bottom: 20px;
 }
 .sponsor-title.old {
   font-size: 30px;
@@ -945,14 +1034,15 @@ th {
 }
 #in-the-news {
   padding-top: 20px;
-  background-color:#140625;
+  margin-top: 20px;
+  /* background-color: #140625; */
   width: 100vw;
 }
 /* DID YOU KNOW */
 
 #didyouknow {
   margin-bottom: 0px !important;
-  font-family: 'Questrial', Arial, sans-serif;
+  font-family: "Questrial", Arial, sans-serif;
 }
 
 /* SOCIAL */
@@ -1017,8 +1107,8 @@ th {
     max-width: 100%;
   }
   #about {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   #faq {
     padding-left: 15px;
@@ -1132,7 +1222,7 @@ th {
 }
 
 .cloud:after {
-  content: '';
+  content: "";
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
@@ -1144,7 +1234,7 @@ th {
 }
 
 .cloud:before {
-  content: '';
+  content: "";
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
   border-radius: 200px;
@@ -1252,6 +1342,7 @@ th {
   position: relative;
   align-items: center;
   justify-content: center;
+
 }
 
 .intro h1 {
@@ -1286,5 +1377,6 @@ th {
 .intro.circle:hover {
   background-color: #eee;
   background-color: #fff;
+
   color: #ffb6c2;
 }
