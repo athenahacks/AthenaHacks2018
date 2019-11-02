@@ -11,13 +11,15 @@
 }
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   min-width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
   color: white;
   /* background-image: linear-gradient(#1C0A32, rgba(198, 226, 255, 0)); */
   background-color: #0F0D20;
+  transition: background-color 1s ease;
+
   text-align: center;
 
   font-family: 'Questrial', Arial, sans-serif;
@@ -70,6 +72,23 @@ p {
   font-size: 17px;
   line-height: 25px;
   font-family: 'Questrial', Arial, sans-serif;
+}
+
+/* Scroll fading */
+.color-blue {
+  background-color: #A5DFD8;
+}
+.color-pink {
+  background-color: #ffb6c2;
+}
+.color-yellow {
+  background-color: #ffd27e;
+}
+.color-purple {
+  background-color: #0F0D20;
+}
+.panel {
+  min-height: 100vh;
 }
 
 @media (min-width: 1824px) {
@@ -609,11 +628,12 @@ th {
 }
 
 #about {
-  background-color: #A5DFD8;
+  /* background-color: #A5DFD8; */
   width:100vw;
   padding-top: 70px;
   padding-bottom: 70px;
   text-align: left;
+  /* display: flex; */
 }
 
 .section-title {
@@ -802,7 +822,6 @@ th {
   min-width: 100%;
   margin: auto;
   text-align: center;
-  background-color: #A5DFD8;
 }
 
 #sponsors-nav {
