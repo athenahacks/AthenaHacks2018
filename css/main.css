@@ -22,7 +22,11 @@ body {
 
   text-align: center;
 
-  font-family: "Questrial", Arial, sans-serif;
+  font-family: "Cabin", sans-serif;
+}
+
+.row{
+  padding: 15px;
 }
 
 .intro {
@@ -35,7 +39,7 @@ body {
 
 .intro h1 {
   padding-top: 20%;
-  font-family: Ardina, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 60px;
 }
 .intro h2 {
@@ -71,7 +75,7 @@ body {
 p {
   font-size: 17px;
   line-height: 25px;
-  font-family: "Questrial", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Scroll fading */
@@ -346,7 +350,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #579cdc;
+  color: #ffccdc;
 }
 
 a:hover {
@@ -432,16 +436,22 @@ a:hover {
   text-decoration: none;
 }
 
-.app_info {
-  width: 70vw;
-  margin-top: 10px;
-  font-family: "Amatic SC", bold;
-  font-weight: 600;
-  font-size: 40px;
-}
 .app_info p {
   font-weight: 400;
+  color: white;
 }
+.app_info {
+  width: 35vw;
+  margin-top: 0;
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFF5B5;
+}
+/* .app_info p {
+  font-weight: 400;
+  font-size: 5px;
+} */
 
 @media (min-width: 800px) {
   .collapse {
@@ -731,6 +741,7 @@ th {
   font-size: 60px;
   margin-bottom: 20px;
 }
+
 .center {
   margin: auto;
   width: 90%;
@@ -745,6 +756,7 @@ th {
 
 .faq {
   list-style: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .faq li {
@@ -760,11 +772,12 @@ th {
 .faq li.active .question {
   /* color: #36373a; */
   transition: color 0.5s ease;
+  font-family: "Roboto", sans-serif;
 }
 
 .faq .answer {
   /* color: #36373a; */
-  font-family: "Questrial", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
   max-height: 0;
@@ -808,7 +821,7 @@ th {
 
 .faq .question {
   /* color: #36373a; */
-  font-family: "Questrial", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
 
   cursor: pointer;
