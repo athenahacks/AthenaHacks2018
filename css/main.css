@@ -76,16 +76,20 @@ p {
 
 /* Scroll fading */
 .color-blue {
-  background-color: #a5dfd8;
+  background-color: #8D83BD;
 }
 
 .color-pink {
-  background-color: #ffb6c2;
+  background-color: #80C0C5;
 }
 .color-yellow {
   background-color: #ffd27e;
 }
 .color-purple {
+}
+
+.color-blue2{
+  background-color: #8EB9E7;
 }
 .panel {
   min-height: 100vh;
@@ -823,9 +827,8 @@ th {
 }
 
 .side {
-  height: 300px;
-  margin-top: 25%;
-  margin-bottom: 5px;
+  height: 500px;
+  margin-bottom: 10px;
   text-align: center;
   display: block;
 }
