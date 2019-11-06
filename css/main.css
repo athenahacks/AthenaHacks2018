@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');@-ms-viewport {
   width: device-width;
 }
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');@-ms-viewport {
+  width: device-width;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +22,11 @@ body {
 
   text-align: center;
 
-  font-family: "Oxygen", Arial, sans-serif;
+  font-family: "Cabin", sans-serif;
+}
+
+.row{
+  padding: 15px;
 }
 
 .intro {
@@ -32,7 +39,7 @@ body {
 
 .intro h1 {
   padding-top: 20%;
-  /* font-family: Ardina, sans-serif; */
+  font-family: "Roboto", sans-serif;
   font-size: 60px;
 }
 .intro h2 {
@@ -68,21 +75,25 @@ body {
 p {
   font-size: 25px;
   line-height: 34px;
-  font-family: "Oxygen", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Scroll fading */
 .color-blue {
-  background-color: #a5dfd8;
+  background-color: #8D83BD;
 }
 
 .color-pink {
-  background-color: #ffb6c2;
+  background-color: #80C0C5;
 }
 .color-yellow {
   background-color: #ffd27e;
 }
 .color-purple {
+}
+
+.color-blue2{
+  background-color: #8EB9E7;
 }
 .panel {
   min-height: 100vh;
@@ -340,7 +351,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #579cdc;
+  color: #ffccdc;
 }
 
 a:hover {
@@ -426,14 +437,22 @@ a:hover {
   text-decoration: none;
 }
 
-.app_info {
-  /* width: 65vw; */
-  margin: 20px;
-  padding: 20px;
-  text-align: right;
-  font-size: 40px;
-  
+.app_info p {
+  font-weight: 400;
+  color: white;
 }
+.app_info {
+  width: 35vw;
+  margin-top: 0;
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFF5B5;
+}
+/* .app_info p {
+  font-weight: 400;
+  font-size: 5px;
+} */
 
 @media (min-width: 800px) {
   .collapse {
@@ -724,6 +743,7 @@ th {
   font-size: 60px;
   margin-bottom: 20px;
 }
+
 .center {
   margin: auto;
   width: 90%;
@@ -738,6 +758,7 @@ th {
 
 .faq {
   list-style: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .faq li {
@@ -753,11 +774,12 @@ th {
 .faq li.active .question {
   /* color: #36373a; */
   transition: color 0.5s ease;
+  font-family: "Roboto", sans-serif;
 }
 
 .faq .answer {
   /* color: #36373a; */
-  font-family: "Oxygen", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 24px;
   max-height: 0;
@@ -801,7 +823,7 @@ th {
 
 .faq .question {
   /* color: #36373a; */
-  font-family: "Oxygen", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 35px;
 
   cursor: pointer;
@@ -820,9 +842,8 @@ th {
 }
 
 .side {
-  height: 300px;
-  margin-top: 25%;
-  margin-bottom: 5px;
+  height: 500px;
+  margin-bottom: 10px;
   text-align: center;
   display: block;
 }
@@ -971,7 +992,6 @@ th {
 .sponsor-title {
   align-self: center;
   font-size: 60px;
-  font-family: "Oxygen", Arial, sans-serif;
   width: 100%;
   margin-bottom: 20px;
 }
