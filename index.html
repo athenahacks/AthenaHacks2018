@@ -30,22 +30,24 @@
     <link rel="stylesheet" href="vendors/responsive-nav/responsive-nav.css">
 
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/main.css">
     <!--<link rel="stylesheet" href="css/flowers.css"> -->
 
     <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+        integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
 
     <script src="https://use.fontawesome.com/9f7b7f8456.js"></script>
     <script src="vendors/responsive-nav/responsive-nav.min.js"></script>
@@ -64,7 +66,8 @@
         firebase.initializeApp(config);
     </script>
     <script src="js/contact.js"></script>
-    <script>jQuery(document).ready(function () {
+    <script>
+        jQuery(document).ready(function () {
             jQuery('.toggle-nav').click(function (e) {
                 jQuery(this).toggleClass('active');
                 jQuery('.menu ul').toggleClass('active');
@@ -72,20 +75,24 @@
                 e.preventDefault();
             });
 
-        });</script>
+        });
+    </script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135608121-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135608121-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-135608121-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-<script type="text/javascript" src="js/scroll_fade.js"></script>
-  <!-- Favicon
+        gtag('config', 'UA-135608121-1');
+    </script>
+
+    <script type="text/javascript" src="js/scroll_fade.js"></script>
+    <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/owl_2020_moon.png">
 
@@ -128,22 +135,23 @@
 </header>
 
 <body>
-        <div class="hidden">
-                <script type="text/javascript">
-                        var images = new Array()
-                        function preload() {
-                            for (i = 0; i < preload.arguments.length; i++) {
-                                images[i] = new Image()
-                                images[i].src = preload.arguments[i]
-                            }
-                        }
-                        preload(
-                            "/images/owl_2020_moon.png",
-                            "/images/athena_text_2020.png",
-                        )
-                    //--><!]]>
-                </script>
-            </div>
+    <div class="hidden">
+        <script type="text/javascript">
+            var images = new Array()
+
+            function preload() {
+                for (i = 0; i < preload.arguments.length; i++) {
+                    images[i] = new Image()
+                    images[i].src = preload.arguments[i]
+                }
+            }
+            preload(
+                "/images/owl_2020_moon.png",
+                "/images/athena_text_2020.png",
+            )
+            //--><!]]>
+        </script>
+    </div>
 
     <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -151,7 +159,7 @@
     <div class="intro ">
 
 
-      <!-- <div class="clouds">
+        <!-- <div class="clouds">
           <div class="cloud x1"></div>
           <div class="cloud x2"></div>
           <div class="cloud x3"></div>
@@ -164,7 +172,7 @@
 
 
 
-        <div class= "center panel" id="landing"  data-color="purple">
+        <div class="center panel" id="landing" data-color="purple">
 
             <div class="row landing" id="header-left">
                 <img id="logo" src="images/owl_2020_moon.png">
@@ -172,9 +180,6 @@
             <div class="row landing" id="header-right">
                 <div class="logo">
                     <img id="logo_text" src="images/athena_text_2020.png">
-
-
-
                 </div>
                 <!-- <div id="hacker_link" class="row">
                     <a href="https://www.athenahacks.com/dayof2019" target="_blank">LIVE</a>
@@ -192,8 +197,8 @@
                 -->
 
                 <div class="app_info">
-                  AthenaHacks 2020 will be March 7-8th!
-                    <p class="app_info"> Organizer Applications are now closed! More info coming soon!</p>
+                    March 7 - 9, 2020 <br/>
+                    University of Southern California
                 </div>
 
             </div>
@@ -207,18 +212,17 @@
         <!-- <a href="Schedule.pdf" target="_blank" class="button" id="app-closed"> Schedule </a> -->
         <!-- <a href="dayof.html" target="_blank" class="button"> Day-of Site </a>  -->
     </div>
-    <div class = "twinkling">
-      </div>
+    <div class="twinkling">
+    </div>
 
     <!-- ABOUT -->
     <!-- <span class="anchor" id="about_landing"></span> -->
 
     <div class="center panel" id="about" data-color="blue">
         <div class="row">
-            <h1 class="section-title">about</h1>
+            <h1 class="sponsor-title">about</h1>
         </div>
-        <div class="row">
-            <div class="twelve columns">
+        <div>
                 <p>
 
                     Join us for a weekend dedicated to <b>filling the gender gap</b>,
@@ -229,9 +233,8 @@
                     and more! No experience necessary, you just need passion.
                 </p>
                 <p>
-                    *trans and non-binary inclusive
+                    <strong>*trans and non-binary inclusive</strong>
                 </p>
-            </div>
 
         </div>
 
@@ -291,7 +294,7 @@
                         <div class="answer">
                             Female* undergraduates and high schoolers are welcome to attend; we'd love to have any
                             males interested
-                            in helping our cause and any women in the industry to mentor or volunteer! <br/>
+                            in helping our cause and any women in the industry to mentor or volunteer! <br />
                             *trans and non-binary inclusive </div>
 
                     </li>
@@ -308,7 +311,8 @@
                         <h3 class="question">How do I get to USC?
                         </h3>
                         <div class="answer">
-                            This year we are sending buses to UCLA, UCI, Cal Poly SLO, and UCR! More details will be coming soon so keep a look
+                            This year we are sending buses to UCLA, UCI, Cal Poly SLO, and UCR! More details will be
+                            coming soon so keep a look
                             out. Registering for a spot on a bus will happen after application acceptances go out.
                         </div>
                     </li>
@@ -419,12 +423,14 @@
                     <img src="images/graphic_paintbrush.png" class="side"></img>
                 </div>
                 <div style="text-align: right; width: 100%;">
-                    <p> if we missed your question, hit us up at <a href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></p>
+                    <p> if we missed your question, hit us up at <a
+                            href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></p>
                 </div>
             </div>
 
             <div class="eleven" id="faq-text">
-                <p> if we missed your question, hit us up at <a href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></p>
+                <p> if we missed your question, hit us up at <a
+                        href="mailto:athenahacks@gmail.com">athenahacks@gmail.com</a></p>
             </div>
         </div>
 
@@ -444,7 +450,7 @@
         <!-- Neudesic Tier -->
         <!-- Beta Tier -->
         <div class="row center collage-images tier2">
-            <a href="https://www.microsoft.com/en-us/" target="_blank"><img src="images/sponsors/microsoft.png"></a>
+            <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank"><img src="images/sponsors/microsoft.png"></a>
         </div>
         <!-- Gamma Tier zynga, qualcomm, honey-->
         <div class="d-flex justify-content-evenly collage-images tier3">
@@ -482,10 +488,12 @@
         <div class="row center">
             <div class="collage-images tier5">
                 <div class="col-4-sm">
-                    <a href="https://www.stickermule.com/supports/hackathons" target="_blank"><img src="images/sponsors/stickermule.png"></a>
+                    <a href="https://www.stickermule.com/supports/hackathons" target="_blank"><img
+                            src="images/sponsors/stickermule.png"></a>
                 </div>
                 <div class="col-4-sm">
-                    <a href="https://resed.usc.edu/get_involved/rha-2/s" target="_blank"><img src="images/sponsors/RHA-logo.png"></a>
+                    <a href="https://resed.usc.edu/get_involved/rha-2/s" target="_blank"><img
+                            src="images/sponsors/RHA-logo.png"></a>
                 </div>
             </div>
         </div>
@@ -494,7 +502,8 @@
         <div class="row center">
             <div class="collage-images tier5">
                 <div class="col-4-sm">
-                    <a href="https://guayaki.com/yerba-mate/" target="_blank"><img src="images/sponsors/yerbamate.png"></a>
+                    <a href="https://guayaki.com/yerba-mate/" target="_blank"><img
+                            src="images/sponsors/yerbamate.png"></a>
                 </div>
                 <div class="col-4-sm">
                     <a href="https://rawrev.com/" target="_blank"><img src="images/sponsors/rawrev.png"></a>
@@ -509,7 +518,8 @@
                     <a href="http://www.thebobatruck.com/" target="_blank"><img src="images/sponsors/bobatruck.png"></a>
                 </div>
                 <div class="col-4-sm">
-                    <a href="https://skinnydipped.com/" target="_blank"><img src="images/sponsors/skinny_dipped.png"></a>
+                    <a href="https://skinnydipped.com/" target="_blank"><img
+                            src="images/sponsors/skinny_dipped.png"></a>
                 </div>
                 <div class="col-4-sm">
                     <a href="https://eatbobos.com/" target="_blank"><img src="images/sponsors/bobos_snacks.png"></a>
@@ -518,7 +528,8 @@
                     <a href="https://baresnacks.com/" target="_blank"><img src="images/sponsors/bare snacks.png"></a>
                 </div>
                 <div class="col-4-sm">
-                    <a href="https://health-ade.com/" target="_blank"><img src="images/sponsors/health_aid_kombucha.png"></a>
+                    <a href="https://health-ade.com/" target="_blank"><img
+                            src="images/sponsors/health_aid_kombucha.png"></a>
                 </div>
                 <div class="col-4-sm">
                     <a href="https://cafedulce.co" target="_blank"><img src="images/sponsors/cafedulce.png"></a>
@@ -526,7 +537,7 @@
             </div>
         </div>
 
-        <div class="row center sponsor_header" >
+        <div class="row center sponsor_header">
             <div class="col purple-rect">
             </div>
             <div class="col">
@@ -542,7 +553,8 @@
                 <a href="https://www.neudesic.com/" target="_blank"><img src="images/sponsors/neudesic.png"></a>
             </div>
             <div class="collage-images tier3">
-                <a href="http://bit.ly/2R5A2Pc" target="_blank"><img src="images/sponsors/challengerocket_logo_color_rgb.png"></a>
+                <a href="http://bit.ly/2R5A2Pc" target="_blank"><img
+                        src="images/sponsors/challengerocket_logo_color_rgb.png"></a>
             </div>
         </div>
         <hr />
@@ -661,7 +673,8 @@
                     <h2>Did you know?</h2>
                     <p>The sacred image of Athena, a wooden statue called Palladium, protected the Trojans as long as
                         they had it.
-                        <br /> Fight on from the Trojan Family! <i class="fa fa-hand-peace-o" aria-hidden="true"></i></p>
+                        <br /> Fight on from the Trojan Family! <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+                    </p>
                 </div>
 
                 <!-- SOCIAL MEDIA -->
@@ -768,7 +781,12 @@
     <!-- MLH -->
     <!--<a class="apply-badge" href="https://projectathena.typeform.com/to/LM2rM0" target="_blank"><img src="images/apply_ad.png" alt="Major League Hacking 2017 Hackathon Season" style="width:100%;"></a>-->
 
-    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
+    <a id="mlh-trust-badge"
+        style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+        href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white"
+        target="_blank"><img
+            src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg"
+            alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
 </body>
 
 </html>
