@@ -260,6 +260,9 @@ body {
     width: 80vw;
     align-self: flex-end;
   }
+  #header-right h2 {
+    font-size: 1.5em;
+  }
   .section {
     font-size: 1.3em;
     padding: 5vh 0vw;
