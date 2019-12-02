@@ -42,9 +42,13 @@ body {
   border-radius: 5px;
   margin: 15px 0px;
   font-size: 20px;
-  color: black;
   background-color: #FFF5B5;
+  text-decoration: none;
   border: none;
+}
+#header-right a {
+  text-decoration: none;
+  color: black;
 }
 #header-right button:hover {
   background-color: #6d589c;
