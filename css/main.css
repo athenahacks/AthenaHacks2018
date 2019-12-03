@@ -103,6 +103,28 @@ body {
   align-items: center;
   color: black;
   border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #212323;
+}
+
+#infoCards {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+#about_land .about-img {
+  width: 90px;
+}
+
+#about {
+  /* background-color: #A5DFD8; */
+  width: 90vw;
+  /* padding-top: 70px; */
+  /* padding-bottom: 70px; */
+  text-align: center;
+
+  /* display: flex; */
 }
 
 /* FAQ section */
@@ -149,7 +171,7 @@ body {
 }
 #faq-right a {
   color: white;
-} 
+}
 #faq-right img {
   height: 30vw;
 }
@@ -180,6 +202,30 @@ body {
 }
 .sponsor-tier img {
   padding: 15px;
+}
+.sponsor_header {
+  flex-direction: row;
+  /* justify-content: center; */
+  align-content: center;
+  /* align-items: center; */
+  padding-bottom: 20px;
+}
+.purple-rect {
+  align-self: center;
+  height: 5px;
+  background: rgba(177, 156, 217, 0.5);
+  width: 100%;
+}
+.sponsor-title{
+  /* align-self: center; */
+  font-size: 60px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.sponsor-title.old{
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .tier1 img {
@@ -297,6 +343,7 @@ body {
   .tier3 img {
     height: 5vh;
   }
+  
   /* their logo has a weird thing that makes it small looking so u gotta fake it being bigger */
   #honey {
     height: 7vh;
