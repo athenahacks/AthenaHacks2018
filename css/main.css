@@ -213,10 +213,12 @@ body {
  padding-bottom: 0;
 }
 #pixlee_container {
-  width: 80%;
+  width: 80vw;
   align-self: center;
   height: 65vh;
   overflow-y: scroll;
+  overflow-x: hidden;
+
 }
 
 #social_media a{
