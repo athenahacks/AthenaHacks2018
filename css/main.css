@@ -40,7 +40,6 @@ body {
   border-radius: 5px;
   margin: 15px 0px;
   font-size: 20px;
-  background-color: #FFF5B5;
   text-decoration: none;
   border: none;
 }
@@ -48,8 +47,18 @@ body {
   text-decoration: none;
   color: black;
 }
-#header-right button:hover {
-  background-color: #6d589c;
+
+#hacker_button {
+  background-color: #967ad2; 
+}
+#hacker_button:hover {
+  background-color: #b694ff; 
+}
+#mentor_button { 
+  background-color: #9dd8d2;
+}
+#mentor_button:hover {
+  background-color: #b7fff8; 
 }
 
 /* athenahacks text */
