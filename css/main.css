@@ -38,7 +38,7 @@ body {
 }
 #header-right button {
   border-radius: 5px;
-  margin: 15px 0px;
+  margin: 3px 0px;
   font-size: 20px;
   text-decoration: none;
   border: none;
@@ -47,7 +47,13 @@ body {
   text-decoration: none;
   color: black;
 }
+#app_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
 
+}
 #hacker_button {
   background-color: #967ad2; 
 }
@@ -60,10 +66,23 @@ body {
 #mentor_button:hover {
   background-color: #b7fff8; 
 }
+#volunteer_button { 
+  background-color: #FFF5B5;
+}
+#volunteer_button:hover {
+  background-color: #f9d364; 
+}
+
 
 /* athenahacks text */
 #header-right img {
   width: 40vw;
+}
+
+#coming_soon {
+  color: #dcbdc7;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 /* Date of Athena */
@@ -71,6 +90,21 @@ body {
   margin-top: 30px;
   font-size: 1.8em;
 }
+#countdown {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 40px;
+}
+#clockdiv {
+  display: flex;
+  justify-content: row;
+  color: #dcbdc7;
+}
+.timer {
+  padding: 5px;
+  font-size: 50px;
+}
+
 
 #main {
   background: transparent
