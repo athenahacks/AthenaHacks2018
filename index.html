@@ -99,9 +99,9 @@
                     function updateClock() {
                       var t = getTimeRemaining(endtime);
                       daysSpan.innerHTML = t.days + " days";
-                      hoursSpan.innerHTML = ('' + t.hours).slice(-2) + " hours";
-                      minutesSpan.innerHTML = ('' + t.minutes).slice(-2) + " min";
-                      secondsSpan.innerHTML = ('' + t.seconds).slice(-2) + " sec";
+                      hoursSpan.innerHTML = ('' + t.hours).slice(-2) + "h";
+                      minutesSpan.innerHTML = ('' + t.minutes).slice(-2) + "m";
+                      secondsSpan.innerHTML = ('' + t.seconds).slice(-2) + "s";
             
                       daysSpan.style.width = "100%";
                       hoursSpan.style.width = "100%";

@@ -39,7 +39,7 @@ body {
 #header-right button {
   border-radius: 5px;
   margin: 3px 0px;
-  font-size: 20px;
+  font-size: 1.2em;
   text-decoration: none;
   border: none;
 }
@@ -49,10 +49,13 @@ body {
 }
 #app_buttons {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: flex-end;
   margin-top: 10px;
-
+  /* padding: 10px; */
+}
+#app_buttons button {
+  margin-left: 5px;
 }
 #hacker_button {
   background-color: #967ad2; 
@@ -103,6 +106,8 @@ body {
 .timer {
   padding: 5px;
   font-size: 50px;
+  display: flex;
+  /* justify-content: center; */
 }
 
 
