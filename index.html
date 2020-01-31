@@ -86,7 +86,7 @@
                       'seconds': seconds
                     };
                   }
-            
+
                   function initializeClock(id, endtime) {
                     var clock = document.getElementById(id);
                     var timer = clock.querySelector('.timer');
@@ -95,14 +95,14 @@
                     var hoursSpan = clock.querySelector('.hours');
                     var minutesSpan = clock.querySelector('.minutes');
                     var secondsSpan = clock.querySelector('.seconds');
-            
+
                     function updateClock() {
                       var t = getTimeRemaining(endtime);
                       daysSpan.innerHTML = t.days + " d";
                       hoursSpan.innerHTML = ('' + t.hours).slice(-2) + " h";
                       minutesSpan.innerHTML = ('' + t.minutes).slice(-2) + " m";
                       secondsSpan.innerHTML = ('' + t.seconds).slice(-2) + " s";
-            
+
                       daysSpan.style.width = "100%";
                       hoursSpan.style.width = "100%";
                       minutesSpan.style.width = "100%";
@@ -116,11 +116,11 @@
                         clearInterval(timeinterval);
                       }
                     }
-            
+
                     updateClock();
                     var timeinterval = setInterval(updateClock, 1000);
                   }
-            
+
                   var deadline = new Date("March 7, 2020 12:00:00");
                   initializeClock('clockdiv', deadline);
                 </script>
@@ -129,11 +129,11 @@
                 March 7 - 8, 2020 <br />
                 University of Southern California
             </h2>
-            
+
             <div id="app_buttons">
                 <button id="hacker_button"><a target="_blank" href="http://apply.athenahacks.com">Hacker
                         App</a></button>
-                       
+
                 <button id="mentor_button"><a target="_blank"
                         href="https://docs.google.com/forms/u/3/d/e/1FAIpQLSe6vL88G2l4NN_TBbkrXOOB9lwS5dHuVSEJsFiGJDmTOoRHdQ/viewform">Mentor
                         App</a></button>
@@ -141,13 +141,13 @@
                     href="https://docs.google.com/forms/d/e/1FAIpQLSeXVPlrpSnk10zRjR2TLS9ZCBoj1hLFq7Gc8DJrC1DtZwxXww/viewform">Volunteer
                     App</a></button>
             </div>
-            
+
             <div id="coming_soon">
                 Live site coming soon!
             </div>
-            
+
         </div>
-        
+
     </div>
     <div id="main">
         <!-- ABOUT -->
@@ -360,7 +360,12 @@
                             src="https://athenahacks.com/images/sponsors/honey-logo.svg" id="honey"></a>
                     <a href="https://www.qualcomm.com/" target="_blank"><img
                             src="https://athenahacks.com/images/sponsors/qualcomm.png"></a>
-
+                    <a href="https://www.bloomberg.com/" target ="_blank"><img
+                      src="https://athenahacks.com/images/sponsors/bloomberg.png"></a>
+                    <a href="https://www.activision.com/" target ="_blank"><img
+                      src="https://athenahacks.com/images/sponsors/activision.png"></a>
+                    <a href="https://www.pimco.com/" target ="_blank"><img
+                      src="images/sponsors/pimco.png"></a>
                 </div>
                 <!-- Delta Tier-->
                 <div class="sponsor-tier tier4">
@@ -376,6 +381,10 @@
                             src="https://athenahacks.com/images/sponsors/invoca-logo.png"></a>
                     <a href="https://www.standardindustries.com/" target="_blank"><img
                             src="https://athenahacks.com/images/sponsors/standard.png"></a>
+                    <a href="https://www.northropgrumman.com/" target="_blank"><img
+                            src="images/sponsors/northrop-grumman.png"></a>
+                    <a href="https://www.ibm.com/" target="_blank"><img
+                            src="images/sponsors/ibm.png"></a>
                 </div>
                 <!-- Other Tier -->
                 <div class="sponsor-tier tier5">
@@ -389,6 +398,11 @@
                             src="https://athenahacks.com/images/sponsors/mlh-logo.png"></a>
                     <a href="https://viterbischool.usc.edu/" target="_blank"><img
                             src="https://athenahacks.com/images/sponsors/viterbilogo.png"></a>
+                    <a href="https://ripplematch.com/" target="_blank"><img
+                            src="images/sponsors/ripplematch.png"></a>
+                    <a href="https://disney.com/" target="_blank"><img
+                            src="images/sponsors/disney.png"></a>
+
                 </div>
                 <!-- Food Sponsors -->
                 <!-- <div class="sponsor-tier tier5">
