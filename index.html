@@ -72,57 +72,57 @@
                     </div>
                 </div>
                 <script>
-                  function getTimeRemaining(endtime) {
-                    var t = Date.parse(endtime) - Date.parse(new Date());
-                    var seconds = Math.floor((t / 1000) % 60);
-                    var minutes = Math.floor((t / 1000 / 60) % 60);
-                    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-                    return {
-                      'total': t,
-                      'days': days,
-                      'hours': hours,
-                      'minutes': minutes,
-                      'seconds': seconds
-                    };
-                  }
-
-                  function initializeClock(id, endtime) {
-                    var clock = document.getElementById(id);
-                    var timer = clock.querySelector('.timer');
-
-                    var daysSpan = clock.querySelector('.days');
-                    var hoursSpan = clock.querySelector('.hours');
-                    var minutesSpan = clock.querySelector('.minutes');
-                    var secondsSpan = clock.querySelector('.seconds');
-
-                    function updateClock() {
-                      var t = getTimeRemaining(endtime);
-                      daysSpan.innerHTML = t.days + " d";
-                      hoursSpan.innerHTML = ('' + t.hours).slice(-2) + " h";
-                      minutesSpan.innerHTML = ('' + t.minutes).slice(-2) + " m";
-                      secondsSpan.innerHTML = ('' + t.seconds).slice(-2) + " s";
-
-                      daysSpan.style.width = "100%";
-                      hoursSpan.style.width = "100%";
-                      minutesSpan.style.width = "100%";
-                      secondsSpan.style.width = "100%";
-                      daysSpan.style.fontSize = "24px";
-                      hoursSpan.style.fontSize = "24px";
-                      minutesSpan.style.fontSize = "24px";
-                      secondsSpan.style.fontSize = "24px";
-
-                      if (t.total <= 0) {
-                        clearInterval(timeinterval);
-                      }
+                    function getTimeRemaining(endtime) {
+                        var t = Date.parse(endtime) - Date.parse(new Date());
+                        var seconds = Math.floor((t / 1000) % 60);
+                        var minutes = Math.floor((t / 1000 / 60) % 60);
+                        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+                        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                        return {
+                            'total': t,
+                            'days': days,
+                            'hours': hours,
+                            'minutes': minutes,
+                            'seconds': seconds
+                        };
                     }
 
-                    updateClock();
-                    var timeinterval = setInterval(updateClock, 1000);
-                  }
+                    function initializeClock(id, endtime) {
+                        var clock = document.getElementById(id);
+                        var timer = clock.querySelector('.timer');
 
-                  var deadline = new Date("March 7, 2020 12:00:00");
-                  initializeClock('clockdiv', deadline);
+                        var daysSpan = clock.querySelector('.days');
+                        var hoursSpan = clock.querySelector('.hours');
+                        var minutesSpan = clock.querySelector('.minutes');
+                        var secondsSpan = clock.querySelector('.seconds');
+
+                        function updateClock() {
+                            var t = getTimeRemaining(endtime);
+                            daysSpan.innerHTML = t.days + " d";
+                            hoursSpan.innerHTML = ('' + t.hours).slice(-2) + " h";
+                            minutesSpan.innerHTML = ('' + t.minutes).slice(-2) + " m";
+                            secondsSpan.innerHTML = ('' + t.seconds).slice(-2) + " s";
+
+                            daysSpan.style.width = "100%";
+                            hoursSpan.style.width = "100%";
+                            minutesSpan.style.width = "100%";
+                            secondsSpan.style.width = "100%";
+                            daysSpan.style.fontSize = "24px";
+                            hoursSpan.style.fontSize = "24px";
+                            minutesSpan.style.fontSize = "24px";
+                            secondsSpan.style.fontSize = "24px";
+
+                            if (t.total <= 0) {
+                                clearInterval(timeinterval);
+                            }
+                        }
+
+                        updateClock();
+                        var timeinterval = setInterval(updateClock, 1000);
+                    }
+
+                    var deadline = new Date("March 7, 2020 12:00:00");
+                    initializeClock('clockdiv', deadline);
                 </script>
             </div>
             <h2>
@@ -138,8 +138,8 @@
                         href="https://docs.google.com/forms/u/3/d/e/1FAIpQLSe6vL88G2l4NN_TBbkrXOOB9lwS5dHuVSEJsFiGJDmTOoRHdQ/viewform">Mentor
                         App</a></button>
                 <button id="volunteer_button"><a target="_blank"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeXVPlrpSnk10zRjR2TLS9ZCBoj1hLFq7Gc8DJrC1DtZwxXww/viewform">Volunteer
-                    App</a></button>
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeXVPlrpSnk10zRjR2TLS9ZCBoj1hLFq7Gc8DJrC1DtZwxXww/viewform">Volunteer
+                        App</a></button>
             </div>
 
             <div id="coming_soon">
@@ -346,8 +346,7 @@
             <div class="section-title">Sponsors</div>
             <div id="sponsor-logos">
                 <!-- Beta Tier -->
-                <div class="sponsor-tier tier2">
-                </div>
+
                 <!-- Gamma Tier-->
                 <div class="sponsor-tier tier3">
                     <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank"><img
@@ -360,12 +359,14 @@
                             src="https://athenahacks.com/images/sponsors/honey-logo.svg" id="honey"></a>
                     <a href="https://www.qualcomm.com/" target="_blank"><img
                             src="https://athenahacks.com/images/sponsors/qualcomm.png"></a>
-                    <a href="https://www.bloomberg.com/" target ="_blank"><img
-                      src="https://athenahacks.com/images/sponsors/bloomberg.png"></a>
-                    <a href="https://www.activision.com/" target ="_blank"><img
-                      src="https://athenahacks.com/images/sponsors/activision.png"></a>
-                    <a href="https://www.pimco.com/" target ="_blank"><img
-                      src="images/sponsors/pimco.png"></a>
+                    <a href="https://www.bloomberg.com/" target="_blank"><img
+                            src="https://athenahacks.com/images/sponsors/bloomberg.png"></a>
+                    <a href="https://www.activision.com/" target="_blank"><img
+                            src="https://athenahacks.com/images/sponsors/activision.png"></a>
+                    <a href="https://www.pimco.com/" target="_blank" id="pimco"><img
+                            src="images/sponsors/pimco-logo.png"></a>
+
+
                 </div>
                 <!-- Delta Tier-->
                 <div class="sponsor-tier tier4">
@@ -382,9 +383,8 @@
                     <a href="https://www.standardindustries.com/" target="_blank"><img
                             src="https://athenahacks.com/images/sponsors/standard.png"></a>
                     <a href="https://www.northropgrumman.com/" target="_blank"><img
-                            src="images/sponsors/northrop-grumman.png"></a>
-                    <a href="https://www.ibm.com/" target="_blank"><img
-                            src="images/sponsors/ibm.png"></a>
+                            src="images/sponsors/northrop_grumman_logo.png"></a>
+                    <a href="https://www.ibm.com/" target="_blank"><img src="images/sponsors/ibm.png"></a>
                 </div>
                 <!-- Other Tier -->
                 <div class="sponsor-tier tier5">
@@ -392,17 +392,16 @@
                             src="https://athenahacks.com/images/sponsors/stickermule.png"></a>
                     <a href="https://stickerapp.com/" target="_blank"><img
                             src="https://athenahacks.com/images/sponsors/stickerapp_logo.png"></a>
-                    <a href="https://usg.usc.edu/resources/" target="_blank"><img
-                            src="https://athenahacks.com/images/sponsors/USG-logo.png"></a>
+
                     <a href="https://mlh.io/" target="_blank"><img
                             src="https://athenahacks.com/images/sponsors/mlh-logo.png"></a>
+
+                    <a href="https://ripplematch.com/" target="_blank"><img src="images/sponsors/ripplematch.png"></a>
+                    <a href="https://disney.com/" target="_blank"><img src="images/sponsors/disney.png"></a>
+                    <a href="https://usg.usc.edu/resources/" target="_blank"><img
+                            src="https://athenahacks.com/images/sponsors/USG-logo.png"></a>
                     <a href="https://viterbischool.usc.edu/" target="_blank"><img
                             src="https://athenahacks.com/images/sponsors/viterbilogo.png"></a>
-                    <a href="https://ripplematch.com/" target="_blank"><img
-                            src="images/sponsors/ripplematch.png"></a>
-                    <a href="https://disney.com/" target="_blank"><img
-                            src="images/sponsors/disney.png"></a>
-
                 </div>
                 <!-- Food Sponsors -->
                 <!-- <div class="sponsor-tier tier5">
@@ -415,7 +414,8 @@
                 </div> -->
             </div>
             <div>
-                A <b>huge</b> thank you to all our returning and new sponsors for 2020! We are no longer accepting sponsors for this year, but keep an eye out for next year.
+                A <b>huge</b> thank you to all our returning and new sponsors for 2020! We are no longer accepting
+                sponsors for this year, but keep an eye out for next year.
                 <br />
                 <p>Contact us: athenahacks@gmail.com</p>
             </div>

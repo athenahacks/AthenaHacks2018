@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');@-ms-viewport {
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+
+@-ms-viewport {
   width: device-width;
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');@-ms-viewport {
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@-ms-viewport {
   width: device-width;
 }
 
@@ -23,19 +28,20 @@ body {
   padding: 5vw;
   width: 100vw;
   height: 100vh;
-  background: transparent
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat;
 }
 
 #logo {
   height: 60vh;
 }
+
 #header-right {
   display: flex;
   flex-direction: column;
   text-align: right;
   color: #FFF5B5;
 }
+
 #header-right button {
   border-radius: 5px;
   margin: 3px 0px;
@@ -43,10 +49,12 @@ body {
   text-decoration: none;
   border: none;
 }
+
 #header-right a {
   text-decoration: none;
   color: black;
 }
+
 #app_buttons {
   display: flex;
   flex-direction: row;
@@ -54,26 +62,33 @@ body {
   margin-top: 10px;
   /* padding: 10px; */
 }
+
 #app_buttons button {
   margin-left: 5px;
 }
+
 #hacker_button {
-  background-color: #967ad2; 
+  background-color: #967ad2;
 }
+
 #hacker_button:hover {
-  background-color: #b694ff; 
+  background-color: #b694ff;
 }
-#mentor_button { 
+
+#mentor_button {
   background-color: #9dd8d2;
 }
+
 #mentor_button:hover {
-  background-color: #b7fff8; 
+  background-color: #b7fff8;
 }
-#volunteer_button { 
+
+#volunteer_button {
   background-color: #FFF5B5;
 }
+
 #volunteer_button:hover {
-  background-color: #f9d364; 
+  background-color: #f9d364;
 }
 
 
@@ -93,16 +108,19 @@ body {
   margin-top: 30px;
   font-size: 1.8em;
 }
+
 #countdown {
   display: flex;
   justify-content: flex-end;
   font-size: 40px;
 }
+
 #clockdiv {
   display: flex;
   justify-content: row;
   color: #dcbdc7;
 }
+
 .timer {
   padding: 5px;
   font-size: 50px;
@@ -112,9 +130,9 @@ body {
 
 
 #main {
-  background: transparent
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat;
 }
+
 .section {
   min-height: 100vh;
   width: 100vw;
@@ -124,6 +142,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .section-title {
   font-size: 3em;
 }
@@ -134,18 +153,22 @@ body {
   justify-content: space-evenly;
   background-color: rgb(83, 132, 184, 0.5);
 }
+
 #about h1 {
   align-self: center;
 }
+
 #about-info {
   align-self: center;
   width: 90%;
 }
+
 #info-cards {
   display: flex;
 }
+
 .card {
-  background-color: rgb(255, 255, 255,0.5);
+  background-color: rgb(255, 255, 255, 0.5);
   padding: 20px;
   margin: 10px;
   align-items: center;
@@ -161,6 +184,7 @@ body {
   text-align: center;
   width: 100%;
 }
+
 #about_land .about-img {
   width: 90px;
 }
@@ -180,13 +204,16 @@ body {
   text-align: left;
   background-color: rgb(141, 131, 190, 0.5);
 }
+
 #faq .section-title {
   margin-bottom: 15px;
 
 }
+
 .faq {
   list-style: none;
 }
+
 #faq-content {
   display: flex;
   justify-content: space-evenly;
@@ -206,20 +233,24 @@ body {
   overflow: hidden;
   transition: max-height 0.5s ease, padding-bottom 0.5s ease;
 }
+
 .faq li.active .answer {
-  max-height: 275px ;
+  max-height: 275px;
   padding-bottom: 25px;
   transition: max-height 0.5s ease, padding-bottom 0.5s ease;
 }
+
 #faq-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
 }
+
 #faq-right a {
   color: white;
 }
+
 #faq-right img {
   height: 30vw;
 }
@@ -230,9 +261,10 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   align-self: center;
 }
+
 #sponsor-logos {
   display: flex;
   flex-direction: column;
@@ -240,17 +272,22 @@ body {
   margin-left: 10vw;
   margin-right: 10vw;
 }
+
 .sponsor-tier {
-  overflow-wrap: normal;
+  /* overflow-wrap: normal; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  /* padding-bottom: 40px; */
+  margin-bottom: 20px;
 }
+
 .sponsor-tier img {
   padding: 15px;
+  align-self: flex-start;
 }
+
 .sponsor_header {
   flex-direction: row;
   /* justify-content: center; */
@@ -258,19 +295,22 @@ body {
   /* align-items: center; */
   padding-bottom: 20px;
 }
+
 .purple-rect {
   align-self: center;
   height: 5px;
   background: rgba(177, 156, 217, 0.5);
   width: 100%;
 }
-.sponsor-title{
+
+.sponsor-title {
   /* align-self: center; */
   font-size: 60px;
   width: 100%;
   margin-bottom: 20px;
 }
-.sponsor-title.old{
+
+.sponsor-title.old {
   font-size: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -279,33 +319,43 @@ body {
 .tier1 img {
   width: 10vw;
 }
+
+.tier3 {
+  margin-bottom: 20px;
+}
+
 .tier2 img {
   max-width: 320px !important;
 }
+
 .tier3 img {
   height: 10vh;
 }
+
 /* their logo has a weird thing that makes it small looking so u gotta fake it being bigger */
 #honey {
   height: 13vh;
 }
+
 .tier4 img {
   max-height: 9vh;
   max-width: 15vw;
 }
+
 .tier5 img {
   max-width: 10vw;
 }
 
 /* SOCIAL */
 #social_media {
- text-align: center;
- display: flex;
- flex-direction: column;
- justify-content: space-evenly;
- background-color: rgb(255, 182, 194,0.5);
- padding-bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgb(255, 182, 194, 0.5);
+  padding-bottom: 0;
 }
+
 #pixlee_container {
   width: 80vw;
   align-self: center;
@@ -315,7 +365,7 @@ body {
 
 }
 
-#social_media a{
+#social_media a {
   padding: 15px;
   color: #ffffff;
   text-decoration: none;
@@ -353,20 +403,25 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+
   #header-right img {
     width: 80vw;
     align-self: flex-end;
   }
+
   #header-right h2 {
     font-size: 1.5em;
   }
+
   .section {
     font-size: 1.3em;
     padding: 5vh 0vw;
   }
+
   #info-cards {
     display: none;
   }
+
   #faq-content {
     display: flex;
     flex-direction: column;
@@ -374,6 +429,7 @@ body {
     flex-direction: column;
     margin-right: 10px;
   }
+
   #faq-content ul {
     margin-bottom: -11vh;
   }
@@ -382,31 +438,42 @@ body {
     margin-left: 1vw;
     margin-right: 1vw;
   }
+
   .sponsor-tier {
     padding: 2vh;
   }
+
   .sponsor-tier img {
     padding: 5px;
   }
+
   .tier3 img {
     height: 5vh;
   }
-  
+
   /* their logo has a weird thing that makes it small looking so u gotta fake it being bigger */
   #honey {
     height: 7vh;
   }
+
+  #pimco {
+    width: 5vw;
+  }
+
   .tier4 img {
     max-height: 15vh;
     max-width: 20vw;
   }
+
   .tier5 img {
     max-width: 15vw;
   }
+
   #sponsors {
     font-size: 1em;
     padding: 10px;
   }
+
   #social_media .section-title {
     font-size: 1.5em;
   }
