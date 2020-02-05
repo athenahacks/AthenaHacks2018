@@ -13,13 +13,14 @@
 html,
 body {
   color: white;
-  background-color: #0f0d20;
+  background-color: #2A2F49;
   text-align: center;
   font-family: "Cabin", sans-serif;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   height: 100vh;
 }
+
 
 #header {
   display: flex;
@@ -32,7 +33,8 @@ body {
 }
 
 #logo {
-  height: 60vh;
+  height: 70vh;
+  opcaity: 1;
 }
 
 #header-right {
@@ -64,7 +66,10 @@ body {
 }
 
 #app_buttons button {
-  margin-left: 5px;
+  padding: 20px;
+  margin-left: 15px;
+  padding: 7px 20px;
+  font-size: 15px;
 }
 
 #hacker_button {
@@ -94,11 +99,11 @@ body {
 
 /* athenahacks text */
 #header-right img {
-  width: 40vw;
+  width: 35vw;
 }
 
 #coming_soon {
-  color: #dcbdc7;
+  color: white;
   font-size: 16px;
   margin-top: 10px;
 }
@@ -116,9 +121,10 @@ body {
 }
 
 #clockdiv {
+  padding-top: 5px;
   display: flex;
   justify-content: row;
-  color: #dcbdc7;
+  color: #FFF5B5;
 }
 
 .timer {
@@ -136,7 +142,7 @@ body {
 .section {
   min-height: 100vh;
   width: 100vw;
-  padding: 5vh 10vw;
+  padding: 10vh 10vw;
   font-size: 1.5em;
   text-align: center;
   display: flex;
@@ -144,23 +150,41 @@ body {
 }
 
 .section-title {
-  font-size: 3em;
+  font-size: 50px;
+  color: #ABD8D3;
+}
+
+#hack-date{
+  color: white;
+  font-size: 19px;
+  padding-top: 15px;
 }
 
 /* ABOUT section */
 #about {
   text-align: center;
   justify-content: space-evenly;
-  background-color: rgb(83, 132, 184, 0.5);
+  /*background-color: rgb(83, 132, 184, 0.5);*/
+  color: white;
+  /*background-color: #2A2F49;*/
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #3e4363;
 }
 
 #about h1 {
   align-self: center;
+  color: #9dd8d2;
 }
 
 #about-info {
   align-self: center;
   width: 90%;
+  font-size: 16px;
+  font-weight: 300px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 32px;
+  padding: 20px 35px;
 }
 
 #info-cards {
@@ -168,7 +192,9 @@ body {
 }
 
 .card {
-  background-color: rgb(255, 255, 255, 0.5);
+  /*background-color: rgb(255, 255, 255, 0.5);*/
+  background-color: white;
+  opacity: 0.9;
   padding: 20px;
   margin: 10px;
   align-items: center;
@@ -183,6 +209,7 @@ body {
   justify-content: center;
   text-align: center;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 #about_land .about-img {
@@ -202,11 +229,17 @@ body {
 /* FAQ section */
 #faq {
   text-align: left;
-  background-color: rgb(141, 131, 190, 0.5);
+  /*background-color: rgb(141, 131, 190, 0.5);*/
+  /*background-color: #685E9E;*/
+  /*background-color: #0E0C1C;*/
+  padding-top: 70px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #2A2F49;
 }
 
 #faq .section-title {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  font-family: 'Cabin', sans-serif;
 
 }
 
@@ -220,14 +253,24 @@ body {
 }
 
 .faq .question {
-  font-size: 1em;
+  font-size: 20px;
   cursor: pointer;
   transition: color 0.5s ease;
   margin-bottom: 20px;
+  color: #BDB8DD;
+}
+
+.faq .question:hover{
+  color: #FDFFB7;
+}
+
+.faq .active .question{
+  color: #FDFFB7;
+  font-weight: 600;
 }
 
 .faq .answer {
-  font-size: 0.8em;
+  font-size: 16px;
   line-height: 24px;
   max-height: 0;
   overflow: hidden;
@@ -238,13 +281,17 @@ body {
   max-height: 275px;
   padding-bottom: 25px;
   transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+  /*color: #FEFFC4;*/
 }
+
 
 #faq-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 #faq-right a {
@@ -261,16 +308,26 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.3);
+  /*background-color: rgba(255, 255, 255, 0.3);*/
+ /* background-color: #0E0C1C;*/
+ background-color: #3e4363;
   align-self: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 #sponsor-logos {
+  background-color: white;
   display: flex;
+  padding: 30px 100px;
+  border-radius: 20px;
   flex-direction: column;
   align-self: center;
   margin-left: 10vw;
   margin-right: 10vw;
+  opacity: 0.9;
+  margin-bottom: 40px;
 }
 
 .sponsor-tier {
@@ -294,6 +351,8 @@ body {
   align-content: center;
   /* align-items: center; */
   padding-bottom: 20px;
+  /*color: #685E9E;*/
+  color: #9dd8d2;;
 }
 
 .purple-rect {
@@ -301,6 +360,22 @@ body {
   height: 5px;
   background: rgba(177, 156, 217, 0.5);
   width: 100%;
+}
+
+#sponsors .section-title{
+ /*color: #9dd8d2;*/
+ padding: 30px;
+ font-family: 'Cabin', sans-serif;
+}
+
+.sponsor-thanks{
+  margin: auto;
+  width: 65%;
+  padding-bottom: 50px;
+}
+
+.sponsor-thanks p{
+  margin-top: 5px;
 }
 
 .sponsor-title {
@@ -348,12 +423,19 @@ body {
 
 /* SOCIAL */
 #social_media {
-  text-align: center;
+  /*text-align: center;*/
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: rgb(255, 182, 194, 0.5);
+  /*background-color: rgb(255, 182, 194, 0.5);*/
+  background-color: #2A2F49;
   padding-bottom: 0;
+}
+
+#social_media .section-title{
+ /* color: #9dd8d2;*/
+  padding: 30px;
+  padding-bottom: 50px;
 }
 
 #pixlee_container {
@@ -376,8 +458,65 @@ body {
 }
 
 #social_media i:hover {
-  color: rgb(152, 152, 152);
+  color:#FFFDBA;
+ /* color: rgb(152, 152, 152);*/
 }
+
+/*footer*/
+#footer{
+  width: 100%;
+  background-color: #6d60b5;
+ /* opacity: 0.1;*/
+  margin-top: 170px;
+  padding: 15px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+#footer p{
+  margin: 0;
+}
+
+.footer-left{
+  float: left;
+  width: 25%;
+}
+
+.made-with{
+  text-align: center;
+  width: 75%;
+}
+
+#footer .made-with p{
+  margin-top: 20px;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.footer-logo{
+  width: 80px;
+  overflow: hidden;
+}
+
+.footer-img{
+  width: 100%;
+}
+
+
+.fa{
+  padding-right: 15px;
+  color: white;
+
+}
+
+.social-icons{
+  text-align: left;
+  padding-top: 8px;
+  width: 200px
+  margin-right: 0;
+}
+
 
 /* Day-off / Nearing hackathon */
 .links {
@@ -396,6 +535,12 @@ body {
   font-size: 18px;
 }
 
+#info{
+  padding: 50px;
+}
+
+
+
 @media (max-width: 1025px) {
   #header {
     display: flex;
@@ -405,7 +550,8 @@ body {
   }
 
   #header-right img {
-    width: 80vw;
+    padding-top: 10px;
+    width: 70vw;
     align-self: flex-end;
   }
 
@@ -476,5 +622,6 @@ body {
 
   #social_media .section-title {
     font-size: 1.5em;
+    color: #99D8D1;
   }
 }
