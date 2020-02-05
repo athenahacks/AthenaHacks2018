@@ -365,6 +365,7 @@ body {
 #sponsors .section-title{
  /*color: #9dd8d2;*/
  padding: 30px;
+ padding-top: 20px;
  font-family: 'Cabin', sans-serif;
 }
 
@@ -435,6 +436,7 @@ body {
 #social_media .section-title{
  /* color: #9dd8d2;*/
   padding: 30px;
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 
@@ -465,7 +467,7 @@ body {
 /*footer*/
 #footer{
   width: 100%;
-  background-color: #6d60b5;
+  background-color: #242840;
  /* opacity: 0.1;*/
   margin-top: 170px;
   padding: 15px;
