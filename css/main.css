@@ -69,9 +69,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  /* margin: 5px; */
-
-  /* padding: 10px; */
 }
 
 /* Media Query for low resolution  Tablets, Ipads  and phones*/
@@ -82,7 +79,6 @@ body {
 
   #app_buttons {
     width: 100vw;
-
   }
 }
 
@@ -238,13 +234,8 @@ body {
 }
 
 #about {
-  /* background-color: #A5DFD8; */
   width: 100%;
-  /* padding-top: 70px; */
-  /* padding-bottom: 70px; */
   text-align: center;
-
-  /* display: flex; */
 }
 
 /* FAQ section */
@@ -328,6 +319,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   text-align: center;
   /*background-color: rgba(255, 255, 255, 0.3);*/
   /* background-color: #0E0C1C;*/
@@ -345,6 +337,8 @@ body {
   border-radius: 20px;
   flex-direction: column;
   align-self: center;
+  align-items: center;
+  justify-content: center;
   margin-left: 10vw;
   margin-right: 10vw;
   opacity: 0.9;
