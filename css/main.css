@@ -344,6 +344,39 @@ body {
   opacity: 0.9;
   margin-bottom: 40px;
 }
+#keynote {
+  background-color: white;
+  display: flex;
+  padding: 30px;
+  border-radius: 20px;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-start;
+  
+  margin-left: 10vw;
+  margin-right: 10vw;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  color: black;
+  text-align: left;
+
+
+}
+#keynote img {
+  width: 10vw;
+  margin-left: 20px;
+  border-radius: 10px;
+
+}
+#keynote-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#keynote-info p {
+  text-align: left;
+
+}
 
 .sponsor-tier {
   /* overflow-wrap: normal; */
