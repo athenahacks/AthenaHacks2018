@@ -18,23 +18,29 @@ body {
   font-family: "Cabin", sans-serif;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
+/* Media Query for Tablets Ipads portrait mode, desktop */
+@media (min-width: 768px) {
+  #header {
+    height: 100vh;
+    padding: 5vw;
+  }
+}
 
 #header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5vw;
+  margin-bottom: 10px;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat;
 }
 
 #logo {
   height: 70vh;
-  opcaity: 1;
 }
 
 #header-right {
@@ -42,6 +48,7 @@ body {
   flex-direction: column;
   text-align: right;
   color: #FFF5B5;
+  /* padding-right: 5vw; */
 }
 
 #header-right button {
@@ -57,18 +64,32 @@ body {
   color: black;
 }
 
+
 #app_buttons {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: 10px;
+  /* margin: 5px; */
+
   /* padding: 10px; */
+}
+
+/* Media Query for low resolution  Tablets, Ipads  and phones*/
+@media (max-width: 481px) {
+  #header-right {
+    padding-right: 5vw;
+  }
+
+  #app_buttons {
+    width: 100vw;
+
+  }
 }
 
 #app_buttons button {
   padding: 20px;
-  margin-left: 15px;
-  padding: 7px 20px;
+  margin-left: 5px;
+  padding: 7px 10px;
   font-size: 15px;
 }
 
@@ -154,7 +175,7 @@ body {
   color: #ABD8D3;
 }
 
-#hack-date{
+#hack-date {
   color: white;
   font-size: 19px;
   padding-top: 15px;
@@ -260,11 +281,11 @@ body {
   color: #BDB8DD;
 }
 
-.faq .question:hover{
+.faq .question:hover {
   color: #FDFFB7;
 }
 
-.faq .active .question{
+.faq .active .question {
   color: #FDFFB7;
   font-weight: 600;
 }
@@ -309,8 +330,8 @@ body {
   justify-content: space-evenly;
   text-align: center;
   /*background-color: rgba(255, 255, 255, 0.3);*/
- /* background-color: #0E0C1C;*/
- background-color: #3e4363;
+  /* background-color: #0E0C1C;*/
+  background-color: #3e4363;
   align-self: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -352,7 +373,8 @@ body {
   /* align-items: center; */
   padding-bottom: 20px;
   /*color: #685E9E;*/
-  color: #9dd8d2;;
+  color: #9dd8d2;
+  ;
 }
 
 .purple-rect {
@@ -362,20 +384,20 @@ body {
   width: 100%;
 }
 
-#sponsors .section-title{
- /*color: #9dd8d2;*/
- padding: 30px;
- padding-top: 20px;
- font-family: 'Cabin', sans-serif;
+#sponsors .section-title {
+  /*color: #9dd8d2;*/
+  padding: 30px;
+  padding-top: 20px;
+  font-family: 'Cabin', sans-serif;
 }
 
-.sponsor-thanks{
+.sponsor-thanks {
   margin: auto;
   width: 65%;
   padding-bottom: 50px;
 }
 
-.sponsor-thanks p{
+.sponsor-thanks p {
   margin-top: 5px;
 }
 
@@ -433,8 +455,8 @@ body {
   padding-bottom: 0;
 }
 
-#social_media .section-title{
- /* color: #9dd8d2;*/
+#social_media .section-title {
+  /* color: #9dd8d2;*/
   padding: 30px;
   padding-top: 20px;
   padding-bottom: 50px;
@@ -460,63 +482,62 @@ body {
 }
 
 #social_media i:hover {
-  color:#FFFDBA;
- /* color: rgb(152, 152, 152);*/
+  color: #FFFDBA;
+  /* color: rgb(152, 152, 152);*/
 }
 
 /*footer*/
-#footer{
+#footer {
   width: 100%;
   background-color: #242840;
- /* opacity: 0.1;*/
+  /* opacity: 0.1;*/
   margin-top: 170px;
   padding: 15px;
   overflow: hidden;
   padding-left: 20px;
 }
 
-#footer p{
+#footer p {
   margin: 0;
 }
 
-.footer-left{
+.footer-left {
   float: left;
   width: 25%;
 }
 
-.made-with{
+.made-with {
   text-align: center;
   width: 75%;
 }
 
-#footer .made-with p{
+#footer .made-with p {
   margin-top: 20px;
   font-family: "Open-Sans", sans-serif;
   font-weight: 300;
   font-size: 12px;
 }
 
-.footer-logo{
+.footer-logo {
   width: 80px;
   overflow: hidden;
 }
 
-.footer-img{
+.footer-img {
   width: 100%;
 }
 
 
-.fa{
+.fa {
   padding-right: 15px;
   color: white;
 
 }
 
-.social-icons{
+.social-icons {
   text-align: left;
   padding-top: 8px;
-  width: 200px
-  margin-right: 0;
+  width: 200px margin-right: 0;
 }
 
 
@@ -537,7 +558,7 @@ body {
   font-size: 18px;
 }
 
-#info{
+#info {
   padding: 50px;
 }
 
