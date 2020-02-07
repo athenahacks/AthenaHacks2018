@@ -719,12 +719,44 @@ body {
   opacity: 0.9;
   font-family: 'Open-Sans', sans-serif;
   padding-bottom: 15px;
-}
-
-
+  }
 }
 
 @media (max-width: 767px) {
+
+  #logo{
+    width: 300px;
+    height: 300px;
+  }
+
+  #header{
+    padding-bottom: 50px;
+  }
+
+  #header-right img {
+    padding-top: 10px;
+    width: 55vw;
+    align-self: flex-end;
+  }
+
+  #about{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #faq{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+   #sponsors{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
 
   #organizers .person{
     width: 100%;
@@ -738,6 +770,8 @@ body {
 
  #organizers{
   font-size: 18px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
  #organizers .team-name{
