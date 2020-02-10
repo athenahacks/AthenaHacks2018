@@ -486,14 +486,14 @@ body {
   padding-bottom: 30px;
 }
 
-#organizers h3{
+/*#organizers h3{
   text-align: left;
   margin-bottom: 0;
   padding-left: 25px;
   padding-top: 25px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-}
+}*/
 
 #organizers p{
   font-size: 16px;
@@ -614,7 +614,6 @@ body {
 }
 
 
-
 @media (max-width: 1025px) {
   #header {
     display: flex;
@@ -696,6 +695,97 @@ body {
 
   #social_media .section-title {
     font-size: 1.5em;
-    color: #99D8D1;
+    /*color: #99D8D1;*/
+  }
+
+   #organizers .person{
+    width: 33%;
+  }
+
+  .profile-img{
+  opacity: 0.9;
+  width: 75%;
+  padding: 20px;
+ }
+
+ #organizers{
+  font-size: 18px;
+}
+
+ #organizers .team-name{
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  opacity: 0.9;
+  font-family: 'Open-Sans', sans-serif;
+  padding-bottom: 15px;
   }
 }
+
+@media (max-width: 767px) {
+
+  #logo{
+    width: 300px;
+    height: 300px;
+  }
+
+  #header{
+    padding-bottom: 50px;
+  }
+
+  #header-right img {
+    padding-top: 10px;
+    width: 55vw;
+    align-self: flex-end;
+  }
+
+  #about{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #faq{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+   #sponsors{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
+
+  #organizers .person{
+    width: 100%;
+  }
+
+  .profile-img{
+  opacity: 0.9;
+  width: 60%;
+  padding: 20px;
+ }
+
+ #organizers{
+  font-size: 18px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+ #organizers .team-name{
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  opacity: 0.9;
+  font-family: 'Open-Sans', sans-serif;
+  padding-bottom: 20px;
+}
+
+
+ 
+}
+
+
+
