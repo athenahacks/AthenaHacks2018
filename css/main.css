@@ -120,6 +120,7 @@ body {
 /* athenahacks text */
 #header-right img {
   width: 35vw;
+  align-self: flex-end;
 }
 
 #coming_soon {
