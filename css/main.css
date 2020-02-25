@@ -351,36 +351,63 @@ body {
 #keynote {
   background-color: white;
   display: flex;
-  padding: 30px;
+  padding: 40px;
   border-radius: 20px;
   flex-direction: column;
-  align-self: center;
-  align-items: flex-start;
-  
+  /* align-items: flex-end; */
   margin-left: 10vw;
   margin-right: 10vw;
   opacity: 0.9;
   margin-bottom: 40px;
   color: black;
   text-align: left;
-
-
 }
 #keynote img {
-  width: 10vw;
+  width: 20%;
+  height: 20%;
   margin-left: 20px;
   border-radius: 10px;
-
+  flex: 1;
 }
 #keynote-info {
-  margin-top: 20px;
   display: flex;
+  /* flex: 3; */
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  
 }
-#keynote-info p {
+#keynote-info h1 {
+  font-size: 2.5em;
+  padding-top: 20px;
+}
+#keynote-info text {
+  font-size: 1.5em;
   text-align: left;
-
+  padding-top: 0px;
+  flex: 3;
 }
+@media (max-width: 1025px) {
+  #keynote {
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  #keynote-info {
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
+    margin-left: 0px;
+  }
+  #keynote-info img {
+    margin-left: 0px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    display: none;
+  }
+  #keynote text {
+    font-size: 1em;
+  }
+}
+
 
 .sponsor-tier {
   /* overflow-wrap: normal; */
@@ -625,7 +652,8 @@ body {
 .social-icons {
   text-align: left;
   padding-top: 8px;
-  width: 200px margin-right: 0;
+  width: 200px;
+  margin-right: 0;
 }
 
 
