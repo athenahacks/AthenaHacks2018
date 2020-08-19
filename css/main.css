@@ -13,7 +13,7 @@
 html,
 body {
   color: white;
-  background-color: #2A2F49;
+  /* background-color: #2A2F49; */
   text-align: center;
   font-family: "Cabin", sans-serif;
   overflow-x: hidden;
@@ -30,13 +30,17 @@ body {
 }
 
 #header {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   width: 100vw;
   /* height: 100vh; */
-  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat;
+ /* background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat; */
+  padding-top: 7%;
+  background-image: url('../images/2021website.png');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
 }
 
 #logo {
@@ -46,8 +50,10 @@ body {
 #header-right {
   display: flex;
   flex-direction: column;
-  text-align: right;
+  text-align: center;
   color: #FFF5B5;
+  margin: auto;
+  padding-top: none;
   /* padding-right: 5vw; */
 }
 
@@ -61,14 +67,15 @@ body {
 
 #header-right a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 
 #app_buttons {
-  display: flex;
+  padding: 10px;
+  /* display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-end; */
 }
 
 /* Media Query for low resolution  Tablets, Ipads  and phones*/
@@ -90,11 +97,11 @@ body {
 }
 
 #hacker_button {
-  background-color: #967ad2;
+  background-color: #b05858;
 }
 
 #hacker_button:hover {
-  background-color: #b694ff;
+  background-color: #994b4b;
 }
 
 #mentor_button {
@@ -120,7 +127,8 @@ body {
 /* athenahacks text */
 #header-right img {
   width: 35vw;
-  align-self: flex-end;
+  /* align-self: flex-end; */
+  margin: auto;
 }
 
 #coming_soon {
@@ -172,13 +180,14 @@ body {
 
 .section-title {
   font-size: 50px;
-  color: #ABD8D3;
+  color: #e0b0a8;
 }
 
 #hack-date {
   color: white;
   font-size: 19px;
-  padding-top: 15px;
+  /* padding-top: 15px; */
+  padding-top: 7px;
 }
 
 /* ABOUT section */
@@ -188,14 +197,13 @@ body {
   /*background-color: rgb(83, 132, 184, 0.5);*/
   color: white;
   /*background-color: #2A2F49;*/
-  padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #3e4363;
+  background-color: #212D3E;
 }
 
 #about h1 {
   align-self: center;
-  color: #9dd8d2;
+  color: #c78d8d;
 }
 
 #about-info {
@@ -250,7 +258,7 @@ body {
   /*background-color: #0E0C1C;*/
   padding-top: 70px;
   font-family: 'Open Sans', sans-serif;
-  background-color: #2A2F49;
+  background-color: #2f3d52;
 }
 
 #faq .section-title {
@@ -273,15 +281,15 @@ body {
   cursor: pointer;
   transition: color 0.5s ease;
   margin-bottom: 20px;
-  color: #BDB8DD;
+  color: #d0d9db;
 }
 
 .faq .question:hover {
-  color: #FDFFB7;
+  color: #d4e8ca;
 }
 
 .faq .active .question {
-  color: #FDFFB7;
+  color: #d4e8ca;
   font-weight: 600;
 }
 
@@ -308,6 +316,7 @@ body {
   text-align: right;
   font-size: 18px;
   font-weight: 400;
+  padding-top: 20px;
 }
 
 #faq-right a {
@@ -315,7 +324,8 @@ body {
 }
 
 #faq-right img {
-  height: 30vw;
+  padding-bottom: 50px;
+  height: 25vw;
 }
 
 /* SPONSORS */
@@ -327,7 +337,7 @@ body {
   text-align: center;
   /*background-color: rgba(255, 255, 255, 0.3);*/
   /* background-color: #0E0C1C;*/
-  background-color: #3e4363;
+  background-color: #212D3E;
   align-self: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -431,7 +441,7 @@ body {
   /* align-items: center; */
   padding-bottom: 20px;
   /*color: #685E9E;*/
-  color: #9dd8d2;
+  color: #c78d8d;
   ;
 }
 
@@ -509,7 +519,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   /*background-color: rgb(255, 182, 194, 0.5);*/
-  background-color: #2A2F49;
+  background-color: #2f3d52;
   padding-bottom: 90px;
 }
 
@@ -546,7 +556,7 @@ body {
 
 /*organizers*/
 #organizers{
-  background-color: #3e4363;
+  background-color: #212D3E;
   padding-bottom: 30px;
 }
 
@@ -564,7 +574,7 @@ body {
   font-family: 'Cabin', sans-serif;
   margin-bottom: 0;
   font-weight: 400;
-  color: #b6bde0;
+  color: #d4e8ca;
 }
 
 .profile-img{
@@ -605,7 +615,7 @@ body {
 
 #footer {
   width: 100%;
-  background-color: #363a59;
+  background-color: #2f3d52;
   /* opacity: 0.1;*/
   padding: 15px;
   overflow: hidden;
@@ -685,6 +695,8 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+
   }
 
   #header-right img {
